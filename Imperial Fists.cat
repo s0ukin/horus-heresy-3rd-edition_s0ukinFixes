@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d186-cffc-0950-f632" name="                         VII - Imperial Fists" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="1" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d186-cffc-0950-f632" name="                         VII - Imperial Fists" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="2" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Assets" id="4314-0fbc-731a-fa14" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="5470-c826-a822-2caa" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
@@ -106,5 +106,189 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Solarite Power Gauntlet" hidden="false" id="3b91-56eb-e1fc-7567">
+      <profiles>
+        <profile name="Solarite Power Gauntlet" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="b8e0-3934-eb64-b463">
+          <characteristics>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">-3</characteristic>
+            <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+4</characteristic>
+            <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+            <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+)</characteristic>
+            <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Critical Hit (X)" id="ed5e-1edd-d33e-d714" hidden="false" type="rule" targetId="fe5a-a52a-468f-3f88">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vigil Pattern Storm Shield" hidden="false" id="25b1-d9fe-2b90-dc58">
+      <infoLinks>
+        <infoLink name="Heavy Unit Sub-type" id="545d-2e90-e5fc-9dff" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="add" value="6ece-5c52-590e-43a4" field="category" scope="parent"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Iliastus Assault Cannon" hidden="false" id="a6ba-6f72-e2fd-037a">
+      <profiles>
+        <profile name="Iliastus Assault Cannon - Maximal fire " typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="ebf4-ef9a-bf55-1ae4">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">5</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Breaching (6+), Overload (1)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Iliastus Assault Cannon - Sustained fire " typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="4cbb-6454-6f43-03b8">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">3</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP), Breaching (6+) </characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Heavy (X)" id="62bd-b7e1-108a-1dd2" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+          <comment>FP</comment>
+          <modifiers>
+            <modifier type="set" value="Heavy (FP)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Breaching (X)" id="fb9c-d3f8-e2c7-7735" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Overload (X)" id="ff89-72f5-67e1-aa9d" hidden="false" type="rule" targetId="1d3a-d1e2-871a-63ae">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Overload (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Evander Garrius" hidden="false" id="6819-8014-fe49-2e96">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Evander Garrius " hidden="false" id="6efb-ae05-8ed9-50a7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec4b-d0e5-ecc5-aaf1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec4b-d0e5-ecc5-aaf1-max" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Subjugator" hidden="false" id="e8ae-3327-952c-3b9c">
+              <profiles>
+                <profile name="Subjugator" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="68ce-b5ea-2050-bfc9">
+                  <characteristics>
+                    <characteristic name="IM" typeId="6eec-4093-f946-1014">-2</characteristic>
+                    <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
+                    <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+4</characteristic>
+                    <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
+                    <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e"/>
+                    <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Incineratus" hidden="false" id="616a-6d2a-8158-0499">
+              <profiles>
+                <profile name="Subjugator" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7533-4916-e548-f0c8">
+                  <characteristics>
+                    <characteristic name="R" typeId="cdb0-8654-6840-1037">15</characteristic>
+                    <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
+                    <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">5</characteristic>
+                    <characteristic name="AP" typeId="7a23-0248-2b94-5951">5</characteristic>
+                    <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+                    <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Deflagrate (6)</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Volkite</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Deflagrate (X)" id="3b53-aacc-e5e9-9986" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
+                  <comment>6</comment>
+                  <modifiers>
+                    <modifier type="set" value="Deflagrate (6)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Evander Garrius " typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="5d3e-b21a-f71d-b2e2">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Unique, Command, Heavy)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">6</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">6</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">5</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">5</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">4</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">5</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">4</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">10</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">9</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">9</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">9</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Infantry Unit Type" id="18ed-2f0c-f9ac-faee" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1"/>
+            <infoLink name="Command Unit Sub-type" id="8106-8c74-99f7-af4c" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
+            <infoLink name="Infantry Unit Type" id="8ec4-ac65-32f7-3144" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1">
+              <comment>Unique</comment>
+            </infoLink>
+            <infoLink name="Bulky (X)" id="f013-1da0-8111-a433" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Implacable Advance" id="706c-88dd-b54d-ab48" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
+            <infoLink name="Slow and Purposeful" id="6e33-1216-22c1-b1fd" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
+            <infoLink name="Feel No Pain (X)" id="c020-ee3f-5774-0619" hidden="false" type="rule" targetId="89b5-7320-db15-fd60">
+              <comment>5</comment>
+              <modifiers>
+                <modifier type="set" value="Feel No Pain (5)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="The Tyrant&apos;s Regalia" id="df3d-43cc-983a-267f" hidden="false">
+              <description>A Model with this Special Rule has the Feel No Pain (5+) Special Rule against Wounds suffered when Engaged in a Challenge.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="215"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Fire Discipline" id="43fe-8703-9ddf-686c" hidden="false">
+      <description>When making a Shooting Attack for a Unit that only includes Models with this Special Rule, add +1 to the result of Hit Tests made for attacks in any Fire Groups that include more than five Dice or attacks and that have the Bolt or Auto Trait.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

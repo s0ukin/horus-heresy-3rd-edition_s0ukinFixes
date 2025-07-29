@@ -9012,7 +9012,7 @@
             <modifier type="set" value="Auto-Repair (5+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Outflank" id="eee0-0fcb-7586-c79b" hidden="false" type="rule" targetId="92d2-cc57-1ef6-a712"/>
+        <infoLink name="Assault Vehicle" id="90b9-980d-0d68-5c2d" hidden="false" type="rule" targetId="150c-16e6-1212-9f75"/>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="265"/>

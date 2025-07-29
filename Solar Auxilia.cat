@@ -5542,22 +5542,22 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
     </selectionEntryGroup>
     <selectionEntryGroup name="Auxilia Hull Weapons" id="9a19-6f6d-abea-d053" hidden="false" defaultSelectionEntryId="1888-42bd-6055-9169">
       <entryLinks>
-        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232">
+        <entryLink import="true" name="Heavy bolter" hidden="false" id="1888-42bd-6055-9169" type="selectionEntry" targetId="bc40-b14a-978e-0232" sortIndex="1" defaultAmount="1">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) heavy bolter" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Heavy flamer" hidden="false" id="168c-a947-c426-7e58" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86">
+        <entryLink import="true" name="Heavy flamer" hidden="false" id="168c-a947-c426-7e58" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="2">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) heavy flamer" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Multi-laser" hidden="false" id="9819-d41e-92f6-fa6c" type="selectionEntry" targetId="247d-a71c-d493-790b">
+        <entryLink import="true" name="Multi-laser" hidden="false" id="9819-d41e-92f6-fa6c" type="selectionEntry" targetId="247d-a71c-d493-790b" sortIndex="3">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) multi-laser" field="name"/>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Autocannon" hidden="false" id="d319-49f2-20de-c824" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93">
+        <entryLink import="true" name="Autocannon" hidden="false" id="d319-49f2-20de-c824" type="selectionEntry" targetId="da6e-3b8a-ea61-1e93" sortIndex="4">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) autocannon" field="name"/>
           </modifiers>
@@ -5565,7 +5565,7 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lascannon" hidden="false" id="37bd-0733-4b20-eb83" type="selectionEntry" targetId="b6d5-4be2-c37e-2197">
+        <entryLink import="true" name="Lascannon" hidden="false" id="37bd-0733-4b20-eb83" type="selectionEntry" targetId="b6d5-4be2-c37e-2197" sortIndex="5">
           <modifiers>
             <modifier type="set" value="Hull Mounted (Front) lascannon" field="name"/>
           </modifiers>

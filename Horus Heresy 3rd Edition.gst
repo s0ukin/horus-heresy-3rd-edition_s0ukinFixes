@@ -3861,7 +3861,6 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f9dd-33e0-0f03-6a62" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <comment>Solar Auxilia</comment>
                 </conditionGroup>
@@ -3884,7 +3883,6 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="10aa-c775-8ed3-387b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <comment>Solar Auxilia</comment>
                 </conditionGroup>
@@ -3907,7 +3905,6 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="bc95-1e0a-9db8-7517" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <comment>Solar Auxilia</comment>
                 </conditionGroup>
@@ -3945,7 +3942,6 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d536-ea44-8569-15fb" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <comment>Solar Auxilia</comment>
                 </conditionGroup>
@@ -3973,7 +3969,6 @@
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="95e2-9c56-ae1c-923b" shared="true" includeChildSelections="true" includeChildForces="true"/>
                   </conditions>
                   <comment>Solar Auxilia</comment>
                 </conditionGroup>

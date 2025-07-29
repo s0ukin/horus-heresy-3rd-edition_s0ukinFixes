@@ -2767,6 +2767,90 @@
             <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="f622-d190-e747-fb67"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="25d0-f805-e917-305a" includeChildSelections="false"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="8021-14d2-fda5-ff57" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange bolt pistol for:" id="453d-74f4-89c9-4ff3" hidden="false" defaultSelectionEntryId="38ad-3258-60c4-072e" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Pistols" hidden="false" id="1228-94af-17ce-8d41" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="2"/>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="38ad-3258-60c4-072e" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
+                    <entryLink import="true" name="Combat shield" hidden="false" id="cbf7-c2a8-c7d0-0daf" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="4"/>
+                    <entryLink import="true" name="Disintegrator pistol" hidden="false" id="93ca-0d73-1a74-7733" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="5416-00be-e2e7-5ba1"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="5416-00be-e2e7-5ba1">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d87-5c20-7f7d-fab9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange chainsword for:" id="f3e5-01b9-8bef-c806" hidden="false" defaultSelectionEntryId="b7a3-bb5a-9d16-e709" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="4632-eafc-1115-76c3" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2">
+                      <modifiers>
+                        <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy chainsword" hidden="false" id="cb56-031f-1f5e-d648" type="selectionEntry" targetId="e175-3b00-8885-b321" sortIndex="4">
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="eac0-72ae-9e33-bfab"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="eac0-72ae-9e33-bfab">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Heavy chainaxe" hidden="false" id="e56a-a208-fc54-433c" type="selectionEntry" targetId="3a14-74ac-8634-c204" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="32c1-ca4e-54d3-2c2c"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="2" field="32c1-ca4e-54d3-2c2c">
+                          <repeats>
+                            <repeat value="5" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebe3-cf36-689c-bbd1" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="aba1-d1c7-9107-10e5" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="aba1-d1c7-9107-10e5">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="983b-e755-333a-906d" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="436e-c868-44db-0bed" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veteran Sergeant" hidden="false" id="d026-be22-fbc5-ee36" sortIndex="1">
           <profiles>
@@ -2797,6 +2881,61 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="86cd-7755-3ddf-f408"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aab9-ea56-e3ec-be7b"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Options" id="a8ee-be02-e926-e779" hidden="false">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange bolt pistol for:" id="7780-4ef2-4b84-4999" hidden="false" defaultSelectionEntryId="38ad-3258-60c4-072e" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Pistols" hidden="false" id="a67e-2c0a-a520-2058" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="2"/>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="a023-d29e-c71e-6d10" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
+                    <entryLink import="true" name="Combat shield" hidden="false" id="2803-a664-a26d-fb25" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="4"/>
+                    <entryLink import="true" name="Disintegrator pistol" hidden="false" id="8142-d03c-e2db-9a7c" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c4b-5475-aad1-bd1e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange chainsword for:" id="760f-9ff1-2dc1-23fb" hidden="false" defaultSelectionEntryId="b7a3-bb5a-9d16-e709" sortIndex="3">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="0164-c146-98ff-8f27" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2"/>
+                    <entryLink import="true" name="Chainsword" hidden="false" id="f638-99df-94f4-e49a" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
+                      <modifiers>
+                        <modifier type="append" value="(default)" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5789-cc21-b011-d314" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="21b7-1798-b727-b5ec" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="1" field="21b7-1798-b727-b5ec">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <entryLinks>
+                <entryLink import="true" name="Pair of lightning claws" hidden="false" id="90bf-f0da-4344-7766" type="selectionEntry" targetId="6754-24dd-5be0-26ff" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5956-92c8-764e-ebe8" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Melta bombs" hidden="false" id="32da-6b81-52ca-9f53" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -2804,6 +2943,18 @@
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="30f9-6f0e-6a8e-4ade" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="c47a-8d0a-ae3e-332f" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="110d-7955-2150-6362" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b304-911d-66d4-2d3d" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="70fe-81ce-6318-a5e1" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4c5-ad67-611e-2512" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92fd-983b-5f52-f0cd" includeChildSelections="false"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -2818,6 +2969,19 @@
       <infoLinks>
         <infoLink name="[Allegiance]" id="6722-426c-0abc-99d2" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="360d-c06f-f05d-e29a" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Deep Strike" id="56b0-be06-10c3-df31" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+        <infoLink name="Bulky (X)" id="1491-c32a-33c5-382f" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Vanguard (X)" id="8807-62df-f930-072c" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tactical Squad" hidden="false" id="7b69-a372-a803-9c6f" sortIndex="30">
@@ -8311,10 +8475,9 @@
             </selectionEntryGroup>
             <selectionEntryGroup name="May exchange chainsword for:" id="baad-9cba-60ee-cb74" hidden="false" defaultSelectionEntryId="b4ba-f09d-0821-a6f0">
               <entryLinks>
-                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="16de-1549-8070-71ee" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2"/>
-                <entryLink import="true" name="Chainsword" hidden="false" id="b4ba-f09d-0821-a6f0" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="16de-1549-8070-71ee" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2">
                   <modifiers>
-                    <modifier type="append" value="(default)" field="name"/>
+                    <modifier type="set" value="9994-4d65-a0b5-bef0" field="defaultSelectionEntryId"/>
                   </modifiers>
                 </entryLink>
               </entryLinks>

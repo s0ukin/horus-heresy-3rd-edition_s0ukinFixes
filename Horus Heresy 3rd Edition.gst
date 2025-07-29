@@ -3715,20 +3715,8 @@
             </categoryLink>
             <categoryLink name="Armour" hidden="false" id="2c39-7871-5384-b101" targetId="643a-1012-bd51-6537">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8e95-747d-01c5-d9a0"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8e95-747d-01c5-d9a0"/>
               </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="8e95-747d-01c5-d9a0">
-                  <conditions>
-                    <condition type="equalTo" value="2" field="selections" scope="force" childId="e6e4-964a-5852-9c07" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Armour" hidden="false" id="e9c8-da1a-160f-75a0" targetId="4460-7bc1-4d80-aecb">
               <constraints>

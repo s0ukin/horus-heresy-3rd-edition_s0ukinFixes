@@ -8995,7 +8995,7 @@
         <entryLink import="true" name="Twin lascannon" hidden="false" id="596f-c64e-6216-1dc5" type="selectionEntry" targetId="8e62-3fda-37e1-5f0a">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f340-f4cc-d010-4bfc" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebfb-05bc-8d3f-3d6f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ebfb-05bc-8d3f-3d6f" includeChildSelections="false"/>
           </constraints>
           <modifiers>
             <modifier type="prepend" value="Two Sponson Mounted" field="name"/>

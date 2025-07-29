@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="7" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <profiles>
@@ -2312,7 +2312,7 @@
             <modifier type="set" value="Auto-Repair (4+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Light Transport" id="5f96-1aca-d0df-8b96" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+        <infoLink name="Legio Armsmen" id="5f96-1aca-d0df-8b96" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="60"/>
@@ -3252,7 +3252,7 @@
         <categoryLink targetId="1e7d-9066-28d2-97a0" id="c245-28c9-ba9f-0119" primary="false" name="Heavy Model Sub-Type"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="" id="98df-2802-16e3-b8fa" hidden="false"/>
+        <selectionEntryGroup id="98df-2802-16e3-b8fa" hidden="false"/>
         <selectionEntryGroup name="Weapon Options" id="9471-b387-8e1b-4b5a" hidden="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="Two options from the following list:" id="d25e-85ec-02d5-cf19" hidden="false" sortIndex="1" defaultSelectionEntryId="b2b0-557f-985e-ab0c">
@@ -4285,7 +4285,7 @@
         <infoLink name="[Allegiance]" id="243f-1d49-08fa-6dbf" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="509a-29ac-70cf-7c99" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="Smokescreen" id="ea44-267a-2890-ff0e" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
-        <infoLink name="Light Transport" id="a230-71be-2ff6-628a" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+        <infoLink name="Legio Armsmen" id="a230-71be-2ff6-628a" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
         <infoLink name="Auto-Repair (X)" id="f947-6652-876f-485e" hidden="false" type="rule" targetId="3973-ed50-1482-ff4a">
           <comment>4+</comment>
           <modifiers>
@@ -4882,7 +4882,7 @@
             <modifier type="set" value="Battlesmith (1)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Master of Automata" id="8d15-5f6c-1edd-d9d6" hidden="false" type="rule" targetId="3ad7-36d0-16cc-4995"/>
+        <infoLink name="Macro-Auspex" id="8d15-5f6c-1edd-d9d6" hidden="false" type="rule" targetId="3ad7-36d0-16cc-4995"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="0b3d-819b-6b7d-8107" hidden="false" sortIndex="2">
@@ -8236,7 +8236,97 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Apothecary" hidden="false" id="b7fe-ba65-00d2-57f0" sortIndex="37"/>
+    <selectionEntry type="unit" import="true" name="Apothecary" hidden="false" id="b7fe-ba65-00d2-57f0" sortIndex="37">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Apothecary" hidden="false" id="5f5a-93ee-0bb6-aab5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79cf-4ab6-d274-1b54" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82ce-a5ea-1626-0f4a" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Apothecary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="3ac3-5b9a-fe4e-dbdd">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Specialist)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">7</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">7</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="53ec-af9f-ff30-b70f" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a249-1bf1-9bdf-2c37" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afbf-df3e-1d68-39a3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="b729-5a6d-ce71-5874" type="selectionEntry" targetId="fa20-82bc-c7de-9e97">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5593-ed95-6b44-e7df" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f72f-01b3-2f08-fae4" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Narthecium" hidden="false" id="b2c8-f1e3-89ad-73cb" type="selectionEntry" targetId="a7bb-ae7f-3ef2-90d1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c70-263a-04e1-894c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8652-f11a-d32a-eb03" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="[Legiones Astartes]" id="9b70-4c5c-0bb2-aa66" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="[Allegiance]" id="5bbd-513c-339f-a939" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="Medic (X)" id="407d-d147-ba8e-3071" hidden="false" type="rule" targetId="93b3-c23d-7263-e013">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="set" value="Medic (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="fdbd-db08-6981-c28a" hidden="false" sortIndex="1">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="0bcb-2eda-83b5-4fb3" hidden="false" defaultSelectionEntryId="0427-b7ae-007d-79a2">
+              <entryLinks>
+                <entryLink import="true" name="Legion Pistols" hidden="false" id="ac6e-22d5-9aaa-24df" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true"/>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="0427-b7ae-007d-79a2" type="selectionEntry" targetId="2942-f783-d627-33c5"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d664-2a3a-2601-a0a7" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="546e-1b41-c304-c50b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May exchange chainsword for:" id="baad-9cba-60ee-cb74" hidden="false" defaultSelectionEntryId="b4ba-f09d-0821-a6f0">
+              <entryLinks>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="16de-1549-8070-71ee" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963" flatten="true" sortIndex="2"/>
+                <entryLink import="true" name="Chainsword" hidden="false" id="b4ba-f09d-0821-a6f0" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
+                  <modifiers>
+                    <modifier type="append" value="(default)" field="name"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84c9-72a3-b5e7-4578" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2814-92fb-eb92-d727" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Techmarine" hidden="false" id="6cac-d5d2-dda7-ea8f" sortIndex="38"/>
     <selectionEntry type="unit" import="true" name="Deathstorm Drop Pod" hidden="false" id="84cd-c790-5886-8814" sortIndex="39">
       <selectionEntries>
@@ -8501,7 +8591,7 @@
         <infoLink name="[Allegiance]" id="996e-fda6-b66e-4e10" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="78dc-5d87-1c7a-9960" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="Deep Strike" id="52ae-69fb-9725-440f" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
-        <infoLink name="Light Transport" id="5ceb-4bb3-6b3a-d4fa" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+        <infoLink name="Legio Armsmen" id="5ceb-4bb3-6b3a-d4fa" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
       </infoLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="80"/>
@@ -8552,7 +8642,7 @@
         <infoLink name="[Allegiance]" id="a419-9af9-c050-1efa" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="6819-a23d-513d-8875" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
         <infoLink name="Impact Reactive Doors" id="1417-5e5e-0cef-b02f" hidden="false" type="rule" targetId="a919-02f3-60f7-ab99"/>
-        <infoLink name="Light Transport" id="8566-4149-6ac5-a708" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
+        <infoLink name="Legio Armsmen" id="8566-4149-6ac5-a708" hidden="false" type="rule" targetId="d451-f7f3-fc8f-db23"/>
         <infoLink name="Orbital Assault Vehicle" id="ab0a-cdb7-5b39-b029" hidden="false" type="rule" targetId="d3d7-2241-0ce5-f2b6"/>
       </infoLinks>
       <costs>
@@ -8861,7 +8951,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dec0-dc65-7ef4-bca5"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange chainsword for:" id="ef00-780c-dc70-f179" hidden="false" page="" defaultSelectionEntryId="08fd-696d-e140-43fd" sortIndex="2">
+            <selectionEntryGroup name="May exchange chainsword for:" id="ef00-780c-dc70-f179" hidden="false" defaultSelectionEntryId="08fd-696d-e140-43fd" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Chainsword" hidden="false" id="08fd-696d-e140-43fd" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1"/>
                 <entryLink import="true" name="Astartes shotgun" hidden="false" id="5a3c-7fb8-0725-afbb" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="2"/>

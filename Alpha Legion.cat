@@ -238,6 +238,11 @@ When a Model with this Special Rule is deployed, if every Model in its Unit does
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="485e-6bc8-75a8-3f05" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="4222-8fb6-2588-6c9f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="261b-819e-3d9e-bb11" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="95"/>
@@ -488,6 +493,11 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3882-f89e-9f60-152f"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="781e-bd61-9fdb-5e93" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="221a-d904-9d6b-ca59" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Exodus" hidden="false" id="9258-8867-220d-429f" sortIndex="5">
@@ -635,6 +645,11 @@ When an enemy Unit finishes a Move within 6&quot; of a Model with this Special R
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b4ba-f3e6-3894-3638"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6503-c310-a226-5e77"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="58b2-7b96-9a40-60d1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="330b-ee73-b398-2093" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
         </entryLink>
       </entryLinks>
     </selectionEntry>

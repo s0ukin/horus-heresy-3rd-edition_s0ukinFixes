@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <categoryLinks>
-        <categoryLink targetId="6dbf-654a-f06f-2d69" id="457b-f9ca-7118-83b8" primary="false" name="Command"/>
         <categoryLink targetId="d9a6-9b5f-b18a-4d63" id="f2f8-b941-8c49-f632" primary="true" name="High Command"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="ed34-7d0b-8377-e5b6" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
@@ -2850,13 +2849,16 @@
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c02-8c77-f191-9cc4"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="492f-359a-0b8d-d34e"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="866a-557f-71e2-38b2"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Lasrifle w/ Charger" hidden="false" id="3a31-6343-7835-d1fe" sortIndex="3">
+                <selectionEntry type="upgrade" import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="3a31-6343-7835-d1fe" sortIndex="3">
                   <entryLinks>
                     <entryLink import="true" name="Lasrifle" hidden="false" id="e605-19f2-a29a-9362" type="selectionEntry" targetId="40e8-fcb7-9e0e-1582">
                       <constraints>
@@ -2869,6 +2871,9 @@
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a78e-042e-b51e-7a58"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3775-508f-f045-b6b0"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -2888,12 +2893,18 @@
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a3aa-568c-3922-76cf"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2848-9ad0-3f45-e2f7"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink import="true" name="Blast charger" hidden="false" id="c319-a954-b680-5e3b" type="selectionEntry" targetId="df2d-2052-ff9a-0d43">
                       <constraints>
                         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d06-192b-ce8e-ed2d"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bc9-5c18-331a-12e2"/>
                       </constraints>
+                      <modifiers>
+                        <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -3578,10 +3589,10 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Arvus Lighter" hidden="false" id="b42c-4380-99ba-1a9e">
       <categoryLinks>
-        <categoryLink targetId="cf96-8891-3f9a-8921" id="c8dc-644a-41a5-8c15" primary="true" name="Fast Attack"/>
         <categoryLink targetId="aa5a-c9fd-1eb1-7a45" id="900f-759b-d8f2-8114" primary="false" name="Vehicle Model Type"/>
         <categoryLink targetId="42a3-02e9-e0e4-8292" id="479e-f931-6924-b38f" primary="false" name="Flyer Model Sub-Type"/>
         <categoryLink targetId="2e6d-36f6-eeca-8e0c" id="5a94-1731-4f29-26ec" primary="false" name="Transport Model Sub-Type"/>
+        <categoryLink targetId="d162-4711-5d60-0a48" id="e9cb-954d-aaec-6025" primary="true" name="Transport"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Arvus Lighter" hidden="false" id="2abb-a00b-e2a0-12c1" sortIndex="1">
@@ -4038,7 +4049,8 @@
         <profile name="Cohorts vexilla" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="b8b4-12eb-0af8-00bc">
           <characteristics>
             <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A cohorts vexilla increases the Casualty threshold when making Panic Checks for a Unit in the Shooting Phase from 25% to 50% and removes the Routed Tactical Status from friendly Solar Auxilia Units when they end a Fall Back Move within 12&quot;.</characteristic>
-            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5"/>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">When determining whether a Unit containing at least one Model with a cohorts vexilla is required to take a Leadership Check in the Morale Sub-Phase of the Shooting Phase due to the number of Models removed from that Unit as Casualties, a Check only has to be made for the Unit if the number of Models removed is equal to 50% or more of the total number of Models in the Unit at the start of that Shooting Attack.
+Additionally, when at least one Model in a Unit entirely composed of Models with the Solar Auxilia Trait ends a Fall Back Move within 12&quot; of at least one Model from a Friendly Unit with a cohorts vexilla, all Models in that Unit immediately remove the Routed Sten.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4072,7 +4084,16 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Vox" hidden="false" id="bf73-dbdf-c31b-d188"/>
+    <selectionEntry type="upgrade" import="true" name="Command Vox" hidden="false" id="bf73-dbdf-c31b-d188">
+      <profiles>
+        <profile name="Command Vox" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="a9be-24df-3ee0-0cb9">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Command vox and vox interlocks allow Units to remove Statuses in the Start Phase.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">If a Unit includes one or more Models with a vox interlock, and there are one or more friendly Models on the Battlefield with a command vox, then the Controlling Player may activate the vox interlock during the Start Phase of their Player Turn. When activated, the Controlling Player may make a Check to remove a single Status from all Models in the Unit that includes the vox interlock. This Check is made using the Characteristics of any one friendly Model on the Battlefield which is part of a Unit containing at least one Model with a command vox, chosen by the Controlling Player (using Cool, unless attempting to remove Routed, in which case Leadership is used). A vox interlock may only be activated once per Player Turn, and each Friendly Model on the Battlefield with a command vox may only be used once per Start Phase as part of this Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="247d-a71c-d493-790b">
       <profiles>
         <profile name="Multi-laser" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="bcb7-1beb-03e9-d07b">
@@ -4504,7 +4525,6 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gravis Heavy " hidden="false" id="988a-e28d-603a-b621"/>
     <selectionEntry type="unit" import="true" name="Malcador Infernus Special Weapon Tank" hidden="false" id="2cfd-fcf4-ce27-87f3">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Malcador Infernus" hidden="false" id="9d6a-5df6-81f1-5df1" sortIndex="1">
@@ -4527,9 +4547,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9899-f732-2409-990b"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="240"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="205"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5089,9 +5111,11 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ac4-df63-f6d1-1d01"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="225"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="190"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5505,6 +5529,452 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Legiones Auxilia designation:" hidden="false" id="fd22-51ed-28fa-8690">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ultramar High Guard" hidden="false" id="8dde-9e02-b92b-b55d" sortIndex="11">
+          <profiles>
+            <profile name="Combined Arms" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="ecc8-63a6-7fa5-0f51" publicationId="adda-966f-f129-ed26" page="70">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to make a Shooting Attack against a Charging Unit and potentially cause that Charge to become Disordered.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Combine Arms Advanced Reaction at the start of Step 3 of the Charge process of any Charge declared by the
+Active Player that targets a Unit under the Reactive Player’s Control</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player mustspend1point of their Reaction Allotment to declare the Combined Arms Advanced Reaction, this cost paid as soon as the
+declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Advanced Reaction. The Reacting Unit is a Unit with at least one Model within12&quot; of the Target Unit which can also draw a Line of Sight to the Target Unit. The Reacting Unit must be a Unit under the Reactive Player’s control entirely composed of Models with the Solar Auxilia Trait.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Combined Arms Advanced Reaction has been declared, the Reactive Player makes a Shooting Attack with the Reacting Unit against the Target Unit.
+
+
+2. If, after Saves and Damage Mitigation Rolls, this Shooting Attack inflicts one or more successful wounds on the Target Unit, the Target Unit’s Charge immediately becomes a Disordered Charge.
+
+
+3. After resolving this Shooting Attack (including removing Casualties), the Active Player proceeds with Step 3 of that Charge as normal, unless the Target Unit’s Charge is now a Disordered Charge, in which case the Active Player instead moves to Step 4 of the Charge Procedure.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Calibanite Jaegers" hidden="false" id="155c-de3e-f68a-52cb" sortIndex="1">
+          <profiles>
+            <profile name="Calibanite Jaegers" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="db41-a192-4a1e-61c8">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b"/>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Bring It Down! Advanced Reaction in the Assault Phase, at the end of Step 5 of the Charge procedure of a Charge made by the Active Player if the Charge Roll has succeeded and the Charging Unit includes at least one Model with either the Walker
+Type, Automata Type, Malefic Sub-Type or the Bulky (X) Special Rule, where the value of X is at least 3</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend I point of their Reaction Allotment to declare a Bring It Down! Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Bring It Down! Advanced Reaction, the Reacting Unit is always the Unit that is the target of the Charge that triggered the Advanced Reaction, and must be composed entirely of Models with the Solar Auxilia Trait. The Target Unit is the Unit whose Charge triggered the Advanced Reaction.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reactive Player must select a Weapon with the Detonation Special Rule as the Weapon for each Model in the Reacting Unit to make attacks with, ignoring the usual restrictions on when Weapons with the Detonation Special Rule may be used. Models that do not have Weapons with the Detonation Special Rule cannot make attacks as part of this Reaction.
+
+
+2. The Reactive Player resolves Steps 3-10 of the Resolving an Initiative Step step for the Reacting Unit with each Model in the Reacting Unit which has a Weapon with the Detonation Special Rule counting as being Engaged with the Target Unit and making its attacks in this Initiative Step.
+
+
+3.Models Removed as Casualties as a result of attacks made as part of this Reaction are counted for the Purposes of scoring Combat Resolution Points.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Archite Palatines" hidden="false" id="ff63-4ab1-fafa-3630" sortIndex="2">
+          <profiles>
+            <profile name="Redouble" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="6e46-3a50-95bf-3681">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows a Unit and nearby allies to perform a move after it succeeds on a Check to avoid gaining a Tactical Status in the Active Player’s
+Shooting Phase.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Redouble Advanced Reaction in the Morale Sub-Phase of the Active Player&apos;s Shooting Phase, when a Unit entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule makes a successful Cool or Leadership Check when testing to see if it gains a Tactical Status.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Redouble Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Redouble Advanced Reaction, the Reacting Unit is always the Unit that has passed the Cool or Leadership Check in that Morale Sub-Phase, and contains only Models with the Solar Auxilia Trait.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1.Once a Redouble Advanced Reaction has been declared, the Reactive Player may make a standard move with the Reacting Unit, following all the normal Rules for movement, but may not choose to Rush.
+
+
+2. Once this movement is complete, the Reactive Player may select one or more Units under their control entirely composed of Models with the Solar Auxilia Trait without the Vehicle Type and which also have at least one Model within 12&quot; of the Reacting Unit.
+
+
+3.The Reactive Player may then move each Model in these additional Units a number of inches equal to its Initiative Characteristic, ending each move in Coherency with another Model from the same Unit, but not within 1&quot; of any Enemy Models. Note that each of these Units still counts as having made a Reaction during this Player Turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Selucid Thorakites" hidden="false" id="4ccf-fbd8-21da-8ec0" sortIndex="3">
+          <profiles>
+            <profile name="Weather the Storm" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="252d-bbfd-f93e-c2df">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to ignore the effect of a failed Pinning, Suppressive or Stun Check.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Weather the Storm Advanced Reaction in the Morale Sub-Phase of the Shooting Phase, when a Unit entirely composed of Models with the Infantry or Cavalry Types and the Solar Auxilia Trait would gain the Pinned, Stunned or Suppressed Tactical Status due to having failed a Characteristic Check, unless that Unit is Out of Coherency.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Weather the Storm Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Weather the Storm Advanced Reaction, the Reacting Unit is always the Unit that would gain the Tactical Status in that Morale Sub-Phase, and contains only Models with the Solar Auxilia Trait.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reacting Unit does not gain the Pinned, Stunned or Suppressed Tactical Status, as though it had passed the Characteristic Check.
+
+
+2. The Morale Sub-Phase of the Shooting Phase then proceeds as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Chogorian Limitanei" hidden="false" id="f64b-2fa0-1eea-54ea" sortIndex="4">
+          <profiles>
+            <profile name="Chogorian Limitanei" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="41b7-fd5d-cb92-abc4">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to ignore the effect of a failed Panic Check in the Assault Phase and instead apply the Hold aftermath option to a Unit within 3&quot;of an Objective.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare a Chosen Ground Advanced Reaction in the Resolution Sub-Phase of the Active Player&apos;s Assault Phase, When a Panic Check is failed for a Unit entirely composed of Models with the Solar Auxilia Trait which contains at least one Model within 3&quot; of an Objective during the Make Panic Checks Step (but before Models in that Unit would gain the Routed Tactical Status as a result).</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Chosen Ground Advanced Reaction has no cost.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Chosen Ground Advanced Reaction, the Reacting Unit is always the Unit for which the Panic Check was failed in that Resolution Sub-Phase, and contains only Models with the Infantry Type and Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Chosen Ground Advanced Reaction has been declared, the Reactive Player must discard the Routed Tactical Status that would be gained by all Models in the Reacting Unit. The Battle immediately proceeds to the Aftermath step of the Resolution Sub-Phase, and the Reacting Player must declare the Hold aftermath option for the Reacting Unit. Once the Reacting Player has declared the Hold option for the Reacting Unit, the rest of the Aftermath step proceeds as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fenrisian Kaerls" hidden="false" id="9d8a-4d52-6a58-3229" sortIndex="5">
+          <profiles>
+            <profile name="Hunter&apos;s Strike" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="32c5-1060-4728-d149">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Advanced Reaction allows a Unit to charge an Enemy Unit moving into play from Reserves.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare a Hunter’s Strike Advanced Reaction when the Active Player finishes moving a Unit into play from Reserve</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Hunter’s Strike Advanced Reaction has no cost.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Unit entering play from Reserves is always the Target Unit of this Advanced Reaction. After declaring this Reaction, the Reactive Player must select one Unit under their control which is entirely composed of Models with the Infantry lype and the Solar Auxilia Trait without the Bulky (X) Special Rule. This Unit must be able to draw a Line of Sight to the Target Unit. The selected Unit is the Reacting Unit.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Hunter&apos;s Strike Advanced Reaction has been declared, the Reactive Player may make a move with the Reacting Unit directly towards the Target Unit, following all the normal Rules for Movement, but may not choose to Rush.
+
+
+2. Once this movement is complete, the Reactive Player makes a Charge Roll for the Reacting Unit, where the target of the Charge is the Target Unit.
+
+
+3.If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting unit gain any bonuses from any Special Rules that would apply to that Unit as a result of a successful Charge.
+
+
+4. f the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made, with no Cool Check having to be made for the Reacting Unit due to a failed Charge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Inwit Phalangites" hidden="false" id="3754-1d81-59e3-82a4" sortIndex="6">
+          <profiles>
+            <profile name="Steadfast Bulwark" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="d7ab-6d0a-e635-0640">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to increase the Toughness of a Unit targeted by a Shooting Attack if the Target Unit is in Cover.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Steadfast Bulwark Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Steadfast Bulwark Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Steadfast Bulwark Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack. This Unit must be entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule of which the Majority can claim a Cover Save when the Advanced Reaction is declared.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">All Models in the Reacting Unit increase their Toughness Characteristic by +1 (to a maximum of 4) for the duration of the Shooting Phase in which this Advanced Reaction was declared. The Active Player continues to resolve the Shooting Attack that triggered this Advanced Reaction</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Nostraman Damnatil" hidden="false" id="1b2b-f415-2327-f55f" sortIndex="7">
+          <profiles>
+            <profile name="Combat Haze" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="bb00-da49-b498-9154">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to ignore the effect of a failed Panic Check in the Shooting Phase and instead gain the Heedless and Impact (A) Special Rules for the rest of the Battle.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Combat Haze Advanced Reaction in the Morale Sub-Phase of the Shooting Phase, when a Unit entirely  composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule would gain the Routed Status due to having failed a Leadership Check.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend1point of their Reaction Allotment to declare a Combat Haze Advance Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Combat Haze Advanced Reaction, the Reacting Unit is always the Unit that would gain the Tactical Status in that Morale Sub-Phase, and  contains only Models with the Solar Auxilia Trait.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reacting Unit does not gain the Routed Tactical Status, as though it had passed the Leadership Check.
+
+
+2. All Models in the Reacting Unit immediately gain the Heedless and Impact (A) Special Rules, and lose any version of the Line (X) Special Rule they already have as well as any instance of the Infantry Tercio, Veletaris Tercio or Artillery Tercio Traits if they have them.
+
+
+3. The Morale Sub-Phase of the Shooting Phase then proceeds as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Saiphan Elevatii" hidden="false" id="8e83-5648-6c82-f7c4" sortIndex="8">
+          <profiles>
+            <profile name="Counter-assault" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="6dd6-db14-04e4-cba2">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Charge against an enemy Unit that moves within range.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Counter-assault Advanced Reaction in Step 2 of the Move Sub-Phase process, if an enemy Unit ends a move within 6&quot; and in Line of Sight of at least one Model in a Unit that is entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend l point of their Reaction Allotment to declare the Counter-assault Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Move triggered the Reaction. The Reacting Unit is always the Unit which has at least one Model within 6&quot; and Line of Sight of at least one Model in the Target Unit at the end of
+its move.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1.Once the Counter-assault Advanced Reaction has been declared, the Reactive Player must make a Charge Roll for the Reacting Unit, where the target of the Charge is the Target Unit.
+
+
+2.If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+
+
+3.If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made, with no Cool Check having to be made for the Reacting Unit due to a failed Charge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Medusan Chainshroud" hidden="false" id="78e3-af53-7d9c-f882" sortIndex="9">
+          <profiles>
+            <profile name="Cerebral Augments" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="f825-d807-e73d-e2d9">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows one of the Reactive Player’s Units to suffer D3 Wounds and discard the Routed Status when it fails a Panic Check in the Shooting or Assault Phase</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Cerebral Augments Advanced Reaction in the Morale Sub-Phase the Resolution Sub-Phase of the Assault Phase, when a of the Shooting Phase or the Make Panic Checks step of Unit entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule would gain the Routed Status due to having falled a
+Leadership Check.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Cerebral Augments Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Cerebral Augments Advanced Reaction, the Reacting Unit is always the Unit that would gain the Routed Tactical Status in that Morale Sub-Phase or Make Panic Checks Step, and contains only Models with the Solar Auxilia Trait.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reactive Player must discard the Routed Tactical Status which would be gained by all Models in the Reacting Unit.
+
+
+2. The Reacting Unit immediately suffers D3 automatic wounds which ignore all Armour Saves and Cover Saves. Invulnerable Saves and Damage Mitigation Rolls may be taken against these wounds as normal and they are allocated as if they were inflicted bya Shooting Attack.
+
+
+3.The Morale Sub-Phase of the Shooting Phase or the Make Panic Checks step of the Resolution Sub-Phase of the Assault Phase then proceeds as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Nagrakal Thraexii" hidden="false" id="8f06-9f9e-30ec-7275" sortIndex="10">
+          <profiles>
+            <profile name="Butcher&apos;s Due" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="310b-6c4c-0243-d382">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Shooting Attack targeting an enemy Unit that performs a Disengage or Fall Back aftermath option in the Assault Phase.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Butchers Due Advanced Reaction in the Resolution Sub-Phase of the Active Player&apos;s Assault Phase, when an enemy Unit moves as part of a Disengage or Fall Back aftermath option. The Reacting Unit must have at least one Model with Line of Sight to this enemy Unit once it has completed its movement, and must be a Unit under the Reactive Players control entirely composed of Models with the Solar Auxilia Trait which is not Locked in Combat.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Butcher&apos;s Due Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose movement triggered the Advanced Reaction.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">Once the Butcher&apos;s Due Advanced Reaction has been declared. the Reactive Player makes a Shooting Atack with the Reacting Unit, tarting only the Target Unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Barbaran Ambaxtoi" hidden="false" id="8e1a-33d5-89a9-f307" sortIndex="12">
+          <profiles>
+            <profile name="Outlast" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="2bdd-c759-c998-43e0" publicationId="adda-966f-f129-ed26" page="72">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to prevent a Unit from needing to make a Panic Check due to suffering Casualties in the Shooting Phase and allow it to perform a Snap Shots Shooting Attack.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare an Outlast Advanced Reaction in the Shooting Phase, at the end Step11 of the Shooting Attack sequence of any Shooting Attack made by the Active Player which triggers a Panic Check due to the number of Models Removed as Casualties.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend1point of their Reaction Allotment to declare an Outlast Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For an Outlast Advanced Reaction, the Reacting Unit is always the Unit that was the Target of the Shooting Attack. This Unit must be entirely  composed of Models with the Infantry Type and the Solar Auxilia Trail without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reactive Player immediately removes the Marker indicating a Panic Check is required of the Reacting Unit in the following Morale Sub-Phase.
+
+
+2. After this Marker has been removed, the Reactive Player makes a Shooting Attack with the Reacting Unit, targeting any enemy Unit to which at least one Model in the Reacting Unit has Line of Sight.
+ 
+3. Once this Shooting Attack has been completely resolved, including removing any Casualties, the Players must then finish resolving Step11of the
+original Shooting Attack that triggered the Reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Prosperine Spireguard" hidden="false" id="f4f6-b40a-f29d-fc3a" sortIndex="13">
+          <profiles>
+            <profile name="Psy-shock" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="6cda-791b-0af8-3203">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to inflict the Warp Rupture result from the Perils of the Warp Table on both a Friendly Unit and an Enemy Unit which has inflicted enough Casualties on it in the Shooting Phase to trigger a Panic Check.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Psy-shock Advanced Reaction in the Shooting Phase, at the end of Step 11 of the Shooting Attack sequence of any Shooting Attack made by the Active Player which triggers a Panic Check due to the number of Models Removed
+as Casualties.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">he Reactive Player must spend 1 point of their Reaction Allotment to declare a Psy-shock Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Psy-shock Advanced Reaction, the Target Unit is always the Unit whose Shooting Attack triggered the Advanced Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack. This Unit must be entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reacting Unit immediately suffers the Warp Rupture result on the Perils of the Warp Table.
+
+
+2. After this Warp Rupture has been resolved against the Reacting Unit, another Warp Rupture result is immediately resolved against the Target Unit.
+
+
+3. Once both Warp Rupture results have been resolved, the Active Player&apos;s Shooting Phase continues as
+normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cthonian Headhunters" hidden="false" id="625e-3337-40f0-f817" sortIndex="14">
+          <profiles>
+            <profile name="Cthonian Headhunters" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="77ed-eb98-c117-1b7f">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows a Unit and nearby allies to move towards an Enemy Unit when it makes a Fall Back Move.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Warmaster&apos;s Spite Advanced Reaction in the Rout Sub-Phase of the Active Players Movement Phase, whenever the Active Player selects a Unit under their control to perform a Fall Back Move.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Warmaster&apos;s Spite Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Unit selected by the Active Player to perform a Fall Back Move 1s always the larget Unit of this Advanced Reaction. After declaring this Advanced Reaction, the Reactive Player must select one Unit under their control with at least one Model within 18&quot; of the Target Unit which is entirely composed of Models with the Solar Auxilia Trait. This Unit must be able to draw a Line of Sight to the Target Unit. The selected Unit is the
+Reacting Unit.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Warmaster&apos;s Spite Advanced Reaction has been declared, the Reactive Player may make a move with the Reacting Unit directly towards the Target Unit, following all the normal Rules for Movement. but may not choose to Rush.
+
+
+2. Once this movement is complete, the Reactive Player may select one or more Units under their control entirely composed of Models with the Solar Auxilia Trait and which also have at least one Model within 12&quot; of the Target Unit.
+
+
+3.The Reactive Player may then move each Model in these additional Units a number of inches equal to its Initiative Characteristic directly towards the Target Unit, ending each Move in Coherency with another Model from the same Unit, but not within 1&quot; of any Enemy Model. Note that each of these Units still counts as having made a Reaction during this Battle Turn.
+
+
+4. Once the Reactive Player has performed any Moves made as part of this Advanced Reaction, the Rout Sub-Phase of the Active
+Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back Move for the Target Unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Colchisian Torquatii" hidden="false" id="8858-af19-1840-d4cb" sortIndex="15">
+          <profiles>
+            <profile name="Undying Fanaticism" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="0f84-06cc-b732-f77f">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to make attacks with a Unit when its last Model is Removed as a Casualty while Locked in Combat.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare an Undying Fanaticism Advanced Reaction in step 8 of the Resolving an Initiative Step sequence of the Active Player&apos;s Assault Phase, when the final Model in a Unit under the Reactive Player&apos;s control entirely composed of Models with the Infantry Type and the Solar Auxilia Trait is Removed as a Casualty.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare an Undying Fanaticism Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For an Undying Fanaticism Advanced Reaction, the Reacting Model is always the final Model Removed as a Casualty and set to one side from a Unit under the Reactive Player&apos;s Control which contains only Models with the Infantry Type and Solar Auxilia Trait.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reactive Player selects one Weapon the Reacting Model has to make attacks with.
+
+
+2. The Reactive Player immediately resolves Steps 3-10 of the Resolving an Initiative Step sequence for the Reacting Model, making its attacks at this step regardless of its Combat Initiative, but replaces the Reacting Model&apos;s Attacks Characteristic with the number of Enemy Models remaining in the Combat.
+
+
+3.Once any Attacks have been made for the Reacting Model, the Active Player proceeds with Steps 8-10 of the Resolving an Initiative Step sequence of their Assault Phase, we wing the Reacting Model from play.
+
+
+4.Models Removed as Casualties as a result of Attacks made as part of this Reaction are counted for the purposes of scoring Combat Resolution Points.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Proximan Sacramentii" hidden="false" id="7081-ef03-4345-dbf5" sortIndex="16">
+          <profiles>
+            <profile name="Dutiful Endurance" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="05ba-c86f-ea81-ddff">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to make Feel No Pain Damage Mitigation Rolls for a Friendly Unit at the expense of it gaining the Pinned Status.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive mayer may declare a Dutiful Endurance Advanced Reaction in the Shooting Phase, during Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player that argen a Unit that only contains Models with the infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Dutiful Endurance Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For an Dutiful Endurance Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Dutiful Endurance Advanced Reaction has been declared, all Models with the Solar Auxilia Trait in the Reacting Unit gain the Feel No Pain (5) Special Rule for the tast of the Shooting Phase.
+
+
+2. Once the Shooting Attack that triggered this Advanced Reaction has been fully resolved, the Reacting Unit gains the Pinned Status.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Therion Velites" hidden="false" id="1e2f-7694-ca03-5a3e" sortIndex="17">
+          <profiles>
+            <profile name="Displacement" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="ca24-4bda-4af7-aab8">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to move up to its Initiative Characteristic and make a Volley Attack targeting a Unit that makes a Charge.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">he Reactive Player may declare the Displacement Advanced Reaction at the start of Step 4 of the Charge process of any Charge declared by the Active Player that targets a Unit under the Reactive Player&apos;s control that only contains Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Displacement Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Advanced Reaction. The Reacting Unitis always the Unit that was declared as the target of the Charge that triggered this Advanced Reaction.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Displacement Advanced Reaction has been declared, each Model in the Reacting Unit may be moved a number of inches equal to its Initiative Characteristic and must end the move in Coherency with another Model from the same Unit, but not within 1&quot; of any Enemy Models.
+
+
+2. The Reactive Player then makes a Volley Attack with the Reacting Unit, with every Model in the Reacting Unit gaining the Assault Trait on any Ranged Weapons they have for the duration of the Displacement Reaction
+ 
+3.After resolving this Volley Attack, the Active Player proceeds with Step 4 of that Charge as normal. The Reactive Player may not make Volley Attacks during this Step, even if the Active Player chooses to do so.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Sparatoi Vindicta" hidden="false" id="8d54-35be-5521-02bf" sortIndex="18">
+          <profiles>
+            <profile name="Diversion" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="e892-1e95-3e16-fedc">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to force a Shooting Attack declared by the Active Player to target a Unit with the Infantry Type and Solar Auxilia Trait if the shooting Unit fails a Cool Check.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Diversion Advanced Reaction in the Shooting Phase, at the end of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player which targets a Unit under the Reactive Player&apos;s Control. This Unit must also be within 12&quot; of at least one Model from another Unit under the Reactive Player&apos;s Control containing only Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (X) Special Rule, to which the Unit making the Shooting Attack can draw Line of Sight and which is within range of all Weapons declared by the Active Player during Step 3 of their Shooting Attack.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Diversion Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Diversion Reaction, the Target Unit is the Unit whose Shooting Attack triggered the Advanced Reaction. The Reacting Unit is always the Unit within 12&quot; of the Shooting Attack&apos;s target. This Unit must be entirely composed of Models with the Infantry Type and the Solar Auxilia Trait without the Bulky (4) Special Rule, and must contain at least one Model within Line of Sight of the Target Unit and within range of all Weapons declared by the Active Player during Step 3 of their Shooting Attack.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Diversion Advanced Reaction has been declared, the Active Player must immediately make a Cool Check for the Target Unit.
+
+
+2.If this Cool Check is successful, the Active Player continues with Steps 4-11 of their Shooting Attack, but all Hit Tests made as part of the Shooting Attack are made as Snap Shots.
+
+
+3.If the Cool Check is unsuccessful, the Active Player must return to Step 1 of their Shooting Attack and instead declare the Reactive Unit as the target of their Shooting Attack, before proceeding with the rest of that Shooting Attack against this new target.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6f61-8b92-b87d-3b80"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d4d-c560-8312-c4a8"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Advanced Reactions" hidden="false" id="8b83-93d0-a1e1-a05a">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Form Ranks!" hidden="false" id="d31b-789c-a123-40dc">
+          <profiles>
+            <profile name="Form Ranks!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="1a74-de7c-612d-2f8f">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to move the Models in an Infantry Unit into Base Contact with each other, granting the entire Unit an Invulnerable Save.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Form Ranks! Advanced Reaction in Step 2 of the Move Sub-Phase process, if an enemy Unit ends a move within 12&quot; and in Line of Sight of a Unit under the Reactive Player&apos;s Control.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their only Models with the Infantry Type and Solar Auxilia Reaction Allotment to declare a Form Ranks! Advanced Trait without the Bulky (X) Special Rule. Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose control that is within 12&quot; and has Line of Sight to the Shooting Attack triggered the Advanced Reaction. The Target Unit, and which contains only Models with the Reacting Unit is always the Unit that was the target of the Infantry Type and Solar Auxilia Trait without the Bulky Shooting Attack that triggered the Advanced Reaction. (x) Special Rule. That Unit is the Reacting Unit.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once a Form Ranks! Advanced Reaction has been declared, the Active Player must completely resolve the Target Unit&apos;s movement.
+
+
+2. Once the Target Unit has finished its Move, the Reactive Player may move the Reacting Unit. When making this Move, each Model in the Reacting Unit may move a number of inches up to the Base Value of its Initiative Characteristic. Once all the Models in the Reacting Unit have been Moved, each Model in the Reacting Unit must be in Base Contact with at least two other Models from the same Unit. If for any reason it is not possible for each Model in the Reacting Unit to be placed in Base Contact with at least two other Models from the same Unit as part of this Movement, the Reaction process immediately ends.
+
+
+3. Once the Reacting Unit has completed this move, the Movement Phase continues as normal, but the Reacting Unit gains a 5+ Invulnerable Save against any Shooting Attacks for the remainder of the Active Player&apos;s Turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fire Support!" hidden="false" id="163c-fe2d-2e31-240d">
+          <profiles>
+            <profile name="Fire Support!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="2919-3828-958c-0b53">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Player to move a Unit away from a Unit targeting it with a Shooting Attack, and shoot back with another Unit equipped with a Barrage Weapon.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Fire Support! Advanced Reaction in the Shooting Phase, during Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player that targets a Unit that contains only Models with the Infantry Type and Solar Auxilia Trait without the Bulky (X) Special Rule.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Fire Support! Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Advanced Reaction. The Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Advanced Reaction.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. All Models in the Reacting Unit may be moved a number of inches equal to their Initiative Characteristic and must end the move in Coherency with another Model from the same Unit, but not within 1&quot; of any Enemy Models. If no Model in the Reacting Unit is determined to be within Line of Sight and/or Range of any Model in the Target Unit once this move is resolved, the Active Player may not select an alternative target for the Target Unit during the current Shooting Phase.
+
+
+2. Once the Reacting Player has resolved this move, they may select a single Friendly Model with the Solar Auxilia Trait which has a Weapon with the Barrage (X) Special Rule within 12&quot; of at least one Model in the Reacting Unit. This Model immediately performs a Shooting Attack against the Target Unit with a single Weapon which has the Barrage (X) Special Rule (if this Model has the Vehicle Type, it may Pivot immediately before performing the Shooting Attack). Note that this Model&apos;s Unit still counts as having made a Reaction during this Battle Turn.
+
+
+3. Once the Shooting Attack made as part of this Advanced Reaction has been completely resolved, including Removing any Casualties, the Players must then finish resolving the original Shooting Attack that triggered the Advanced Reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fix Bayonets!" hidden="false" id="5e1f-ef59-9f91-a504">
+          <profiles>
+            <profile name="Fix Bayonets!" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="910a-3a21-36d0-b8f6">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to make attacks with bayonets against a charging enemy Unit.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Fix Bayonets! Advanced Reaction in the Assault Phase, at the end of Step 5 of the Charge sequence of a Charge made by the Active Player if the Charge Roll has succeeded.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Fix Bayonets! Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Fix Bayonets! Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Charge that triggered the Advanced Reaction, and must be entirely composed of Models with the Solar Auxilia Trait.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the cost has been paid, the Reactive Player must select one Weapon with the Bayonet Trait for each Model in the Reacting Unit to make attacks with. Models that do not have any Weapons with the Bayonet Trait cannot make attacks as part of this Advanced Reaction.
+
+
+2. The Reactive Player resolves Steps 3-10 of the Resolving an Initiative Step sequence for the Reacting Unit, with each Model in the Reacting Unit which has a Weapon with the Bayonet Trait counting as being Engaged with the Target Unit and making its attacks in this Initiative Step.
+
+
+3. Models Removed as Casualties as a result of Attacks made as part of this Advanced Reaction are counted for the purposes of scoring Combat
+Resolution Points.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="smokescreen" hidden="false" id="eda9-a3cd-c0be-b4f2">
+          <profiles>
+            <profile name="smokescreen" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="19b0-c414-13b8-901e">
+              <characteristics>
+                <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reactive Player to gain Shrouded Damage Mitigation Rolls for a Model with the Smokescreen Trait.</characteristic>
+                <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Smokescreen Advanced Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.</characteristic>
+                <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For a Smokescreen Advanced Reaction, the Reacting Unit is always the Unit that was the Target of the Shooting Attack that triggered the Advanced Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point where the Advanced Reaction is declared.</characteristic>
+                <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. The Active Player continues to resolve this Shooting
+Attack as normal.
+
+
+2. All Models in the Unit for which this Reaction was declared gain a 5+ Shrouded Damage Mitigation Test against any wounds, Penetrating Hits or Glancing Hits inflicted during any Shooting Attack made in the same Phase in which this Reaction was declared.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="4cae-016d-a1dd-6dd5"/>
+        <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="48d6-36e7-d281-0d62"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="4cae-016d-a1dd-6dd5">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="fd22-51ed-28fa-8690" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="48d6-36e7-d281-0d62"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gambit: Contemptuous Volley" hidden="false" id="9b42-f8ae-fe65-3724">
+      <profiles>
+        <profile name="Gambit: Contemptuous Volley" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="bfc8-c425-2ace-21d2">
+          <characteristics>
+            <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows a Model in a Challenge to make a Shooting Attack with a Pistol against the enemy Model.</characteristic>
+            <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">When this Gambit is selected, the Controlling Player may immediately make a single Shooting Attack for the Model with this Gambit, selecting one of the Model&apos;s Weapons which has the Pistol Special Rule to make the Shooting Attack. This Shooting Attack must target the Unit which contains the enemy Model in the Challenge, and wounds from the Shooting Attack may only be allocated to the enemy Model in the Challenge.
+If this Shooting Attack would cause the enemy Model in the Challenge to be Removed as a Casualty, the Challenge immediately proceeds to the Glory Step. If the enemy Model in the Challenge is not Removed as a Casualty, the Controlling Player does not make a Focus Roll in the Focus Step and the Opposing Player automatically gains Challenge Advantage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="6523-64cb-9da8-764f" targetId="106b-693b-99f2-00c3"/>
@@ -5516,9 +5986,31 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Auxilia Pistols" id="22a3-5b09-13b0-2624" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Volkite serpenta" hidden="false" id="2ee2-fb22-8a3b-eb56" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e"/>
-        <entryLink import="true" name="Hand flamer" hidden="false" id="0927-6294-b589-7554" type="selectionEntry" targetId="9322-09ed-abec-6e13"/>
-        <entryLink import="true" name="Plasma pistol" hidden="false" id="0add-bc15-3507-d6e9" type="selectionEntry" targetId="659f-d52e-1515-2912"/>
+        <entryLink import="true" name="Volkite serpenta" hidden="false" id="2ee2-fb22-8a3b-eb56" type="selectionEntry" targetId="b7c3-1de1-087c-3d6e" sortIndex="3">
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Hand flamer" hidden="false" id="0927-6294-b589-7554" type="selectionEntry" targetId="9322-09ed-abec-6e13" sortIndex="4">
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Plasma pistol" hidden="false" id="0add-bc15-3507-d6e9" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="5">
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Blast Pistol" hidden="false" id="2283-58ce-f3a7-c950" type="selectionEntry" targetId="a3d6-71df-6482-30a0" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="3" field="9893-c379-920b-8982"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Needle Pistol" hidden="false" id="c3da-9760-a217-b0a7" type="selectionEntry" targetId="c252-4716-b30f-9a01" sortIndex="2">
+          <modifiers>
+            <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Auxilia Melee Weapons" id="012b-9848-784b-3663" hidden="false">
@@ -5530,12 +6022,12 @@ When making multiple Shooting Attacks in the same Shooting Phase, a Model with t
         </entryLink>
         <entryLink import="true" name="Power sword" hidden="false" id="dacf-6650-bfe0-d2f0" type="selectionEntry" targetId="59a9-57c1-fff9-ca75" sortIndex="2">
           <modifiers>
-            <modifier type="set" value="10" field="9893-c379-920b-8982"/>
+            <modifier type="set" value="5" field="9893-c379-920b-8982"/>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Power fist" hidden="false" id="1e24-e088-71d6-d153" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="3">
           <modifiers>
-            <modifier type="set" value="5" field="9893-c379-920b-8982"/>
+            <modifier type="set" value="10" field="9893-c379-920b-8982"/>
           </modifiers>
         </entryLink>
       </entryLinks>

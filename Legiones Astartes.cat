@@ -13400,6 +13400,9 @@
         <entryLink import="true" name="Legion Prime Benefits" hidden="false" id="305a-ba33-df73-b67d" type="selectionEntryGroup" targetId="d3a2-e7f2-9da7-fd3c" sortIndex="2" flatten="false"/>
         <entryLink import="true" name="Common Prime Benefits" hidden="false" id="c115-438b-4395-1eb7" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146" sortIndex="1" flatten="false"/>
       </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9175-4a41-5c72-c801" includeChildSelections="true"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legiones Decurion" id="6dcf-12ac-0f05-f158" hidden="false" sortIndex="12">
       <entryLinks>

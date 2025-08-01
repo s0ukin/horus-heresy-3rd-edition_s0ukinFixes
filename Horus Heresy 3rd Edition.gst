@@ -202,6 +202,20 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Rewards of Treachery" id="fe7f-1287-4162-a65d" hidden="true">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden"/>
+        <modifier type="increment" value="1" field="8887-3d6b-9d34-28b4">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="7c64-0321-e098-fd0e" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5377-ddcc-acc1-2083"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8887-3d6b-9d34-28b4"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -460,6 +474,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1d0-2db5-32ec-522e"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d" type="categoryEntry"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -2778,6 +2793,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d996-b35c-6bd8-d9e4"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Rewards of Treachery" hidden="false" id="d380-16f1-b016-5c87" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -5459,6 +5475,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f5cc-b7e0-8205-ea74"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
         </forceEntry>
       </forceEntries>
@@ -6327,6 +6344,23 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-min" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98f0-4cab-2f85-12db-max" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rewards of Treachery" hidden="true" id="7c64-0321-e098-fd0e">
+      <rules>
+        <rule name="Rewards of Treachery" id="faf0-ba93-2013-3f34" hidden="false">
+          <description>Add one additional Battlefield Role Slot to the Detachment that includes the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage. This Slot may be of any Battlefield Role other than High Command, Command, Warlord or Lord of War (note that a Detachment may gain more than one additional Force Organisation slot if this option is selected for multiple Units in the same Detachment).
+
+Each Unit selected to fill such a Slot must:
+• Be from the Legiones Astartes Army List.
+• Not have the Alpha Legion Faction Trait on their Unit Profile.
+• Not include any Models that have the Unique Sub-Type.
+
+All Models in any of these Units have their Faction Trait replaced with &apos;Alpha Legion&apos;.</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>

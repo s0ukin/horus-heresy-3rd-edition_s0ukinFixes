@@ -5380,64 +5380,6 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Banestrike combi-bolter" hidden="false" id="2442-f324-4b1a-ac63">
-      <profiles>
-        <profile name="Banestrike combi-bolter" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="d592-6926-970e-d1a1">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">18</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (6+)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Bolt</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="ec3f-b7cb-3012-d7dd" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-          <comment>6+</comment>
-          <modifiers>
-            <modifier type="set" value="Breaching (6+)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Banestrike shotgun" hidden="false" id="50e4-181b-9bd5-61f3">
-      <infoLinks>
-        <infoLink name="Breaching (X)" id="faa3-b02c-a166-937a" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-          <comment>6+</comment>
-          <modifiers>
-            <modifier type="set" value="Breaching (6+)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Shred (X)" id="bc8d-1a41-cbfa-dfa8" hidden="false" type="rule" targetId="d01e-f96b-b5c1-8fb1">
-          <comment>6+</comment>
-          <modifiers>
-            <modifier type="set" value="Shred (6+)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Stun (X)" id="d402-68ca-419d-96fa" hidden="false" type="rule" targetId="c7c1-bbc9-f852-6f71">
-          <comment>0</comment>
-          <modifiers>
-            <modifier type="set" value="Stun (0)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <profiles>
-        <profile name="Banestrike shotgun" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0ccd-f987-e730-fcfa">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">12</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">4</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Breaching (6+), Shred (6+), Stun (0)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power Dagger" hidden="false" id="d8d4-f400-7730-792a">
       <profiles>
         <profile name="Power Dagger" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="acd7-604a-124e-bef9">

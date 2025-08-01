@@ -2478,7 +2478,7 @@
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="3fda-da4f-725c-d190" hidden="false" sortIndex="3">
               <selectionEntryGroups>
-                <selectionEntryGroup name="May take one of the following:" id="c2d0-7e49-4db3-7f9e" hidden="false">
+                <selectionEntryGroup name="May take one of the following:" id="c2d0-7e49-4db3-7f9e" hidden="false" defaultSelectionEntryId="none">
                   <entryLinks>
                     <entryLink import="true" name="Bayonet" hidden="false" id="5b2d-83d6-d514-a809" type="selectionEntry" targetId="3484-1bd3-cb74-7abe" sortIndex="1">
                       <costs>
@@ -2514,7 +2514,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange bolter for:" id="e98d-67c1-bc30-93ef" hidden="false" defaultSelectionEntryId="98a5-9129-893d-29db" sortIndex="1">
+            <selectionEntryGroup name="May exchange bolter for:" id="e98d-67c1-bc30-93ef" hidden="false" defaultSelectionEntryId="da83-e154-a03d-52be" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="21d0-6ee6-5d27-fba9" includeChildSelections="true"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b977-c931-5922-bc5f" includeChildSelections="true"/>
@@ -2583,7 +2583,7 @@
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
-                <selectionEntryGroup name="1-5 may exchange their bolter for:" id="f05a-255e-55ac-e190" hidden="false">
+                <selectionEntryGroup name="1-5 may exchange their bolter for:" id="f05a-255e-55ac-e190" hidden="false" defaultSelectionEntryId="none">
                   <entryLinks>
                     <entryLink import="true" name="Disintegrator blaster" hidden="false" id="6657-4510-132c-282f" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="2">
                       <costs>
@@ -13139,7 +13139,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Legion Sergeant Melee Weapons" id="b8d7-8ff0-721e-a963" hidden="false" sortIndex="3" collapsible="true">
+    <selectionEntryGroup name="Legion Sergeant Melee Weapons" id="b8d7-8ff0-721e-a963" hidden="false" sortIndex="3" collapsible="true" defaultSelectionEntryId="9994-4d65-a0b5-bef0">
       <entryLinks>
         <entryLink import="true" name="Chainsword" hidden="false" id="9994-4d65-a0b5-bef0" type="selectionEntry" targetId="78f4-4967-2896-c3a5" sortIndex="1">
           <costs>

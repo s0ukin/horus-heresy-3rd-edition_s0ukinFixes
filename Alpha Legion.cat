@@ -1703,5 +1703,25 @@ A Model with this Special Rule is always considered to be 2&quot; further away t
         <categoryLink name="Rewards of Treachery" hidden="false" id="9f32-c515-7c26-c947" targetId="fe7f-1287-4162-a65d" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Crimson Paladins" hidden="false" id="1d0d-5979-6e89-ba31" type="selectionEntry" targetId="80bb-caf1-d1fc-0e26" sortIndex="901">
+      <categoryLinks>
+        <categoryLink name="Rewards of Treachery" hidden="false" id="12d3-178d-7003-37d5" targetId="fe7f-1287-4162-a65d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dawnbreaker Cohort" hidden="false" id="d8a0-bc62-310b-9408" type="selectionEntry" targetId="410b-50c3-4f12-1c67" sortIndex="902">
+      <categoryLinks>
+        <categoryLink name="Rewards of Treachery" hidden="false" id="2867-abb2-ac7e-6b93" targetId="fe7f-1287-4162-a65d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="The Angel&apos;s Tears" hidden="false" id="a631-3a91-3dbb-0831" type="selectionEntry" targetId="06d5-d1b3-de1f-7564" sortIndex="903">
+      <categoryLinks>
+        <categoryLink name="Rewards of Treachery" hidden="false" id="fd79-b34b-96f4-f4d8" targetId="fe7f-1287-4162-a65d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Contemptor-Incaendius Dreadnought" hidden="false" id="e204-8dc5-6b36-3bcf" type="selectionEntry" targetId="83ae-08c8-bdf1-ccaa" sortIndex="904">
+      <categoryLinks>
+        <categoryLink name="Rewards of Treachery" hidden="false" id="2e12-fbea-64a3-6a5e" targetId="fe7f-1287-4162-a65d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </catalogue>

@@ -160,11 +160,7 @@
     </categoryEntry>
     <categoryEntry name="Automata Model Type" id="5833-5e86-26bc-0916" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
       <rules>
-        <rule name="Automata Model Type" id="a7d3-aaa8-8179-33d1" hidden="false" publicationId="09c6-1c1d-03a7-9556" page="175">
-          <description>- Models with the Automata Type cannot gain any Tactical Statuses and are considered to automatically pass any Check made to avoid gaining a Tactical Status.
-- When targeting a Unit that includes any Models with the Automata Type, the effects of the Poisoned (X) Special Rule only trigger on the Wound Test with a result of a &apos;6&apos; before modifiers are applied, regardless of the value of X for that variant of the Special Rule.
-- A Unit that includes one of more Models with the Automata Type may not make Reactions.</description>
-        </rule>
+        <rule name="New Rule" id="a7d3-aaa8-8179-33d1" hidden="false"/>
       </rules>
     </categoryEntry>
     <categoryEntry name="Prime High Command" id="3568-ad75-b452-3137" hidden="false"/>
@@ -206,6 +202,7 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Army Configuration" id="abfa-86ab-1726-077a" hidden="false"/>
     <categoryEntry name="Rewards of Treachery" id="fe7f-1287-4162-a65d" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden"/>
@@ -502,7 +499,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1d0-2db5-32ec-522e"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
+            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d" type="categoryEntry"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -11527,7 +11524,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3cd4-1efc-c9a1-b1ef" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Army Configuration" hidden="false" id="fac8-8790-489d-f551" targetId="abfa-86ab-1726-077a"/>
+        <categoryLink name="Army Configuration" hidden="false" id="b95b-50d4-2dea-049a" targetId="abfa-86ab-1726-077a" type="categoryEntry"/>
       </categoryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
@@ -12668,6 +12665,6 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Army Configuration" hidden="false" id="5370-2415-f349-02e0" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e"/>
+    <entryLink import="true" name="Army Configuration" hidden="true" id="e528-702e-f73e-5890" type="selectionEntry" targetId="e12d-2ab1-b3ef-cc91"/>
   </entryLinks>
 </gameSystem>

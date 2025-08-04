@@ -266,12 +266,13 @@ In addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player
         <profile name="Rad furnace" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="0c55-0abd-a85c-9e0b">
           <characteristics>
             <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">&quot;A Model with a rad furnace reduces the enemy&apos;s Toughness while Locked in Combat.&quot;</characteristic>
-            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phase (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phase (X) Special Rule.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">Any model, friendly or enemy, that is part of a Combat that includes one of more Models with a rad furnace must reduce its Toughness Characteristic by 1 while a part of that Combat in the Fight Sub-Phase. This reduction is not cumulative with the effects of the Phage (X) Special Rule. Models with a rad furnace, the Automata Type or Cybernetica Trait are unaffected and do not reduce their Toughness Characteristic. Additionally, a Unit that is composed of a majority of Models with rad furnaces does not reduce any Characteristics due to the effects of the Phage (X) Special Rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec7f-b557-491a-4c2a"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec7f-b557-491a-4c2a-min"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec7f-b557-491a-4c2a-max"/>
       </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arae-shrike" hidden="false" id="bd7b-1511-997a-f275">

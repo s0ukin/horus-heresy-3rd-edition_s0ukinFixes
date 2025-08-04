@@ -202,7 +202,6 @@
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Army Configuration" id="abfa-86ab-1726-077a" hidden="false"/>
     <categoryEntry name="Rewards of Treachery" id="fe7f-1287-4162-a65d" hidden="true">
       <modifiers>
         <modifier type="set" value="false" field="hidden"/>
@@ -218,6 +217,28 @@
       </constraints>
     </categoryEntry>
     <categoryEntry name="Army Configuration" id="abfa-86ab-1726-077a" hidden="false"/>
+    <categoryEntry name="Veletaris Tercio Unlock" id="67d3-556b-b619-28e2" hidden="false">
+      <comment>SA</comment>
+    </categoryEntry>
+    <categoryEntry name="Armour Tercio Unlock" id="390f-d9dc-10d8-56aa" hidden="false">
+      <comment>SA</comment>
+    </categoryEntry>
+    <categoryEntry name="Artillery Tercio Unlock" id="2a0c-b2b2-0f48-2e90" hidden="false">
+      <comment>SA</comment>
+    </categoryEntry>
+    <categoryEntry name="Infantry Tercio Unlock" id="847c-d351-32a7-cc2a" hidden="false">
+      <comment>SA</comment>
+    </categoryEntry>
+    <categoryEntry name="Scout Tercio Unlock" id="3bba-e8bb-7463-b0b2" hidden="false">
+      <comment>SA</comment>
+    </categoryEntry>
+    <categoryEntry name="Cohort Doctrine: Solar Pattern Cohort" id="f2be-abfe-311c-afe2" hidden="false"/>
+    <categoryEntry name="Cohort Doctrine: Ultima Pattern Cohort" id="1241-4ccd-80b8-8ff2" hidden="false"/>
+    <categoryEntry name="Cohort Doctrine: Reconnaissance Pattern Cohort" id="7f98-e8eb-f86e-180d" hidden="false"/>
+    <categoryEntry name="Cohort Doctrine: Mechanised Pattern Cohort" id="1d7a-eb2d-5d0f-0fa4" hidden="false"/>
+    <categoryEntry name="Cohort Doctrine: Siege Pattern Cohort" id="c9ef-b204-e951-6b7e" hidden="false"/>
+    <categoryEntry name="Cohort Doctrine: Iron Pattern Cohort" id="28ba-8660-5266-8674" hidden="false"/>
+    <categoryEntry name="Iron Tercio Unlock" id="deba-d402-8204-1d13" hidden="false"/>
     <categoryEntry name="Support - Apothecary Only" id="4a48-9154-40d8-d6b7" hidden="false"/>
     <categoryEntry name="Support - Techmarine Only" id="103f-d00d-f8cf-52de" hidden="false"/>
     <categoryEntry name="Recon - Reconnaissance Squad Only" id="f8c3-f44e-569f-4418" hidden="false"/>
@@ -1840,12 +1861,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Shock Assault" id="c9a5-3069-920b-32f1" hidden="true" sortIndex="8">
           <categoryLinks>
-            <categoryLink name="Allegiance" hidden="false" id="e091-482b-99e8-9b79" targetId="c408-52f1-b632-4c82">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bfb-98d0-b837-c045" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38ef-99c0-fe77-0b6b" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Heavy Assault" hidden="false" id="b5a6-4082-06e1-a253" targetId="3235-bd79-e9b1-60fa">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5279-0e0a-763f-7aec"/>
@@ -2033,12 +2048,6 @@
         </forceEntry>
         <forceEntry name="Auxiliary - First Strike" id="c444-8242-d3fc-b5b0" hidden="true" sortIndex="9">
           <categoryLinks>
-            <categoryLink name="Allegiance" hidden="false" id="67c0-be75-3659-c481" targetId="c408-52f1-b632-4c82">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6cd6-6216-f005-682d" includeChildSelections="true"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b3b-9810-4741-6c26" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Fast Attack" hidden="false" id="ac30-1788-0918-4098" targetId="cf96-8891-3f9a-8921">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9723-874b-5bbf-14cc"/>
@@ -5009,8 +5018,27 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="0cdf-ec44-4886-b292">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="f2be-abfe-311c-afe2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="67d3-556b-b619-28e2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="0cdf-ec44-4886-b292">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f2be-abfe-311c-afe2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="67d3-556b-b619-28e2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <comment>SA Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="0cdf-ec44-4886-b292" includeChildSelections="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true" sortIndex="31">
           <categoryLinks>
@@ -5033,8 +5061,27 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="b12c-e160-7e18-6447">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1d7a-eb2d-5d0f-0fa4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="390f-d9dc-10d8-56aa" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="b12c-e160-7e18-6447">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1d7a-eb2d-5d0f-0fa4" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="390f-d9dc-10d8-56aa" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <comment>SA Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="b12c-e160-7e18-6447" includeChildSelections="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Artillery Tercio" id="371d-e9ef-7bf9-47de" hidden="true" sortIndex="32">
           <categoryLinks>
@@ -5057,8 +5104,27 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="2" field="ab5c-eef0-021a-f3d7">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="2a0c-b2b2-0f48-2e90" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="ab5c-eef0-021a-f3d7">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="c9ef-b204-e951-6b7e" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="2a0c-b2b2-0f48-2e90" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <comment>SA Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="ab5c-eef0-021a-f3d7" includeChildSelections="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Infantry Tercio" id="243b-4ffd-9808-11d8" hidden="true" sortIndex="33">
           <categoryLinks>
@@ -5263,8 +5329,27 @@
               </conditionGroups>
               <comment>Solar Auxilia</comment>
             </modifier>
+            <modifier type="increment" value="2" field="27bb-2701-02d4-1c6f">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1241-4ccd-80b8-8ff2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="847c-d351-32a7-cc2a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="27bb-2701-02d4-1c6f">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="1241-4ccd-80b8-8ff2" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="847c-d351-32a7-cc2a" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <comment>SA Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="27bb-2701-02d4-1c6f" includeChildSelections="true"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Scout Tercio" id="551a-23a1-7758-2688" hidden="true" sortIndex="34">
           <categoryLinks>
@@ -5292,8 +5377,27 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" value="1" field="09ef-6880-510a-852b">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="7f98-e8eb-f86e-180d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="3bba-e8bb-7463-b0b2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="2" field="09ef-6880-510a-852b">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="7f98-e8eb-f86e-180d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="3bba-e8bb-7463-b0b2" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <comment>SA Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="09ef-6880-510a-852b"/>
+          </constraints>
         </forceEntry>
         <forceEntry name="Auxiliary - Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="true" publicationId="b905-0414-1057-bb34" page="147" sortIndex="56">
           <categoryLinks>
@@ -11479,6 +11583,49 @@
             </categoryLink>
           </categoryLinks>
         </forceEntry>
+        <forceEntry name="Auxiliary - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true" sortIndex="35">
+          <categoryLinks>
+            <categoryLink name="Troops" hidden="false" id="13dd-708a-30bc-4c72" targetId="88e6-d373-4152-0dd8">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-c01a-64d4-dd3c" includeChildSelections="false"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Support" hidden="false" id="84a6-92e2-1afd-8497" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7143-e998-ba72-8b90"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Heavy Assault" hidden="false" id="828a-d1ae-eaee-d2b7" targetId="3235-bd79-e9b1-60fa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24e-c0f6-4c76-42e0"/>
+              </constraints>
+            </categoryLink>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="7851-69ac-f701-034e" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="7851-69ac-f701-034e" shared="true"/>
+                  </conditions>
+                  <comment>Solar Auxilia</comment>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>Solar Auxilia</comment>
+            </modifier>
+            <modifier type="increment" value="1" field="f66f-803d-5433-bb35">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="28ba-8660-5266-8674" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>SA Only</comment>
+          <constraints>
+            <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="f66f-803d-5433-bb35" includeChildSelections="true"/>
+          </constraints>
+        </forceEntry>
       </forceEntries>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="dae8-8a74-0984-6332" includeChildSelections="false"/>
@@ -12709,13 +12856,13 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
         <modifier type="set" value="false" field="hidden"/>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e">
-      <categoryLinks>
-        <categoryLink targetId="abfa-86ab-1726-077a" id="87b3-ba6b-73e5-7936" primary="true" name="Army Configuration"/>
-      </categoryLinks>
-    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Army Configuration" hidden="true" id="a827-ee7f-fe7d-9e0e"/>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Army Configuration" hidden="true" id="e528-702e-f73e-5890" type="selectionEntry" targetId="e12d-2ab1-b3ef-cc91"/>
+    <entryLink import="true" name="Army Configuration" hidden="false" id="e528-702e-f73e-5890" type="selectionEntry" targetId="a827-ee7f-fe7d-9e0e">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="7c4d-e76b-dfd7-2543" primary="true" name="Army Configuration"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
 </gameSystem>

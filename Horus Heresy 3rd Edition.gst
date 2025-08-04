@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="15" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="16" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -401,7 +401,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -499,7 +499,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d1d0-2db5-32ec-522e"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d" type="categoryEntry"/>
+            <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -4206,7 +4206,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4706,7 +4706,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5496,7 +5496,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5999,7 +5999,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6795,7 +6795,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7051,7 +7051,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7597,7 +7597,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -7979,26 +7979,6 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a745-b684-6607-206d"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="High Command" hidden="false" id="a4cc-4d73-0e28-ca25" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="201b-2d30-f0c7-1c38"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="d06a-b5c7-0060-fcff" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6069-eb2a-4004-9b30"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Command" hidden="false" id="ce07-19a2-6f89-22a2" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e71c-38ec-134d-ca8a"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="c046-7124-74ea-3626" targetId="c85c-2963-658f-1bb9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="18fc-b303-e254-bdd2" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="b54b-d966-6e32-4622" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4dcb-aeeb-167a-744c"/>
@@ -8143,7 +8123,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8373,7 +8353,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8665,7 +8645,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9180,7 +9160,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9467,7 +9447,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9540,17 +9520,12 @@
             </categoryLink>
             <categoryLink name="Fast Attack" hidden="false" id="33c7-d845-073f-6422" targetId="cf96-8891-3f9a-8921">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="be2c-84ab-1363-da6b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be2c-84ab-1363-da6b"/>
               </constraints>
               <modifiers>
                 <modifier type="increment" value="1" field="be2c-84ab-1363-da6b">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -9562,7 +9537,7 @@
             </categoryLink>
           </categoryLinks>
         </forceEntry>
-        <forceEntry name="Auxiliary - Exalted Conclave" id="c961-7007-0142-5d07" hidden="true" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
+        <forceEntry name="Apex - Exalted Conclave" id="c961-7007-0142-5d07" hidden="true" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
           <comment>WB - No LB Prime</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -9578,7 +9553,7 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="b051-562e-890e-d4a4" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Apex Detachment" hidden="false" id="7df6-a08b-9c78-907d" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="Troops" hidden="false" id="b3b2-bd18-c654-d809" targetId="88e6-d373-4152-0dd8">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8a82-537e-c44d-bcf9"/>
@@ -9757,7 +9732,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10457,7 +10432,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10845,7 +10820,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -11421,7 +11396,7 @@
                 </modifier>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -11524,7 +11499,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3cd4-1efc-c9a1-b1ef" includeChildSelections="true"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Army Configuration" hidden="false" id="b95b-50d4-2dea-049a" targetId="abfa-86ab-1726-077a" type="categoryEntry"/>
+        <categoryLink name="Army Configuration" hidden="false" id="b95b-50d4-2dea-049a" targetId="abfa-86ab-1726-077a"/>
       </categoryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">
@@ -11556,6 +11531,11 @@
         <modifier type="increment" value="1" field="22e2-3454-8828-04e6">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="roster" childId="8a97-1585-93e7-c561" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -11774,6 +11754,38 @@
             <categoryLink name="Rewards of Treachery" hidden="false" id="f2b2-8c74-65bf-19e4" targetId="fe7f-1287-4162-a65d"/>
           </categoryLinks>
         </forceEntry>
+        <forceEntry name="Unrestricted Temporarily before we link all the forces" id="2432-e5a1-76d4-0bb6" hidden="true">
+          <categoryLinks>
+            <categoryLink name="High Command" hidden="false" id="e9a4-1580-6053-02d7" targetId="d9a6-9b5f-b18a-4d63"/>
+            <categoryLink name="Prime High Command" hidden="false" id="178f-29b8-c0d6-333c" targetId="3568-ad75-b452-3137"/>
+            <categoryLink name="Command" hidden="false" id="d585-e86d-a99d-33f0" targetId="6dbf-654a-f06f-2d69"/>
+            <categoryLink name="Prime Command" hidden="false" id="57ca-2da2-a623-6082" targetId="c85c-2963-658f-1bb9"/>
+            <categoryLink name="Retinue" hidden="false" id="653d-e3a7-bcab-107f" targetId="a38e-50ff-310f-f19e"/>
+            <categoryLink name="Prime Retinue" hidden="false" id="60f5-680d-ff27-75ca" targetId="c66b-ef39-b20f-725b"/>
+            <categoryLink name="Elites" hidden="false" id="dfc4-15bc-9cbe-546c" targetId="5d5e-958f-e388-50b5"/>
+            <categoryLink name="Prime Elites" hidden="false" id="0f1a-07cd-fee4-ad95" targetId="276f-7a07-a56c-affd"/>
+            <categoryLink name="War-engine" hidden="false" id="3f1c-a98a-781f-b198" targetId="2499-7239-685f-8465"/>
+            <categoryLink name="Prime War-engine" hidden="false" id="af1e-2db0-8d5c-860b" targetId="9699-67c9-2c0b-e64b"/>
+            <categoryLink name="Troops" hidden="false" id="2092-8899-2a98-9f13" targetId="88e6-d373-4152-0dd8"/>
+            <categoryLink name="Prime Troops" hidden="false" id="c073-49cf-0379-9b89" targetId="c3f9-a7f3-984b-3fda"/>
+            <categoryLink name="Support" hidden="false" id="0f46-8036-2905-6b51" targetId="345f-9ba6-9b02-ed5c"/>
+            <categoryLink name="Prime Support" hidden="false" id="acae-1f7d-ee7c-5988" targetId="1c79-ecdf-9a64-84c9"/>
+            <categoryLink name="Transport" hidden="false" id="3034-56f6-5359-c6ce" targetId="d162-4711-5d60-0a48"/>
+            <categoryLink name="Prime Transport" hidden="false" id="5816-a40e-0bbc-1216" targetId="fc27-1a48-84ae-aa7b"/>
+            <categoryLink name="Heavy Assault" hidden="false" id="72ba-fb3a-d2ef-f2e8" targetId="3235-bd79-e9b1-60fa"/>
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="2cc5-3599-67a9-bbdd" targetId="1e95-35f0-1353-ffa1"/>
+            <categoryLink name="Heavy Transport" hidden="false" id="0fbb-9050-f74f-54c5" targetId="52d0-8b78-439e-18e5"/>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="d8ae-9a22-e9c3-c4d3" targetId="abff-3686-c39a-9a24"/>
+            <categoryLink name="Armour" hidden="false" id="9751-a939-446e-278e" targetId="643a-1012-bd51-6537"/>
+            <categoryLink name="Prime Armour" hidden="false" id="54f6-27a2-4688-4740" targetId="4460-7bc1-4d80-aecb"/>
+            <categoryLink name="Recon" hidden="false" id="8e05-1d02-a304-6698" targetId="2b65-a3f2-620a-dc58"/>
+            <categoryLink name="Prime Recon" hidden="false" id="117f-2854-220f-b3d3" targetId="6348-ecd0-714d-042a"/>
+            <categoryLink name="Fast Attack" hidden="false" id="fa6e-bbb7-5054-11a9" targetId="cf96-8891-3f9a-8921"/>
+            <categoryLink name="Prime Fast Attack" hidden="false" id="925d-6efa-fdb0-a585" targetId="c291-144b-3da6-37ed"/>
+            <categoryLink name="Lord of War" hidden="false" id="cf70-42b3-4b27-6676" targetId="a46f-a465-0ead-d6b8"/>
+            <categoryLink name="Warlord" hidden="false" id="ced1-e86f-2501-9432" targetId="22ee-7208-4089-b005"/>
+          </categoryLinks>
+        </forceEntry>
       </forceEntries>
       <modifiers>
         <modifier type="decrement" value="1" field="4823-b27b-f750-5a63">
@@ -11810,6 +11822,11 @@
         <modifier type="increment" value="1" field="3fef-ac67-de89-249f">
           <repeats>
             <repeat value="2" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="3e8e-05ee-be52-12d6">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -12005,7 +12022,7 @@
             </modifier>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="3235-bd79-e9b1-60fa" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

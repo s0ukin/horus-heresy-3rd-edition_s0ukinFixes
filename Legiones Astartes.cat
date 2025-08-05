@@ -2885,7 +2885,11 @@
                   <entryLinks>
                     <entryLink import="true" name="Legion Pistols" hidden="false" id="1228-94af-17ce-8d41" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="2"/>
                     <entryLink import="true" name="Bolt pistol" hidden="false" id="38ad-3258-60c4-072e" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
-                    <entryLink import="true" name="Combat shield" hidden="false" id="cbf7-c2a8-c7d0-0daf" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="4"/>
+                    <entryLink import="true" name="Combat shield" hidden="false" id="cbf7-c2a8-c7d0-0daf" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                    </entryLink>
                     <entryLink import="true" name="Disintegrator pistol" hidden="false" id="93ca-0d73-1a74-7733" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3">
                       <constraints>
                         <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="5416-00be-e2e7-5ba1"/>
@@ -2999,7 +3003,11 @@
                   <entryLinks>
                     <entryLink import="true" name="Legion Pistols" hidden="false" id="a67e-2c0a-a520-2058" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" flatten="true" sortIndex="2"/>
                     <entryLink import="true" name="Bolt pistol" hidden="false" id="a023-d29e-c71e-6d10" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
-                    <entryLink import="true" name="Combat shield" hidden="false" id="2803-a664-a26d-fb25" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="4"/>
+                    <entryLink import="true" name="Combat shield" hidden="false" id="2803-a664-a26d-fb25" type="selectionEntry" targetId="5606-f0ad-360b-fe5b" sortIndex="4">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                      </costs>
+                    </entryLink>
                     <entryLink import="true" name="Disintegrator pistol" hidden="false" id="8142-d03c-e2db-9a7c" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3"/>
                   </entryLinks>
                   <constraints>

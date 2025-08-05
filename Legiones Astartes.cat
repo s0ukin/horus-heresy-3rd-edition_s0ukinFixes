@@ -13604,6 +13604,19 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Inferno Pistol" hidden="true" id="f33d-c694-fac5-dfba" type="selectionEntry" targetId="0a98-b701-5f6c-1fc1" sortIndex="1">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Blood Angels only</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Special Weapons List" id="8e2d-acd9-be67-36f2" hidden="false" sortIndex="6" collapsible="true">
@@ -13726,6 +13739,19 @@
         <entryLink import="true" name="Charnabal sabre" hidden="false" id="7634-d6fc-c76f-2b8f" type="selectionEntry" targetId="e85f-734a-c587-e88b" sortIndex="9">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Inferno Pistol" hidden="true" id="6b2c-959f-5f73-e0f4" type="selectionEntry" targetId="0a98-b701-5f6c-1fc1" sortIndex="6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <comment>Blood Angels only</comment>
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9cff-ac34-56ca-260f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
       </entryLinks>

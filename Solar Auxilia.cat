@@ -6241,24 +6241,6 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Cohort Doctrine: Iron Pattern Cohort" hidden="false" id="ae7f-98e2-62de-05b3">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Cohort Tactica: Ceaseless Bombardment" hidden="false" id="9190-f642-1aad-afb1">
-              <rules>
-                <rule name="Ceaseless Bombardment" id="b851-f8f8-c9c6-5326" hidden="false">
-                  <description>&quot;Models with Special Rule improve the value of the Pinning (x) Special Rule on any Barrage Weapons they have by +1.&quot;</description>
-                </rule>
-              </rules>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae63-0fc6-787b-bb4e"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b91-b3ac-e50d-bb80"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <categoryLinks>
-            <categoryLink targetId="28ba-8660-5266-8674" id="64a9-d2b0-aad5-3fb5" primary="false" name="Cohort Doctrine: Iron Pattern Cohort"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cohort Doctrine: Siege Pattern Cohort" hidden="false" id="3579-30ed-c676-40af">
-          <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Cohort Tactica: Iron over Flesh" hidden="false" id="3d57-fc74-0e8c-2c28">
               <rules>
                 <rule name="Iron over Flesh" id="328d-fb74-d871-8210" hidden="false">
@@ -6268,6 +6250,24 @@ Payer&apos;s Movement Phase continues, starting wit m performing a Fall Back M
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34e6-d712-6885-fe1e"/>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61cc-986b-f387-f966"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <categoryLinks>
+            <categoryLink targetId="28ba-8660-5266-8674" id="64a9-d2b0-aad5-3fb5" primary="false" name="Cohort Doctrine: Iron Pattern Cohort"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Cohort Doctrine: Siege Pattern Cohort" hidden="false" id="3579-30ed-c676-40af">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Cohort Tactica: Ceaseless Bombardment" hidden="false" id="9190-f642-1aad-afb1">
+              <rules>
+                <rule name="Ceaseless Bombardment" id="b851-f8f8-c9c6-5326" hidden="false">
+                  <description>&quot;Models with Special Rule improve the value of the Pinning (x) Special Rule on any Barrage Weapons they have by +1.&quot;</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae63-0fc6-787b-bb4e"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b91-b3ac-e50d-bb80"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>

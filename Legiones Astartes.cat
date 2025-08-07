@@ -8506,6 +8506,9 @@
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33ae-324f-03f6-da0f"/>
                       </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>

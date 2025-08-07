@@ -262,6 +262,7 @@
     <categoryEntry name="Heavy Assault - Cataphractii or Tartaros Only" id="6cc6-9558-dd27-949f" hidden="false"/>
     <categoryEntry name="Heavy Assault - Rampager Squads Only" id="91f0-1b91-0a9a-c542" hidden="false"/>
     <categoryEntry name="Elites - Seeker Squads or Headhunter Kill Teams Only" id="5c0d-4d49-44e2-0a99" hidden="false"/>
+    <categoryEntry name="Cohort Additional Detachment" id="27e8-88b4-d3c8-d63f" hidden="false"/>
     <categoryEntry name="Medusan Vanguard Unlock" id="fc09-911b-ee8c-7967" hidden="true"/>
   </categoryEntries>
   <forceEntries>
@@ -11700,6 +11701,11 @@
         <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
           <repeats>
             <repeat value="1" repeats="1" field="selections" scope="force" childId="ff44-f49f-732b-c3a7" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" value="1" field="0ab6-91a0-792e-4068">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="27e8-88b4-d3c8-d63f" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>

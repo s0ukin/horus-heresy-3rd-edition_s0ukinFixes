@@ -7413,6 +7413,9 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Kraken bolter w/ chain bayonet" hidden="false" id="48db-88a1-c13b-8e0f">
                   <entryLinks>
@@ -7429,6 +7432,9 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="2" field="9893-c379-920b-8982"/>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -7498,6 +7504,9 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="1" field="9893-c379-920b-8982"/>
+                  </modifiers>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Kraken bolter w/ chain bayonet" hidden="false" id="ab3d-2231-b44c-fcf1" sortIndex="3">
                   <entryLinks>
@@ -7514,6 +7523,9 @@
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="2" field="9893-c379-920b-8982"/>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>

@@ -5402,10 +5402,6 @@
         </infoLink>
         <infoLink name="Pistol" id="bd76-f96b-6aab-30d1" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
       </infoLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7221-b7a7-c76c-4053" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a11-8451-c7bb-462c" includeChildSelections="false"/>
-      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blade of Perdition" hidden="false" id="a3a1-84f7-4e23-3ed6">
       <profiles>

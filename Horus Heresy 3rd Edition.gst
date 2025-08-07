@@ -7409,7 +7409,7 @@
             </categoryLink>
             <categoryLink name="Prime Troops" hidden="false" id="01d0-2c71-843a-3b3c" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f597-12cc-62ce-e9a2" includeChildSelections="true"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="f597-12cc-62ce-e9a2" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Support" hidden="false" id="a8b7-9d01-976f-1195" targetId="345f-9ba6-9b02-ed5c">

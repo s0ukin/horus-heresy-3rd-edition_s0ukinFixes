@@ -2383,7 +2383,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
               </modifiers>
               <costs>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39b6-cced-077d-3939" includeChildSelections="false"/>

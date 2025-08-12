@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="acc1-f897-a117-9b4a" name="Legio Custodes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="4" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="acc1-f897-a117-9b4a" name="Legio Custodes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Constantin Valdor" hidden="false" id="9cbb-0abc-5c93-2afd">
       <selectionEntries>
@@ -46,7 +46,7 @@
                     <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+2</characteristic>
                     <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
                     <characteristic name="D" typeId="6a9d-4feb-065a-33e7">2</characteristic>
-                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (5+), Duellist’s Edge (2), Impact (AM)</characteristic>
+                    <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (5+), Duellist’s Edge (2), Impact (AM)</characteristic>
                     <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
                   </characteristics>
                 </profile>
@@ -58,7 +58,7 @@
                     <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
                     <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
                     <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Suppressive (1)</characteristic>
-                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Bolt</characteristic>
+                    <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Bolt</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -110,10 +110,10 @@
           </constraints>
           <rules>
             <rule name="Master of the Golden Legion (Valdor)" id="6a31-54c3-170b-e56b" hidden="false">
-              <description>If a Model with this Special Rule is part of an Army, then the Fear (1) Special Rule is granted to all Models with the Legio Custodes Trait and the Infantry, Cavalry, Walker or Paragon Type in the same Army until the end of the first Battle Turn.
+              <description>If a Model with this Special Rule is part of an Army, then the Fear (1) Special Rule is granted to all Models with the Legio Custodes Trait and the Infantry, Cavalry, Walker or Paragon Type in the same Army until the end of the first Battle Turn.
 
 
-Furthermore, if a Model with this Special Rule is part of an Army, then once per Turn, when the Controlling Player makes a Reserves Test for a Unit which only contains Models with the Legio Custodes Trait and the Deep Strike Special Rule, before the Reserves Test is made, that Player can select to modify that roll by +1. If this modifier is applied, that Unit must be deployed using the Deep Strike Special Rule.</description>
+Furthermore, if a Model with this Special Rule is part of an Army, then once per Turn, when the Controlling Player makes a Reserves Test for a Unit which only contains Models with the Legio Custodes Trait and the Deep Strike Special Rule, before the Reserves Test is made, that Player can select to modify that roll by +1. If this modifier is applied, that Unit must be deployed using the Deep Strike Special Rule.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -178,22 +178,22 @@ Furthermore, if a Model with this Special Rule is part of an Army, then once per
 *This Melee Weapon’s Damage Characteristic is equal to the number of Models with a Misericordia in the Unit for which this aftermath option has been selected</description>
         </rule>
         <rule name="Misericordia" id="fa69-e27e-64ed-da4f" hidden="false">
-          <description>A Unit containing any Models with a Misericordia may select a unique aftermath option in which it makes a special attack against an enemy Unit from the same Combat.
+          <description>A Unit containing any Models with a Misericordia may select a unique aftermath option in which it makes a special attack against an enemy Unit from the same Combat.
 
 
-A Unit which contains any Models with a Misericordia may have the Blade of Mercy aftermath option selected for it in Step 4 of the Resolution Sub-Phase of the Assault Phase for any Combat in which that Unit has won or drawn the Combat.</description>
+A Unit which contains any Models with a Misericordia may have the Blade of Mercy aftermath option selected for it in Step 4 of the Resolution Sub-Phase of the Assault Phase for any Combat in which that Unit has won or drawn the Combat.</description>
         </rule>
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Arae-shrike" hidden="false" id="76f5-a747-71df-6d54">
       <rules>
         <rule name="Arae-shrike" id="44b1-d759-938b-4117" hidden="false">
-          <description>A Model with an arae-shrike gains the Deep Strike Special Rule and confers it to any Unit it joins, and can apply a penalty to Enemy Reserve Tests.
+          <description>A Model with an arae-shrike gains the Deep Strike Special Rule and confers it to any Unit it joins, and can apply a penalty to Enemy Reserve Tests.
 
 
-A Model with an arae-shrike gains the Deep Strike Special Rule, and if it joins a Unit entirely composed of Models with the Legio Custodes Trait in Reserves, all Models in that Unit also gain the Deep Strike Special Rule.
+A Model with an arae-shrike gains the Deep Strike Special Rule, and if it joins a Unit entirely composed of Models with the Legio Custodes Trait in Reserves, all Models in that Unit also gain the Deep Strike Special Rule.
 
-In addition, in the Effects Sub-Phase of the End Phase of their Player Turn, the Controlling Player of a Model with an arae-shrike which is on the Battlefield can make an Intelligence Check for that Model. If that Check is successful, then the opposing Player must apply a -1 modifier to the result of the first Reserves Test they make in the Reserves Sub-Phase of the subsequent Player Turn. 
+In addition, in the Effects Sub-Phase of the End Phase of their Player Turn, the Controlling Player of a Model with an arae-shrike which is on the Battlefield can make an Intelligence Check for that Model. If that Check is successful, then the opposing Player must apply a -1 modifier to the result of the first Reserves Test they make in the Reserves Sub-Phase of the subsequent Player Turn. 
 Any Reserves Test may only be modified by a single arae-shrike in this manner.</description>
         </rule>
       </rules>
@@ -204,10 +204,10 @@ Any Reserves Test may only be modified by a single arae-shrike in this manner.</
     <selectionEntry type="upgrade" import="true" name="Eclipse Shield" hidden="false" id="dfba-51d7-a4cd-a1fe">
       <rules>
         <rule name="Eclipse Shield" id="e1cc-5a7b-dc15-b450" hidden="false">
-          <description>Eclipse shields grant a 5+ Shrouded Damage Mitigation Roll against Shooting Attacks once a Model suffers a Penetrating Hit.
+          <description>Eclipse shields grant a 5+ Shrouded Damage Mitigation Roll against Shooting Attacks once a Model suffers a Penetrating Hit.
 
 
-The first time in a Battle Turn a Model with an eclipse shield suffers a Penetrating Hit, it gains a 5+ Shrouded Damage Mitigation Roll against all subsequent Shooting Attacks until it is returned to Aerial Reserves.</description>
+The first time in a Battle Turn a Model with an eclipse shield suffers a Penetrating Hit, it gains a 5+ Shrouded Damage Mitigation Roll against all subsequent Shooting Attacks until it is returned to Aerial Reserves.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -225,17 +225,17 @@ The first time in a Battle Turn a Model with an eclipse shield suffers a Penetr
       </modifiers>
       <rules>
         <rule name="Praesidium shield" id="db46-10f6-09f0-a753" hidden="false">
-          <description>A model with a Praesidium shield gains a 5+ Invulnerable Save and the Shield Trait.</description>
+          <description>A model with a Praesidium shield gains a 5+ Invulnerable Save and the Shield Trait.</description>
         </rule>
       </rules>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Magisterium Vexilla" hidden="false" id="7796-115e-75a1-e686">
       <rules>
         <rule name="Magisterium Vexilla" id="5166-cdbb-7243-6f49" hidden="false">
-          <description>Units within 8&quot; of a Model with a magisterium vexilla must pass a Leadership Check when scoring an Objective or only a single Victory Point is scored.
+          <description>Units within 8&quot; of a Model with a magisterium vexilla must pass a Leadership Check when scoring an Objective or only a single Victory Point is scored.
 
 
-In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model within Line of Sight and 8&quot; of a Model with a magisterium vexilla would score Victory Points for Controlling or Contesting an Objective, it must first make a Leadership Check. If this Check is failed, that Unit may only score 1 Victory Point for Controlling or Contesting the Objective in that Victory Sub-Phase, regardless of other Special Rules like Line (X) or Comptroller (X). If the Check is successful there is no further effect.</description>
+In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model within Line of Sight and 8&quot; of a Model with a magisterium vexilla would score Victory Points for Controlling or Contesting an Objective, it must first make a Leadership Check. If this Check is failed, that Unit may only score 1 Victory Point for Controlling or Contesting the Objective in that Victory Sub-Phase, regardless of other Special Rules like Line (X) or Comptroller (X). If the Check is successful there is no further effect.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -637,11 +637,11 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
       <profiles>
         <profile name="Arachnus storm cannon - Burst Fire" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0c6b-9215-e60a-816a">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">30</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">4</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">2</characteristic>
             <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Heavy (FP)</characteristic>
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Las</characteristic>
           </characteristics>
@@ -941,7 +941,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
             <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>
             <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
             <characteristic name="AP" typeId="a014-126b-3b7b-27e8">2</characteristic>
-            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">3</characteristic>
+            <characteristic name="D" typeId="6a9d-4feb-065a-33e7">4</characteristic>
             <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Critical Hit (6+), Shock (Pinned), Armourbane</characteristic>
             <characteristic name="Traits" typeId="76e3-c188-bc65-3467">Power</characteristic>
           </characteristics>
@@ -1681,6 +1681,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="aa42-7fb0-42ab-85dd" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="3bb6-0f8b-47d2-8f4d" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Custodian Guard Sodality" hidden="false" id="3125-22d7-c723-2737">
       <selectionEntries>
@@ -2090,6 +2097,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="24b9-f55a-4294-ad1e" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="d125-a3e0-40d3-8f7d" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Contemptor-Galatus Dreadnought" hidden="false" id="5c1e-b656-3a3f-5014">
       <selectionEntries>
@@ -2186,6 +2200,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="f89c-a964-4ddc-863b" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="cbeb-2c33-434d-96fa" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Telemon Heavy Dreadnought" hidden="false" id="6132-aa94-be29-dedb">
       <selectionEntries>
@@ -2342,6 +2363,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6acc-329e-4256-8aa6" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="6aa9-b00e-4e03-aed5" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Coronus Grav-Carrier" hidden="false" id="40df-cbd0-f144-ccdb">
       <selectionEntries>
@@ -2411,6 +2439,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="29bd-c846-4706-8bf1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="7dd7-3df7-4606-9695" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Venatari Sodality" hidden="false" id="6387-bce6-8417-20fa">
       <selectionEntries>
@@ -2456,7 +2491,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
                     <selectionEntry type="upgrade" import="true" name="Tarsus buckler" hidden="false" id="0389-7e59-b2b4-d4bf">
                       <rules>
                         <rule name="Tarsus Buckler" id="3b15-ca8f-dace-9086" hidden="false">
-                          <description>The Ranged Strength of attacks made as part of a Volley Attack or Overwatch Reaction are modified by -1 when resolving Wound Tests against a Unit that includes one or more Models with a tarsus buckler.</description>
+                          <description>The Ranged Strength of attacks made as part of a Volley Attack or Overwatch Reaction are modified by -1 when resolving Wound Tests against a Unit that includes one or more Models with a tarsus buckler.</description>
                         </rule>
                       </rules>
                       <constraints>
@@ -2523,6 +2558,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="12ba-1516-4d0a-84ab" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="4a77-cce9-438b-9d7c" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gyrfalcon Jetbike Sodality" hidden="false" id="5494-8bdd-6978-8d32">
       <selectionEntries>
@@ -2625,6 +2667,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
           </profiles>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="6320-f308-4e62-a9dd" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="d57c-365c-4409-a511" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Pallas Grav-Attack" hidden="false" id="cdf4-0738-9331-095c">
       <selectionEntries>
@@ -2687,6 +2736,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="e3c2-b381-439c-83b9" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="606d-3c0e-4229-91f0" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Caladius Grav-Tank" hidden="false" id="3cc2-9a68-9bc0-b695">
       <selectionEntries>
@@ -2765,6 +2821,13 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
         <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
         <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="fbcb-3177-4ed2-afd5" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="b0d5-5576-4b3a-8e7d" type="selectionEntryGroup" targetId="6f4b-388a-b001-abde"/>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Orion Assault Dropship" hidden="false" id="0c29-b45c-d6e4-6a18">
       <selectionEntries>
@@ -2928,10 +2991,10 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
   </catalogueLinks>
   <sharedRules>
     <rule name="Master of the Golden Legion" id="e26b-8a00-4b2f-112a" hidden="false">
-      <description>If a Model with this Special Rule is part of an Army, then the Fear (1) Special Rule is granted to all Models with the Legio Custodes Trait and the Infantry, Cavalry, Walker or Paragon Type in the same Army until the end of the first Battle Turn.</description>
+      <description>If a Model with this Special Rule is part of an Army, then the Fear (1) Special Rule is granted to all Models with the Legio Custodes Trait and the Infantry, Cavalry, Walker or Paragon Type in the same Army until the end of the first Battle Turn.</description>
     </rule>
     <rule name="Only In Death" id="707b-6c1b-2067-1150" hidden="false">
-      <description>Whenever a Model with this Special Rule would gain the Routed Tactical Status in the Make Panic Checks Step of the Resolution Sub-Phase of the Assault Phase, that Model instead gains the Stunned Tactical Status, unless there are any Models without this Special Rule in the same Unit as that Model. Additionally, a Unit which only contains Models with this Special Rule may never have the Disengage or Fall Back aftermath options selected for it, unless it is entirely composed of Models which also have the Antigrav Sub-Type, in which case it may still have the Disengage aftermath option selected for it.</description>
+      <description>Whenever a Model with this Special Rule would gain the Routed Tactical Status in the Make Panic Checks Step of the Resolution Sub-Phase of the Assault Phase, that Model instead gains the Stunned Tactical Status, unless there are any Models without this Special Rule in the same Unit as that Model. Additionally, a Unit which only contains Models with this Special Rule may never have the Disengage or Fall Back aftermath options selected for it, unless it is entirely composed of Models which also have the Antigrav Sub-Type, in which case it may still have the Disengage aftermath option selected for it.</description>
     </rule>
   </sharedRules>
   <entryLinks>
@@ -3012,164 +3075,20 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model 
     </entryLink>
     <entryLink import="true" name="Orion Assault Dropship" hidden="false" id="baae-c2d4-3028-7c1c" type="selectionEntry" targetId="0c29-b45c-d6e4-6a18">
       <categoryLinks>
-        <categoryLink targetId="88e6-d373-4152-0dd8" id="aaff-1423-ac91-cb56" primary="false" name="Troops"/>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="5b46-6027-c9eb-5060" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Ares Gunship" hidden="false" id="c5e2-c9ab-a62d-2c5f" type="selectionEntry" targetId="0c44-ab22-006f-ebf3">
       <categoryLinks>
-        <categoryLink targetId="88e6-d373-4152-0dd8" id="976d-0087-92f3-0ecf" primary="false" name="Troops"/>
         <categoryLink targetId="a46f-a465-0ead-d6b8" id="4663-d0bb-f257-4f77" primary="true" name="Lord of War"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Prime Benefits" id="6f4b-388a-b001-abde" hidden="false">
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Master Sergeant" hidden="true" id="f9d7-e9ff-6631-7e27">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ab8-3b8c-8cb3-15cf"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="38b9-55af-d01d-0ad8" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Combat Veterans" hidden="false" id="e698-8ba8-84d0-f63c">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e97d-ceba-2731-08f1" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b54e-86b6-e819-d26c" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="true" id="b96c-927f-5064-9737">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed55-3b92-53ae-43e0"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6dbf-654a-f06f-2d69" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Special Assignment" hidden="true" id="2ab9-e5b6-ff3d-190f">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3561-67f1-e712-67a5" includeChildSelections="false"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e171-067e-0f71-e778" includeChildSelections="false"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink name="Prime Command" hidden="false" id="0a8f-bf1a-ecf9-db9d" targetId="c85c-2963-658f-1bb9" primary="false"/>
-          </categoryLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Logistical Benefit" hidden="false" id="dd5c-0843-2818-fa3c">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Logistical Benefit" id="8919-9c4f-18af-0cdb" hidden="false">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="LB - Armour" hidden="false" id="2585-b40f-f1ce-ae88" sortIndex="9">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5f9f-25cb-f848-d4ae" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="78eb-3faa-81d0-10d9" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Retinue" hidden="false" id="eddc-c543-ee3d-f559" sortIndex="1">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9e65-4497-18da-ecfb" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="796e-8978-3551-55d0" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Elites" hidden="false" id="0bb4-dec9-95aa-24c0" sortIndex="2">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="967a-4cda-ad7d-5553" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4d0-a2eb-163f-4e2a" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Support" hidden="false" id="55f4-5025-7943-6a6e" sortIndex="5">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9bae-db72-feb7-0e95" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f35-6c4d-da17-b518" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Recon" hidden="false" id="eb87-9515-b3bd-e30b" sortIndex="10">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3ca5-55d8-fca7-7f58" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ace3-c006-8e18-5255" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Transport" hidden="false" id="5b5c-72ed-8a63-649d" sortIndex="6">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7a26-79e0-e092-cf3d" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6be-9a72-dd50-8c03" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Troops" hidden="false" id="6480-6197-d571-7f09" sortIndex="4">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4f23-eb9c-31f8-fbba" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e166-e94d-c441-bf39" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - War-engine" hidden="false" id="b5a8-2a3f-41ed-b347" sortIndex="3">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="32da-b43b-07fa-60a7" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4671-5076-ebbc-3358" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Heavy Transport" hidden="false" id="d1b4-d38f-f023-81b2" sortIndex="8">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="720f-4015-9c8b-9178" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c6d-59f9-130a-5fa6" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Fast Attack" hidden="false" id="4414-7523-af54-dd10" sortIndex="11">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fae8-3cd1-c656-ebdd" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee80-1246-3391-072a" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="LB - Heavy Assault" hidden="false" id="4057-310a-fd01-c889" sortIndex="7">
-                  <constraints>
-                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ae13-a8c9-1445-9ebc" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2efa-73db-2292-4ac5" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="af61-6000-1e4c-c9c6" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="033b-a760-578e-f2e9" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e24-686b-b82d-49b5" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7bba-f6a3-5fc8-7c44" includeChildSelections="true"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9a6-9b5f-b18a-4d63" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Common Prime Benefits" hidden="false" id="3b2f-a759-71a1-98c0" type="selectionEntryGroup" targetId="93f7-d7db-d7f0-2146"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>

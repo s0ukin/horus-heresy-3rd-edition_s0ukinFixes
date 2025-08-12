@@ -41,6 +41,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="5866-873e-b02c-9d4f" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="adac-833d-4595-b294" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="8b3d-b4fe-4dd6-9533" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="The Blade" hidden="false" id="cb76-bb4b-7531-63f4">
@@ -384,7 +389,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d333-5443-2db2-f082" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="8d8e-94ec-f857-c8b1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="8d8e-94ec-f857-c8b1" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0d41-c8cb-4267-bd1c" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <comment>Retinue</comment>
       <categoryLinks>
@@ -422,7 +431,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed90-bcd5-4796-3b27" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="5225-eb05-6b7a-932f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="5225-eb05-6b7a-932f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="5d47-5482-4b8a-8135" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Interemptor Praefectus" hidden="false" id="b9cc-f676-273f-a094">
@@ -563,7 +576,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Inner Circle Knights Cenobium" hidden="false" id="e033-118d-4b07-5cd1">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Order Cenobites" hidden="false" id="8a6b-255c-5771-b471">
+        <selectionEntry type="model" import="true" name="Order Cenobites" hidden="false" id="8a6b-255c-5771-b471">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
@@ -595,7 +608,7 @@
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1438-b883-5fe0-9b71" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Order Preceptor" hidden="false" id="020f-37dd-726f-1888">
+        <selectionEntry type="model" import="true" name="Order Preceptor" hidden="false" id="020f-37dd-726f-1888">
           <costs>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
@@ -692,7 +705,11 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0472-f871-f6b5-80a9" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Prime Unit" hidden="false" id="4edf-74d7-ceb9-d5e2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="4edf-74d7-ceb9-d5e2" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="0c28-d249-40c7-a8b6" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <comment>Elite</comment>
       <categoryLinks>
@@ -931,6 +948,11 @@ The Lion&apos;s Choler: If this Gambit is selected, the Model for which this Gam
           </constraints>
         </entryLink>
         <entryLink import="true" name="High Command Detachment Choice" hidden="false" id="c938-a09a-6aaa-a19a" type="selectionEntry" targetId="31c4-c9d1-fdba-4b21"/>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="3ba8-3c3d-4faa-a6fc" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="3e2e-4118-41c0-bd65" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="The Death of Worlds" hidden="false" id="aaaa-0f3f-1b3e-75bb">

@@ -6474,7 +6474,7 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Banestrike bolter with Bayonet" hidden="true" id="b2c9-7ceb-417d-7e4d">
+    <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/ Bayonet" hidden="true" id="b2c9-7ceb-417d-7e4d">
       <entryLinks>
         <entryLink import="true" name="Banestrike bolter" hidden="false" id="6fa2-e62d-ec26-d4a7" type="selectionEntry" targetId="69de-4883-efd2-b876"/>
         <entryLink import="true" name="Bayonet" hidden="false" id="79a3-10da-5f91-3fa9" type="selectionEntry" targetId="3484-1bd3-cb74-7abe"/>
@@ -6507,7 +6507,7 @@
         </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Banestrike bolter with Chain bayonet" hidden="true" id="dcc7-6fd9-e976-f4f2">
+    <selectionEntry type="upgrade" import="true" name="Banestrike bolter w/ Chain bayonet" hidden="true" id="dcc7-6fd9-e976-f4f2">
       <costs>
         <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>

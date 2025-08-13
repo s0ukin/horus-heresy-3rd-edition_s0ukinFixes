@@ -3249,7 +3249,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aab9-ea56-e3ec-be7b"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Options" id="a8ee-be02-e926-e779" hidden="false">
+            <selectionEntryGroup name="Options" id="a8ee-be02-e926-e779" hidden="false" sortIndex="1">
               <selectionEntryGroups>
                 <selectionEntryGroup name="May exchange bolt pistol for:" id="7780-4ef2-4b84-4999" hidden="false" defaultSelectionEntryId="38ad-3258-60c4-072e" sortIndex="2">
                   <entryLinks>
@@ -3299,14 +3299,19 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5956-92c8-764e-ebe8" includeChildSelections="false"/>
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="Melta bombs" hidden="false" id="32da-6b81-52ca-9f53" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="4">
-                  <costs>
-                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Melta bombs" hidden="false" id="32da-6b81-52ca-9f53" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="087d-cd09-333c-d877"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="23" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="24" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -1038,6 +1038,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7ed7-0182-49eb-959c" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="81e0-c9a5-79d4-99dc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="1"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Assault Squad" hidden="false" id="470d-5d41-cc59-b85b" sortIndex="32">
@@ -2518,7 +2519,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5792-ae2b-89ca-c8e9" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6bb8-fd9b-2f17-5485" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex=""/>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6bb8-fd9b-2f17-5485" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
@@ -4121,6 +4122,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5c2c-c897-4f46-b9eb" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c3e1-6a8a-1dc9-0f57" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="5"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="d3ff-0c94-ec92-9fd3" hidden="false" sortIndex="4">
@@ -4483,7 +4485,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d29e-5fe6-5452-05e4" includeChildSelections="false"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Options" id="d9a1-0647-971e-242b" hidden="false" flatten="false">
+        <selectionEntryGroup name="Options" id="d9a1-0647-971e-242b" hidden="false" flatten="false" sortIndex="2">
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange power weapon for:" id="6b11-ddfd-7cac-077b" hidden="false" flatten="false">
               <entryLinks>
@@ -4609,6 +4611,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="9064-ad16-4ca4-aa5b" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="5a03-b6ea-16aa-c722" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Optae" hidden="false" id="1653-8dfd-2881-8cec" sortIndex="6">
@@ -14837,6 +14840,33 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="0a30-dcba-4755-88fd" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="15">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>SL</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="9871-cb62-5283-2216" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="af7d-af64-6b7d-da9d" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5a95-e564-96b2-8dc9" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+              <comment>SL+Cmd/Spec/Champ Only</comment>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="d930-e96d-982c-0646" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="15">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -14893,7 +14923,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
         <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="c9d1-2999-6494-b8a0" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="21">
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">

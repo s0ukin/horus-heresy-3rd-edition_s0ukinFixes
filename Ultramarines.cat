@@ -368,6 +368,10 @@ During the Statuses Sub-Phase, any friendly Unit that does not include a Model w
     <selectionEntry type="unit" import="true" name="Praetorian Breacher Squad" hidden="false" id="f115-4466-aa86-b446">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Praetorian Primus" hidden="false" id="d8da-2e7b-77ac-dc40" sortIndex="1" publicationId="b905-0414-1057-bb34" page="253">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4475-ae9c-c164-b556"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1123-c313-78a3-50d1"/>
+          </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup name="May exchange power sword for:" id="f9fb-05c7-3726-6a27" hidden="false" sortIndex="1" defaultSelectionEntryId="59a0-004d-96e5-7473">
               <entryLinks>

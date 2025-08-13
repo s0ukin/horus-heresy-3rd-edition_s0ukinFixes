@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="21" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="22" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -7219,13 +7219,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </modifier>
                   </modifiers>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="1-5 may exchange their bolter for:" id="367c-1556-77bd-119e" hidden="false" flatten="true" sortIndex="10">
+                    <selectionEntryGroup name="1-5 may exchange their bolter for:" id="367c-1556-77bd-119e" hidden="false" flatten="false" sortIndex="10">
                       <entryLinks>
                         <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="5526-ecd1-ff99-764d" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" sortIndex="2"/>
                         <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="6503-a70b-d580-23d2" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" sortIndex="1"/>
                       </entryLinks>
                       <constraints>
-                        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b8db-0c2b-3367-f906"/>
+                        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b8db-0c2b-3367-f906"/>
                       </constraints>
                       <modifiers>
                         <modifier type="set" value="1" field="b8db-0c2b-3367-f906">
@@ -14362,7 +14362,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Graviton Pistol" hidden="true" id="c14d-e2d8-accd-d52b" type="selectionEntry" targetId="320a-5112-0e89-aad4" sortIndex="5">
+        <entryLink import="true" name="Graviton pistol" hidden="true" id="c14d-e2d8-accd-d52b" type="selectionEntry" targetId="320a-5112-0e89-aad4" sortIndex="5">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -14443,7 +14443,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="604f-daac-a0c4-e542" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cfc-7543-f018-185c" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
@@ -15354,7 +15353,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8037-c7e7-b097-8194" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="179e-5002-6ffa-7103" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>

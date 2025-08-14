@@ -2857,7 +2857,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b977-c931-5922-bc5f" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Bolter" hidden="false" id="da83-e154-a03d-52be" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1"/>
+                <entryLink import="true" name="Bolter" hidden="false" id="da83-e154-a03d-52be" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e" sortIndex="1" defaultAmount="1"/>
                 <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="d0a5-304e-2d36-d0e3" type="selectionEntryGroup" targetId="f335-622e-6b0a-6b08" sortIndex="2"/>
                 <entryLink import="true" name="Astartes shotgun" hidden="false" id="7eef-9340-6fce-dd26" type="selectionEntry" targetId="6068-d203-27e6-318a" sortIndex="5">
                   <costs>
@@ -2946,19 +2946,20 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
-                <selectionEntryGroup name="1-5 may exchange their bolter for:" id="f05a-255e-55ac-e190" hidden="false" flatten="true">
+                <selectionEntryGroup name="1-5 may exchange their bolter for:" id="f05a-255e-55ac-e190" hidden="false" flatten="false">
                   <entryLinks>
-                    <entryLink import="true" name="Disintegrator blaster" hidden="false" id="6657-4510-132c-282f" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="2">
+                    <entryLink import="true" name="Disintegrator blaster" hidden="false" id="6657-4510-132c-282f" type="selectionEntry" targetId="0c29-e0e1-525b-4182" sortIndex="3">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Heavy disintegrator" hidden="false" id="ae74-8ab4-4893-459a" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="3">
+                    <entryLink import="true" name="Heavy disintegrator" hidden="false" id="ae74-8ab4-4893-459a" type="selectionEntry" targetId="5359-13c1-29ff-9d3c" sortIndex="4">
                       <costs>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="a377-bb4c-ce91-d6a9" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" sortIndex="4"/>
+                    <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="67ba-8e26-a57c-4a27" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2" sortIndex="1"/>
+                    <entryLink import="true" name="Legion Heavy Weapons" hidden="false" id="a888-4a3c-dcf9-8f2d" type="selectionEntryGroup" targetId="9f99-7e2a-4899-4066" sortIndex="2"/>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="5b2a-b892-c1cb-1eb6" includeChildSelections="true"/>

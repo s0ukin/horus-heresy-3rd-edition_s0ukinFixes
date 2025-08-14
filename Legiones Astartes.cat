@@ -10645,7 +10645,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="27e6-b7b9-b268-da37" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b082-67af-4d40-f74f"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c311-9b06-6a80-bba0"/>
                   </constraints>
                 </entryLink>

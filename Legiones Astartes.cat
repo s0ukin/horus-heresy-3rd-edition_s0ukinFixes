@@ -2518,7 +2518,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="5792-ae2b-89ca-c8e9" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6bb8-fd9b-2f17-5485" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="6bb8-fd9b-2f17-5485" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50" sortIndex=""/>
       </entryLinks>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>

@@ -14728,7 +14728,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Warpfire pistol" hidden="false" id="6004-caff-4471-46ef" type="selectionEntry" targetId="4cba-f773-a1f0-c1ce" sortIndex="6">
+        <entryLink import="true" name="Warpfire pistol" hidden="true" id="6004-caff-4471-46ef" type="selectionEntry" targetId="4cba-f773-a1f0-c1ce" sortIndex="6">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -14798,7 +14798,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Warpfire blaster" hidden="false" id="4eb3-0631-732e-4ef7" type="selectionEntry" targetId="e6dc-cb1f-c6c3-c7b0" sortIndex="8">
+        <entryLink import="true" name="Warpfire blaster" hidden="true" id="4eb3-0631-732e-4ef7" type="selectionEntry" targetId="e6dc-cb1f-c6c3-c7b0" sortIndex="8">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15170,7 +15170,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Caedere Weapons" hidden="false" id="ffc7-ac57-f38e-8ab8" type="selectionEntryGroup" targetId="d44f-504c-cefc-4ac2" sortIndex="25">
+        <entryLink import="true" name="Caedere Weapons" hidden="true" id="ffc7-ac57-f38e-8ab8" type="selectionEntryGroup" targetId="d44f-504c-cefc-4ac2" sortIndex="25">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15193,7 +15193,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Tainted weapon" hidden="false" id="30a0-d9b8-4f84-7a8f" type="selectionEntry" targetId="753d-ae84-f5a6-ebc8" sortIndex="26">
+        <entryLink import="true" name="Tainted weapon" hidden="true" id="30a0-d9b8-4f84-7a8f" type="selectionEntry" targetId="753d-ae84-f5a6-ebc8" sortIndex="26">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15210,7 +15210,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Warpfire pistol" hidden="false" id="814c-d1a3-6999-6766" type="selectionEntry" targetId="4cba-f773-a1f0-c1ce" sortIndex="27">
+        <entryLink import="true" name="Warpfire pistol" hidden="true" id="814c-d1a3-6999-6766" type="selectionEntry" targetId="4cba-f773-a1f0-c1ce" sortIndex="27">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15449,7 +15449,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Caedere Weapons" hidden="false" id="6a7f-10ad-0b4a-02f1" type="selectionEntryGroup" targetId="d44f-504c-cefc-4ac2" sortIndex="11">
+        <entryLink import="true" name="Caedere Weapons" hidden="true" id="6a7f-10ad-0b4a-02f1" type="selectionEntryGroup" targetId="d44f-504c-cefc-4ac2" sortIndex="11">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15644,7 +15644,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Caedere Weapons" hidden="false" id="31c3-cb4d-6d61-db94" type="selectionEntryGroup" targetId="d44f-504c-cefc-4ac2" sortIndex="13">
+        <entryLink import="true" name="Caedere Weapons" hidden="true" id="31c3-cb4d-6d61-db94" type="selectionEntryGroup" targetId="d44f-504c-cefc-4ac2" sortIndex="13">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -15863,7 +15863,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Warpfire projector" hidden="false" id="2e6d-54cb-1555-c8c2" type="selectionEntry" targetId="8735-74a2-7410-cb14" sortIndex="11">
+        <entryLink import="true" name="Warpfire projector" hidden="true" id="2e6d-54cb-1555-c8c2" type="selectionEntry" targetId="8735-74a2-7410-cb14" sortIndex="11">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>

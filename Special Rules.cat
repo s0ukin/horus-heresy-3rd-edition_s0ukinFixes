@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" battleScribeVersion="2.03" type="catalogue" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" type="catalogue" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedRules>
     <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false">
       <description>All Models in a Unit selected to fill a Prime Force Organization with this Prime Advantage gain the Concealed Positions and Expendable(1) Special Rules.</description>
@@ -587,6 +587,18 @@ When the Model with this Special Rule and the Vehicle Type moves through an enem
     </rule>
     <rule name="Duty Before Death" id="e20b-fd1b-6229-eac2" hidden="false">
       <description>Models in a Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Feel No Pain (6+) Special Rule.</description>
+    </rule>
+    <rule name="Skill Unmatched" id="7cc9-2b99-588b-a84f" hidden="false">
+      <description>&quot;When Locked in Combat, this Unit may select an additional Special Rule to Apply until the end of the Phase.&quot;
+
+
+At the End of the Charge Sub-Phase, if a Unit that includes any Models with this Special Rule is Locked in Combat with any enemy Units, this Unit&apos;s Controlling Player can select one of the following effects:
+
+
+*The Perfect Strike - If this effect is selected, until the end of this Phase, the Weapon Skill Characteristic of each Model in this Unit with this Special Rule is considered to be on point higher than normal when determining the score that Model needs to Hit its opponent in the Strike Step of the Challenge Sub-Phase or the Make Hit Tests Step of the Resolving an Initiative Step Step (this does not modify the Weapon Skill Characteristic of each Model in this Unit for the Purposes of Hit Tests made for opposing Models).
+
+
+*The Perfect Guard - If this effect is selected, until the end of this Phase, the Weapon Skill Characteristic of each Model in this Unit with this Special Rule is considred to be one point higher than normal when determining the score an opposing Model needs to Hit this Model in the Strike Step of the Challenge Sub-Phase or the Make Hit Tests Step of the Resolving an Initiative Step Step (this does not modify the Weapon Skill Characteristic of each Model in this Unit for the purposes of Hit Tests made for their own attacks).</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>

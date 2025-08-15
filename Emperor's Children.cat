@@ -639,7 +639,7 @@ If the Paragon of Excellence Gambit is selected for a Model with this Special Ru
         <categoryLink targetId="a364-a983-c2b2-cbc7" id="c3a9-9b38-10a1-d372" primary="false" name="Emperor&apos;s Children"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Saul Tarvitz" hidden="false" id="81fc-3acd-af65-763a">
+        <selectionEntry type="model" import="true" name="Saul Tarvitz" hidden="false" id="81fc-3acd-af65-763a" sortIndex="1">
           <profiles>
             <profile name="Saul Tarvitz" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="c6ff-e38a-5bbc-ca8d">
               <characteristics>
@@ -755,6 +755,10 @@ While a Model with this Special Rule is in a Challenge with an enemy Model with 
 Bite of the Betrayed: This Gambit can only be selected during the first Face-Off Step of a Challenge. If this Gambit is selected, until this Challenge ends, modify this Model&apos;s Weapon Skill, Strength, and Toughness Characteristics by +1.</description>
             </rule>
           </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41b7-c1fa-4564-e115-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41b7-c1fa-4564-e115-max"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -1361,9 +1365,6 @@ At the End of the Charge Sub-Phase, if a Unit that includes any Models with this
               </repeats>
             </modifier>
           </modifiers>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-          </costs>
         </entryLink>
         <entryLink import="true" name="Sonic lance" hidden="false" id="6aa3-3c98-6079-3bcc" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="2">
           <constraints>
@@ -1376,9 +1377,6 @@ At the End of the Charge Sub-Phase, if a Unit that includes any Models with this
               </repeats>
             </modifier>
           </modifiers>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-          </costs>
         </entryLink>
       </entryLinks>
       <constraints>

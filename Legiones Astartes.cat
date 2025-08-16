@@ -3157,6 +3157,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       <infoLinks>
         <infoLink name="[Allegiance]" id="daed-36a4-8d3e-d72b" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="19c2-43dc-c7bd-d9bf" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Line (X)" id="dacc-a759-ca92-dba3" hidden="false" type="rule" targetId="1b5d-ceec-802a-c611">
+          <modifiers>
+            <modifier type="set" value="Line (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veteran Assault Squad" hidden="false" id="a119-c2a7-ff1a-399c" sortIndex="25">

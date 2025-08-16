@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="25" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="28" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -4800,7 +4800,7 @@
         <forceEntry name="Auxiliary - Veletaris Tercio" id="e1a1-2699-4681-47ab" hidden="true" sortIndex="30">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="55a1-8512-405b-8905" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Elites - Veletaris Storm or Veletaris Vanguard units only" hidden="false" id="710a-9bde-a37e-3661" targetId="8dce-eb64-ec33-0b51" type="categoryEntry">
+            <categoryLink name="Elites - Veletaris Storm or Veletaris Vanguard units only" hidden="false" id="710a-9bde-a37e-3661" targetId="8dce-eb64-ec33-0b51">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0cbe-df78-5aa1-886c"/>
               </constraints>
@@ -4812,7 +4812,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Support - Hermes Veletaris units only" hidden="false" id="3821-2b49-3d7e-6f18" targetId="c480-7340-9da9-d9ac" type="categoryEntry">
+            <categoryLink name="Support - Hermes Veletaris units only" hidden="false" id="3821-2b49-3d7e-6f18" targetId="c480-7340-9da9-d9ac">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0fc4-b367-183f-a2cc"/>
               </constraints>
@@ -5003,7 +5003,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Troops" hidden="false" id="c12d-2c85-a227-0b86" targetId="88e6-d373-4152-0dd8" type="categoryEntry">
+            <categoryLink name="Troops" hidden="false" id="c12d-2c85-a227-0b86" targetId="88e6-d373-4152-0dd8">
               <modifiers>
                 <modifier type="increment" value="1" field="aa68-7c65-5d9f-280f">
                   <conditions>
@@ -5058,7 +5058,7 @@
         <forceEntry name="Auxiliary - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true" sortIndex="31">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="880f-e609-7151-ee38" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" hidden="false" id="0bee-0d7e-0466-e2cb" targetId="5725-7f8c-f02e-4df6" type="categoryEntry">
+            <categoryLink name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" hidden="false" id="0bee-0d7e-0466-e2cb" targetId="5725-7f8c-f02e-4df6">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e63e-7101-ee0c-825b"/>
               </constraints>
@@ -5111,7 +5111,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="69ec-fb9b-4ad6-bf96" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" hidden="false" id="9be5-2fdf-195d-448c" targetId="ada1-aac4-9802-9c3d" type="categoryEntry">
+            <categoryLink name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" hidden="false" id="9be5-2fdf-195d-448c" targetId="ada1-aac4-9802-9c3d">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="3a15-2aaa-7be7-b63e"/>
               </constraints>
@@ -5159,7 +5159,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ab-da50-e5e0-666c" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Troops - Lasrifle Section Units only" hidden="false" id="5b44-72e9-776a-c15c" targetId="f006-dd7c-6753-f732" type="categoryEntry">
+            <categoryLink name="Troops - Lasrifle Section Units only" hidden="false" id="5b44-72e9-776a-c15c" targetId="f006-dd7c-6753-f732">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9b47-a597-d110-0bf2" includeChildSelections="false"/>
               </constraints>
@@ -5171,7 +5171,7 @@
                 </modifier>
               </modifiers>
             </categoryLink>
-            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="594e-63ee-a073-3fb5" targetId="b367-e724-5450-9e45" type="categoryEntry">
+            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="594e-63ee-a073-3fb5" targetId="b367-e724-5450-9e45">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7cc3-afb1-35ca-ebac"/>
               </constraints>
@@ -5403,12 +5403,12 @@
         <forceEntry name="Auxiliary - Scout Tercio" id="551a-23a1-7758-2688" hidden="true" sortIndex="34">
           <categoryLinks>
             <categoryLink name="Auxiliary Detachment" hidden="false" id="7fc3-b32d-cdda-e42f" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="4b81-7b2e-792e-003a" targetId="b367-e724-5450-9e45" type="categoryEntry">
+            <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="4b81-7b2e-792e-003a" targetId="b367-e724-5450-9e45">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2d1-1899-30ed-b88f"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="War-engine - Aethon Heavy Sentinel Squadron units only" hidden="false" id="9caf-684c-aa64-c23c" targetId="5ee3-236d-c224-67aa" type="categoryEntry">
+            <categoryLink name="War-engine - Aethon Heavy Sentinel Squadron units only" hidden="false" id="9caf-684c-aa64-c23c" targetId="5ee3-236d-c224-67aa">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="744f-12da-093f-e8db"/>
               </constraints>

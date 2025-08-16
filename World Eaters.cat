@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -1577,14 +1577,14 @@ Any Hit Tests made in the Assault Phase that target a Unit that includes one or 
     <catalogueLink type="catalogue" name="Special Rules" id="c4e7-0fe8-a551-95ff" targetId="106b-693b-99f2-00c3"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup name="Rite of War" id="1455-b8d9-311a-e3f6" hidden="false" defaultSelectionEntryId="c119-d969-8ad8-a54a">
+    <selectionEntryGroup name="World Eaters Rite of War" id="1455-b8d9-311a-e3f6" hidden="false" defaultSelectionEntryId="c119-d969-8ad8-a54a">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="RoW: Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079c-1e93-eb2e-8bed"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="76a0-5e6b-d5c1-2c48">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica: The Nails Bite" hidden="false" id="76a0-5e6b-d5c1-2c48">
               <rules>
                 <rule name="The Nails&apos; Bite" id="bb46-75c5-e4b5-ed09" hidden="false" noindex="false">
                   <description>&quot;The Controlling Player may choose that a World Eaters Unit becomes Lost to the Nails when it fails a Leadership Check&quot;
@@ -1624,7 +1624,7 @@ At the start of the Controlling Player&apos;s Charge Sub-Phase, if there are no 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82ff-8a70-ed85-d996"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Furious Charge" hidden="false" id="3c47-c5a2-e7a4-8906">
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction: Furious Charge" hidden="false" id="3c47-c5a2-e7a4-8906">
               <profiles>
                 <profile name="Furious Charge" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="f42e-f20c-f516-0c50">
                   <characteristics>
@@ -1648,7 +1648,7 @@ At the start of the Controlling Player&apos;s Charge Sub-Phase, if there are no 
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="RoW: Legiones Astartes World Eaters" hidden="false" id="c119-d969-8ad8-a54a">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="4755-a242-4d97-a2cc">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica: Violence Incarnate" hidden="false" id="4755-a242-4d97-a2cc">
               <rules>
                 <rule name="Violence Incarnate" id="b891-bc7e-86a4-203c" hidden="false">
                   <description>&quot;World Eaters gain a +1 to their Attacks Characteristic when they Charge.&quot;

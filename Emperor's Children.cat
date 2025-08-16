@@ -685,7 +685,7 @@
         <categoryLink targetId="594d-fa82-13cb-a345" id="bd69-86ea-6dff-d398" primary="false" name="Infantry Model Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink targetId="ab39-af3b-58c2-8d9b" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Surgical Augments (All models in a Traitor unit may be given the same):" hidden="false" sortIndex="3"/>
+        <entryLink targetId="ab39-af3b-58c2-8d9b" id="5f26-d958-57a4-33ec" type="selectionEntryGroup" name="Surgical Augments (All models in the unit):" hidden="false" sortIndex="3"/>
         <entryLink import="true" name="Prime Unit" hidden="false" id="09e3-f4cd-405a-9923" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
           <entryLinks>
             <entryLink import="true" name="Prime Benefits" hidden="false" id="e3c9-a0bf-441c-87d2" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
@@ -1574,6 +1574,11 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
         <infoLink name="Deep Strike" id="5a0f-c2d9-6273-2723" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="22ef-9354-2543-8bc8">
+      <entryLinks>
+        <entryLink import="true" name="Emperor&apos;s Children Rite of War" hidden="false" id="e28c-f4a6-0484-e8d5" type="selectionEntryGroup" targetId="67f2-6d7f-9c35-9774"/>
+      </entryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Captain Lucius" hidden="false" id="79f7-e68d-59dd-0a4c" targetId="2621-860f-a513-e11e" type="selectionEntry">
@@ -1640,6 +1645,11 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
       <categoryLinks>
         <categoryLink targetId="5d5e-958f-e388-50b5" id="b922-137f-9aa2-dd3f" primary="true" name="Elites"/>
         <categoryLink targetId="a364-a983-c2b2-cbc7" id="7b68-1d89-1cf5-63dd" primary="false" name="Emperor&apos;s Children"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="3bbc-3bfb-bb1b-052e" type="selectionEntry" targetId="22ef-9354-2543-8bc8">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="fbb4-7c66-9248-73b2" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1718,9 +1728,117 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
     </selectionEntryGroup>
     <selectionEntryGroup name="Emperor&apos;s Children Rite of War" id="67f2-6d7f-9c35-9774" hidden="false">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Legiones Astartes Emperor&apos;s Children" hidden="false" id="6666-33b0-8206-5094"/>
-        <selectionEntry type="upgrade" import="true" name="Legiones Hereticus Emperor&apos;s Children" hidden="false" id="51f4-9244-2a1c-2d7e"/>
+        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Astartes Emperor&apos;s Children" hidden="false" id="6666-33b0-8206-5094">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica: Flawless Execution" hidden="false" id="a65a-9894-5e6d-a25d">
+              <rules>
+                <rule name="Flawless Execution" id="6a8c-a28e-fe63-7f5d" hidden="false">
+                  <description>&quot;Emperor&apos;s Children gain an Initiative bonus when they successfully Charge.&quot;
+
+
+On any Turn in which they made a Charge Move, Models with this Special Rule gain an additional modifier to their Combat initiative of +1 until the end of the Phase.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e71-b51b-dd92-6db5-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e71-b51b-dd92-6db5-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit: Paragon of Excellence" hidden="false" id="b53e-5fc2-5882-f3d5">
+              <profiles>
+                <profile name="Paragon of Excellence" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="90dd-f860-f15d-3e1b">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player a bonus to the Focus Roll in the first round of a Challenge.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit can only be selected during the first Face-Off Step of a Challenge involving this Model. While this Gambit is selected, during the Focus Step the Controlling Player gains a +2 modifier to the Focus Roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1c7-402f-8c63-1fa4-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1c7-402f-8c63-1fa4-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction: Perfect Counter" hidden="false" id="6a36-d3fa-ce22-d665">
+              <profiles>
+                <profile name="Perfect Counter" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="7b9c-ba87-dccd-548d">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to Charge an enemy Unit that has made a Charge.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Perfect Counter Advanced Reaction at the end of Step 3 of the Charge process of any Charge declared by the Active Player that targets a Unit under that Player&apos;s control which only includes Models with the Emperor&apos;s Children Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declares the perfect Counter Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the unit whose Charge triggered the Reaction. The Reacting unit is always the Unit that was declared as the target of the Charge that Triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Reactive Player must make a Charge Roll for the Reacting Unit.
+2. If the result of the Charge Roll would be enough to move any Model from the Reacting unit into Base contact with a model from the Target Unit then a Charge move is made and the Units are Locked in Combat. No Model in the Target Unit may claim a bonus from any Special Rule that requires a successful Charge to have been made, while the Models in the Reacting unit gain any bonuses from any Special Rules that would apply to that Unit as a result of a successful Charge.
+3. If the result of the Charge Roll would not bring any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then no Charge Move is made and the Players proceed to Step 4 of the Charge process.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dd7-1231-5349-57ad-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dd7-1231-5349-57ad-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Hereticus Emperor&apos;s Children" hidden="false" id="51f4-9244-2a1c-2d7e">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica: Lords of Profligacy" hidden="false" id="b3da-2e8b-b1e9-6139">
+              <rules>
+                <rule name="Lords of Profligacy" id="e014-41cb-371e-8268" hidden="false">
+                  <description>&quot;The Controlling Player may choose that a Unit becomes Stupefied when it is the target of a Shooting Attach&quot;
+
+
+After a Shooting Attack that targets a Unit entirely composed of the Models with this Special Rule is resolved, that Unit&apos;s Controlling Player can choose for the targeted Unit to become Stupefied</description>
+                </rule>
+                <rule name="Stupefied" id="162a-5899-249e-58e9" hidden="false">
+                  <description>When a Unit becomes Stupefied, all Tactical Statuses affecting it are removed. In addition, while a Unit is Stupefied:
+
+
+*Models in that Unit have Feel No Pain (6+) Special Rule.
+*The Strength Characteristic of Models in that Unit is modified by +1.
+*Models in that Unit cannot gain Tactical Statuses.
+*The Controlling Player of a Unit that is Stupefied may not declare any Reactions for that Unit and must make all shooting Attacks declared for that Unit as Snap Shots.
+*In the Effects Sub-Phase of the Controlling Player&apos;s End Phase, the Controlling Player must make a Cool Check for each Unit from their Army that is Stupefied. If the Check is passed, that Unit is no longer stupefied.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ce8-3472-1454-fcb9-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ce8-3472-1454-fcb9-max"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction: Twisted Desire" hidden="false" id="e608-49a7-093d-af7d">
+              <profiles>
+                <profile name="Twisted Desire" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="6ef3-d8b9-e3a4-a9d6">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to become Stupefied when it is Charged.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare the Twisted Desire Advanced Reaction at the end of Step 2 of a Charge declared by the Active Player that targets a Unit under the Reactive Player&apos;s control which only includes Models with the Emperor&apos;s Children Trait.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Twisted Desire Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">Once this Reaction is declared, the Reacting Unit becomes Stupefied, and for the duration of this Assault Phase, Models in that Unit gain the Feel No Pain (5+) Special Rule.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gambit: The Broken Mirror" hidden="false" id="eda9-13f4-25b7-f3d1">
+              <profiles>
+                <profile name="The Broken Mirror" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="43a7-1ac3-3d17-04cd">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">When this Gambit is selected, the Controlling Player doubles any bonus for Outside Support and also gains a bonus when Stupefied.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then the Model gains double the normal modifier for Outside Support during the Focus Step. If the Unit this Model is part of is Stupefied, add an additional modifier of +1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cda8-c9e1-c667-7952-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cda8-c9e1-c667-7952-max"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e55-1f37-b5a6-25e2"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f4e-8af7-45aa-b0cb"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <forceEntries>
@@ -1769,6 +1887,25 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
         </categoryLink>
       </categoryLinks>
       <comment>Stays here since it&apos;s a root level force</comment>
+    </forceEntry>
+    <forceEntry name="Primacy Wing" id="bbce-f669-ddac-3eeb" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Retinue" hidden="false" id="d37f-11f9-43d8-78b0" targetId="a38e-50ff-310f-f19e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a4e-6f2a-6fc9-2904"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Elites" hidden="false" id="8db5-05f7-ac58-55c2" targetId="5d5e-958f-e388-50b5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b32b-78df-0ea9-47f0"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Fast Attack" hidden="false" id="7121-bd78-6b08-48a3" targetId="cf96-8891-3f9a-8921">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0841-96e9-d075-0cbb"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
 </catalogue>

@@ -4651,23 +4651,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="72cd-4a42-726e-3eb1" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="24c6-6a2f-9782-7a06" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="4">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="dd81-45ec-ed0c-6029"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff0-014d-fc31-5e54"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="642d-e273-f878-edb1" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="dbfe-0078-d93d-67dc" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="3a39-a492-a76c-eca3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -5163,23 +5148,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="7906-cbaa-cc6a-a203" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="cc14-f17f-eed3-d384" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="79ff-3d8b-9bdd-963e"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5dd4-076d-f966-01dd"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5b89-0eec-1218-2a42" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="85b9-890e-534c-976a" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Damocles Command Rhino" hidden="false" id="f214-aeb9-0dd6-9071" sortIndex="7">
@@ -5328,23 +5298,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="2cec-e9e5-5442-7228" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="b26c-73e7-fcb2-3611" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="4">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="57f8-6893-52f7-ccff"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c75b-d32a-65c8-a285"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="d2ac-2e5a-9d09-eafa" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="9574-ef34-e73d-94da" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Librarian" hidden="false" id="c0e4-eabd-4f0a-23ca">
@@ -5490,23 +5445,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="867e-9671-a2c8-3298" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="d1d4-7084-90b5-a203" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="be5a-b0ac-9740-0404"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="493d-27ea-9c61-bb9a"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="9d42-3a8a-a947-09bd" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="8504-9d4d-6a6f-a728" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="6a0a-f0fe-c889-8a8a" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -5641,23 +5581,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="1a41-b7d3-d827-d60e" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="8f29-7813-07d2-503f" type="selectionEntry" targetId="b021-e506-1ecd-b3c5">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a450-25e0-ffe5-5637"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c6b-3146-05eb-5ff3"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="dc4d-d2e6-f755-12da" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="c59a-1a37-2c98-ebec" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Esoterist" hidden="false" id="868f-f32d-d5ef-8021" sortIndex="11">
@@ -5749,6 +5674,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="f5f5-76c2-907d-2dd0" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="d0ff-775d-ef11-6f60" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="9871-cb62-5283-2216" id="7092-2474-59a0-6090" primary="false" name="Command Model Sub-type"/>
@@ -5784,23 +5710,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="3a55-d621-af76-7651" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="380d-2a00-ec0f-b464" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="2">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="28e0-3fe4-7313-c1ab"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6b0-8d82-1610-ef7f"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="c336-56cd-9107-7201" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="f341-66bd-32d2-3181" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Master of Signals" hidden="false" id="f985-ac79-b28b-f341">
@@ -5928,23 +5839,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="2e0c-0719-4705-f195" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="a433-03b9-bae6-6f7a" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2f15-4070-bda8-d99f"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="11ff-f8f4-c343-a6fb"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="06fb-09e1-891c-9602" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="5363-c0b1-6a85-636d" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="f17a-8cab-ca53-bba3" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -6059,6 +5955,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="7684-62ef-251f-fc12" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="8978-7822-490d-31b5" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="b01e-114a-47d0-e7e0" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -6222,6 +6119,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="3cf7-be3a-ac2e-57a7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="49a7-d8d5-ba40-c84a" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="fce6-d23c-c7dd-862f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -6352,23 +6250,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="d7f7-f676-e0e9-a950" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="449d-908e-9430-0b8a" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="69f3-30e0-d789-28a8"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c39-ede1-e9dd-2c46"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="4423-103e-ebe5-95f7" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="1c87-b61c-9757-f665" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="363d-cd4e-6c14-9ef1" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -6452,23 +6335,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="ec66-1c28-87ea-fd73" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="8bcd-d904-0e2f-eb84" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ded0-b905-de1c-f939"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="565b-a905-3e10-b9a6"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="e852-3890-82fd-05a0" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="cf7d-c2d4-db06-fb19" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="265f-5c58-0294-dfa9" hidden="false" sortIndex="1">
@@ -7195,6 +7063,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="2932-b711-0445-9b24" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Veteran" hidden="false" id="d6b9-4937-3679-0529" sortIndex="2">
           <costs>
@@ -13806,23 +13677,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <entryLink import="true" name="Prime Benefits" hidden="false" id="9ef0-4c4f-7136-a229" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
-        <entryLink import="true" name="Drakenscale" hidden="true" id="b881-f3e8-b498-b289" type="selectionEntry" targetId="b021-e506-1ecd-b3c5" sortIndex="3">
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="force" childId="f148-a6e4-5a8c-3aeb" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f61f-57e1-456c-63f0"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f65-5d50-bed4-432a"/>
-          </constraints>
-          <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="aa56-d04e-c2e0-ea57" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="ba7f-ea3b-2977-2c5b" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="[Allegiance]" id="e4cd-e660-606b-9c70" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
@@ -13975,6 +13831,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
         </entryLink>
         <entryLink import="true" name="Prosperine Arcana" hidden="false" id="5c10-a253-29c4-7ce6" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="bb68-028d-d550-d731" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Options" id="02af-aba0-5bd7-6bd2" hidden="false" sortIndex="1">
@@ -14030,6 +13887,133 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <description>When a Model with this Special Rule is the Target of a Charge, during Step 4 of the Charge Procedure, a Model with this Special Rule may make an additional Volley Attack. This additional Volley Attack is made as a separate Shooting Attack after resolving its first Volley Attack and the Controlling Player must select only one Pintle Mounted Weapon to make attacks as part of this second Volley Attack. If any Models are Removed as a Casualty as a result of this Model&apos;s Shooting Attacks as part of this Volley Attack, the Charging Unit subtracts 1 from the result of any Charge Rolls made during this Phase.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Augur Command and Control Squad" hidden="false" id="fc58-b7c8-c021-b2c5">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Command and Control Legionary" hidden="false" id="14fd-923a-5728-3480" sortIndex="1">
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="5ed2-997c-98e3-9af2" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="28fc-a027-2e03-c468-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="28fc-a027-2e03-c468-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Command and Control Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="cf1c-d043-7a80-32b0">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3dc1-4752-bb59-d77f-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3dc1-4752-bb59-d77f-max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May exchange bolter for:" id="70e1-8607-dffe-14e9" hidden="false" sortIndex="1" defaultSelectionEntryId="90bc-140d-82c3-68cc">
+              <entryLinks>
+                <entryLink import="true" name="Legion Special Weapons List" hidden="false" id="73ca-66b5-fc57-a0ce" type="selectionEntryGroup" targetId="8e2d-acd9-be67-36f2"/>
+                <entryLink import="true" name="Bolter" hidden="false" id="90bc-140d-82c3-68cc" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca48-4220-0234-0b37"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1d3-72b7-c2c0-5f48"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Command and Control Legionary" hidden="false" id="06c8-6e89-3eaf-8fd8">
+          <entryLinks>
+            <entryLink import="true" name="Bolter" hidden="false" id="e539-7782-156e-f18c" type="selectionEntry" targetId="d3f9-b9e6-3ea5-cc8e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9bda-26a5-cf8d-606c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bda-26a5-cf8d-606c-max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="8c0b-29bd-f61d-1c8a" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="74da-6fc2-021a-5995-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74da-6fc2-021a-5995-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Command and Control Legionary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="301e-3714-ddac-2909">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">2</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">8</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f31e-11ee-20ec-94a2-min"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f31e-11ee-20ec-94a2-max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="8d5c-8f1c-2781-2393" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc7d-b1f6-48e7-ebaa-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc7d-b1f6-48e7-ebaa-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="5d9e-236e-60b0-131c" type="selectionEntry" targetId="60e4-ca33-2e68-9afc">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2708-3c80-9edd-c3c4-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2708-3c80-9edd-c3c4-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="80"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Support Unit (X)" id="68cf-4078-abdb-10b6" hidden="false" type="rule" targetId="313f-7ed6-3833-e97c">
+          <modifiers>
+            <modifier type="set" value="2" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="[Allegiance]" id="844f-026c-9015-1788" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="40b5-5300-d679-e961" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Battlefield Coordinators" id="cfb3-6b21-72bb-be77" hidden="false" type="rule" targetId="35dd-79de-75f5-f2c8"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="49fc-361e-9168-c460" id="d2c0-d142-cff0-2191" primary="false" name="Smokescreen"/>
+        <categoryLink targetId="594d-fa82-13cb-a345" id="1528-d947-eb84-253e" primary="false" name="Infantry Model Type"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
@@ -14642,6 +14626,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
     <entryLink import="true" name="Master of Descent" hidden="false" id="8315-e79b-2408-affa" type="selectionEntry" targetId="4b59-1e3b-022d-c253" sortIndex="19">
       <categoryLinks>
         <categoryLink targetId="6dbf-654a-f06f-2d69" id="a384-f3cf-50b3-8d8f" primary="true" name="Command"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Augur Command and Control Squad" hidden="false" id="94af-8cfc-7964-8f5e" type="selectionEntry" targetId="fc58-b7c8-c021-b2c5">
+      <categoryLinks>
+        <categoryLink targetId="a38e-50ff-310f-f19e" id="557b-6568-55c7-0279" primary="true" name="Retinue"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -16104,9 +16093,14 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           <comment>Emperor&apos;s Children</comment>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5dd5-d00c-b150-34b9" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <infoLinks>
@@ -16117,11 +16111,39 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <modifiers>
                 <modifier type="set" value="Replace combi-bolter and power weapon with a Phoenix power spear" field="name"/>
               </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eeba-72e8-cb5e-0bdd-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eeba-72e8-cb5e-0bdd-max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b47-7af9-fd9d-c641"/>
-          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Zealous Assault" hidden="true" id="2206-a245-55d1-58e9">
+          <comment>Word Bearers</comment>
+          <rules>
+            <rule name="Zealous Assault" id="4dc2-a667-a8f9-7b54" hidden="false">
+              <description>Models in a Unit selected to fill a Prime Force Organization Slot with this Prime Advantage gain the Impact (S) Special Rule</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Impact (X)" id="df0b-ca63-a9fc-4141" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+              <modifiers>
+                <modifier type="set" value="S" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="4935-1832-63f7-91aa" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3f9-a7f3-984b-3fda" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

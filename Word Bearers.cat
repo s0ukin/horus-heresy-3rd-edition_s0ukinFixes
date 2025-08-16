@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="4935-1832-63f7-91aa" name="                        XVII - Word Bearers" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="10" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="Arkangelmark5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Lorgar Aurelian" hidden="false" id="a763-c205-9fe6-46c1">
       <selectionEntries>
@@ -1153,7 +1153,7 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ashen Circle" hidden="false" id="9290-f8f4-ff78-b09c">
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Incendiary" hidden="false" id="9e26-66a6-9381-04cd" sortIndex="1">
+        <selectionEntry type="model" import="true" name="Incendiary" hidden="false" id="9e26-66a6-9381-04cd" sortIndex="2">
           <profiles>
             <profile name="Incendiary" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="945e-fcf1-814f-dbf9">
               <characteristics>
@@ -1176,18 +1176,16 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="6da9-374d-83a2-fe3d" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675" sortIndex="3"/>
-            <entryLink import="true" name="Allegiance Traits" hidden="false" id="f103-2a85-965b-8187" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323" sortIndex="4"/>
             <entryLink import="true" name="Axe-rake" hidden="false" id="3b15-1202-d433-f896" type="selectionEntry" targetId="103d-b9cb-bb16-1645" sortIndex="2">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a23-ee69-5608-0953-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a23-ee69-5608-0953-max" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baac-c386-4817-6370-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baac-c386-4817-6370-max"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Akkadic hand flamer" hidden="false" id="3166-f385-1dee-9034" type="selectionEntry" targetId="04d0-1f99-ce32-94fc" sortIndex="1">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="91e9-54d1-b95b-c2f7-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="91e9-54d1-b95b-c2f7-max" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06ca-f2d6-fd96-c525-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06ca-f2d6-fd96-c525-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1224,12 +1222,10 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="d4f4-45e6-d019-a15d" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675" sortIndex="3"/>
-            <entryLink import="true" name="Allegiance Traits" hidden="false" id="d743-51dd-5a2b-0a0e" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323" sortIndex="4"/>
             <entryLink import="true" name="Axe-rake" hidden="false" id="24d7-d344-09ca-9690" type="selectionEntry" targetId="103d-b9cb-bb16-1645" sortIndex="2">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="68f2-f7a3-245e-1f07-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="68f2-f7a3-245e-1f07-max" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3424-868d-6068-2392-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3424-868d-6068-2392-max"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Phosphex bombs" hidden="false" id="c747-7b7a-a036-c66c" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10">
@@ -1246,10 +1242,15 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             <categoryLink targetId="8045-89a4-76d4-fcef" id="4722-1e14-4926-17a5" primary="false" name="Sergeant Model Sub-Type"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="The Iconoclast exchanged its Akkadic hand flamer:" id="ff8a-17b4-3124-b75b" hidden="false" defaultSelectionEntryId="04d0-1f99-ce32-94fc" sortIndex="1">
+            <selectionEntryGroup name="May exchange Akkadic hand flamer for:" id="ff8a-17b4-3124-b75b" hidden="false" defaultSelectionEntryId="04d0-1f99-ce32-94fc" sortIndex="1">
               <entryLinks>
                 <entryLink import="true" name="Inferno Pistol " hidden="false" id="e08f-90a7-f523-a2eb" type="selectionEntry" targetId="7b74-a315-ce2e-6ec5" sortIndex="2"/>
                 <entryLink import="true" name="Akkadic hand flamer" hidden="false" id="478a-16dd-2ef0-7e45" type="selectionEntry" targetId="04d0-1f99-ce32-94fc" sortIndex="1"/>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="48bb-fc07-63f5-003b" type="selectionEntry" targetId="659f-d52e-1515-2912" sortIndex="3">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d947-da27-c37c-ce6c" includeChildSelections="false"/>
@@ -1264,16 +1265,16 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Frag grenades" hidden="false" id="a3cf-8a19-e1b9-c76b" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="2">
+        <entryLink import="true" name="Frag grenades" hidden="false" id="a3cf-8a19-e1b9-c76b" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1038-3766-a60b-4743" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3753-93dd-fa24-5346" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27c1-dcc2-be57-06e7-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27c1-dcc2-be57-06e7-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Krak grenades" hidden="false" id="4116-9490-e468-4d33" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="3">
+        <entryLink import="true" name="Krak grenades" hidden="false" id="4116-9490-e468-4d33" type="selectionEntry" targetId="fa20-82bc-c7de-9e97" sortIndex="4">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9002-505e-2b10-cfb9" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fafb-d4e1-72fe-4f8b" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="987e-df19-7aa2-cc04-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="987e-df19-7aa2-cc04-max"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Prime Unit" hidden="false" id="3032-e409-4d33-a113" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
@@ -1281,6 +1282,8 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
             <entryLink import="true" name="Prime Benefits" hidden="false" id="9b45-b790-4326-84eb" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Legiones Astartes Trait" hidden="false" id="9c3c-2c1a-a0c7-69ed" type="selectionEntryGroup" targetId="3014-5f25-bc3b-4675"/>
+        <entryLink import="true" name="Allegiance Traits" hidden="false" id="ca80-c364-1ee7-c573" type="selectionEntryGroup" targetId="edd3-9763-97ca-0323"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Bitter Duty" id="4913-05f1-5a84-2fab" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5"/>
@@ -1299,7 +1302,12 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
         </infoLink>
       </infoLinks>
       <rules>
-        <rule name="Harbingers of Truth " id="742c-a99a-3b4e-95d6" hidden="false"/>
+        <rule name="Harbingers of Truth " id="742c-a99a-3b4e-95d6" hidden="false">
+          <description>&quot;Ashen Circle improve the Firepower Characteristic of Akkadic hand flamers in the Volley Step.&quot;
+
+
+When a Model with this Special Rule makes a Volley Attacks, modify the Firepower Characteristic of that Model&apos;s Akkadic hand flamer by +1.</description>
+        </rule>
       </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="45"/>
@@ -1335,6 +1343,7 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
         </infoLink>
         <infoLink name="Pistol" id="844e-7c38-feec-f12f" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
       </infoLinks>
+      <comment>weapon</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Inferno Pistol " hidden="false" id="7b74-a315-ce2e-6ec5">
       <costs>
@@ -1364,6 +1373,7 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
         </infoLink>
         <infoLink name="Pistol" id="d3a1-95c7-2659-c0a5" hidden="false" type="rule" targetId="2bf6-55c8-6810-a71c"/>
       </infoLinks>
+      <comment>weapon</comment>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Axe-rake" hidden="false" id="103d-b9cb-bb16-1645">
       <profiles>
@@ -1393,6 +1403,68 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
           <comment>M</comment>
         </infoLink>
       </infoLinks>
+      <comment>weapon</comment>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="bae8-fe19-513f-ca3d">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Word Bearers Rite of War" id="abcf-e690-07e7-5266" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="RoW: Legiones Hereticus Word Bearers" hidden="false" id="2fc3-e418-d3c4-fa25">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Legion Tactica: Unwavering Conviction" hidden="false" id="bf3a-f72f-3efa-2855">
+                  <rules>
+                    <rule name="Unwavering Conviction" id="3af3-0444-7df5-3d2f" hidden="false" noindex="false">
+                      <description>&quot;Word Bearers gain additional Combat Resolution Points.&quot;
+
+
+When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 1 Combat Resolution point if any friendly Models in that Combat have the Word Bearers Trait.</description>
+                    </rule>
+                  </rules>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b97-9012-8064-b68c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8ef-b17e-05a1-b2eb"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Gambit: Beseech the Gods" hidden="false" id="96de-68b9-fe51-fcad">
+                  <profiles>
+                    <profile name="Brutal Dimemberment" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="4bd5-4813-b4c2-f994">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to take a willpower Check to modify their Characteristics.</characteristic>
+                        <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">This Gambit can only be selected during the first Face Off Step of a Challenge involving this Model. If this Gambit is selected, then the Controlling Player immediately makes a Willpower Check for this Model. If the Check is passed, until the end of this Challenge Sub-Phase, this Model adds +1 to its Strength and Attacks Characteristics. If the Check is failed, this Model suffers 1 Wound with an AP Characteristics of 2 and a Damage Characteristic of 1. No Saves or Damage Mitigation Roll may be made to discard this wound.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c304-f675-4bb5-d325"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4da2-c32d-8bdc-ccbd"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Advanced Reaction: Glorious Martyrdom" hidden="false" id="4953-8196-0383-d47b">
+                  <profiles>
+                    <profile name="Glorious Martyrdom" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="aceb-24a4-18e8-7f67">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Controlling Player to allocate all wound caused by a Fire Group to a single Model of their choosing.</characteristic>
+                        <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Glorious Martyrdom Advanced Reaction in the Shooting Phase, during Step 5 of the Shooting Attack sequence of any Shooting Attack made by the Active Player that targets a Unit that includes only Models with the Word Bearers Trait.</characteristic>
+                        <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Glorious Martyrdom Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                        <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">For the Glorious Martyrdom Advanced Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Reaction.</characteristic>
+                        <characteristic name="Process" typeId="57cf-1c68-a020-2529">In Step 5 of the Shooting Attack sequence, the Reactive Player must select one Model from the Reacting Unit. Until the current Fire Group and any fire Groups that split from it have been resolved, only the selected Model can be selected as the Target Model. If that Model is Removed as a Casualty, the remainder of that Fire Group and any additional Fire Groups that have been created from it are discarded and the Active Player moves to Step 10 of that Shooting Attack</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7c17-d992-fb8b-1299"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a657-7d18-7453-9bed"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61c5-ba2c-a4ea-817f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b66-105c-8b6c-15c8"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -1463,6 +1535,11 @@ If this Model is the only Model with the Unique Sub-Type in your Army, modify th
       <categoryLinks>
         <categoryLink targetId="2499-7239-685f-8465" id="c0e0-eb4e-9a6e-1737" primary="true" name="War-engine"/>
         <categoryLink targetId="2aba-8953-ea2f-ce59" id="b1b9-d6eb-557c-b693" primary="false" name="Word Bearers"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rite of War" hidden="false" id="93d2-c1c1-e727-ebf0" type="selectionEntry" targetId="bae8-fe19-513f-ca3d">
+      <categoryLinks>
+        <categoryLink targetId="abfa-86ab-1726-077a" id="da0d-6609-691b-0e0f" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

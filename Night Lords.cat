@@ -848,6 +848,9 @@ When this Gambit is selected, the Controlling Player can make one Willpower Chec
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a63f-247c-2f01-23fd"/>
                     <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="e55c-9a13-d62b-d1c5" includeChildSelections="true"/>
                   </constraints>
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <constraints>

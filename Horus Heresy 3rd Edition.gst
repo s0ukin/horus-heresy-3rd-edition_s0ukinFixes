@@ -305,6 +305,15 @@
         </modifier>
       </modifiers>
     </categoryEntry>
+    <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Troops - Tech-Priest unit only" id="3fda-dd8a-a6d5-b782" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -11652,18 +11661,18 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true" sortIndex="35">
           <categoryLinks>
-            <categoryLink name="Troops" hidden="false" id="13dd-708a-30bc-4c72" targetId="88e6-d373-4152-0dd8">
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Troops - Tech-Priest unit only" hidden="false" id="c907-0af7-cce9-9ba8" targetId="3fda-dd8a-a6d5-b782" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-c01a-64d4-dd3c" includeChildSelections="false"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Support" hidden="false" id="84a6-92e2-1afd-8497" targetId="345f-9ba6-9b02-ed5c">
+            <categoryLink name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" hidden="false" id="0599-b368-516c-e9d6" targetId="0fd5-6d2d-e2cc-d22a" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7143-e998-ba72-8b90"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Heavy Assault" hidden="false" id="828a-d1ae-eaee-d2b7" targetId="3235-bd79-e9b1-60fa">
+            <categoryLink name="Heavy Assault - Castellax Destructor Maniple only " hidden="false" id="5f2c-c81c-7da0-c8cd" targetId="d49e-048b-a8e2-ba52" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24e-c0f6-4c76-42e0"/>
               </constraints>
@@ -11692,6 +11701,11 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="f66f-803d-5433-bb35" includeChildSelections="true"/>
           </constraints>
+          <rules>
+            <rule name="Iron Tercio" id="d67e-d02f-4598-ed8a" hidden="false">
+              <description>Units selected as part of this Detachment which contains both one or more Tech-priests and one or more Models with the Automata Type may Hold, Control and Contest Objectives. </description>
+            </rule>
+          </rules>
         </forceEntry>
       </forceEntries>
       <constraints>

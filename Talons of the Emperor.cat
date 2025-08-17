@@ -2547,7 +2547,7 @@ In the Victory Sub-Phase of any End Phase, when a Unit with at least one Model w
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="99a7-d2f5-1bff-4c39" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="55"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="70"/>
             <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
             <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>

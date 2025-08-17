@@ -11717,19 +11717,19 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24e-c0f6-4c76-42e0"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Troops" hidden="false" id="6df7-ca21-0d63-a85a" targetId="c3f9-a7f3-984b-3fda" type="categoryEntry">
+            <categoryLink name="Prime Troops" hidden="false" id="6df7-ca21-0d63-a85a" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fe83-d6de-9a98-6510"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="fe83-d6de-9a98-6510" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Support" hidden="false" id="2ec2-5dbd-13e8-c33e" targetId="1c79-ecdf-9a64-84c9" type="categoryEntry">
+            <categoryLink name="Prime Support" hidden="false" id="2ec2-5dbd-13e8-c33e" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="24ba-3983-841f-90ea"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="24ba-3983-841f-90ea" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Prime Heavy Assault" hidden="false" id="7f5c-1af0-93d2-8fb2" targetId="1e95-35f0-1353-ffa1" type="categoryEntry">
+            <categoryLink name="Prime Heavy Assault" hidden="false" id="7f5c-1af0-93d2-8fb2" targetId="1e95-35f0-1353-ffa1">
               <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="31e1-e18e-dde5-9b16"/>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="31e1-e18e-dde5-9b16" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
           </categoryLinks>

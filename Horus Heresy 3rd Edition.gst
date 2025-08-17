@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="28" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="29" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -201,7 +201,7 @@
           <description>The following Rules apply to all Models with the Malefic Sub-Type:
 • When a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made. Once these wounds are resolved, no Tactical Status is applied to any Model in the Unit.
 • Models with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.
-• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type. </description>
+• No Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -283,6 +283,15 @@
     <categoryEntry name="Support - Rapier Section, Basilisk Artillery Tank or Medusa Artillery tank units only" id="ada1-aac4-9802-9c3d" hidden="false"/>
     <categoryEntry name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" id="5725-7f8c-f02e-4df6" hidden="false"/>
     <categoryEntry name="War-engine - Aethon Heavy Sentinel Squadron units only" id="5ee3-236d-c224-67aa" hidden="false"/>
+    <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Troops - Tech-Priest unit only" id="3fda-dd8a-a6d5-b782" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
+    <categoryEntry name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" id="0fd5-6d2d-e2cc-d22a" hidden="false">
+      <comment>Solar Auxilia - Iron Tercio</comment>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -11639,18 +11648,18 @@
         </forceEntry>
         <forceEntry name="Auxiliary - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true" sortIndex="35">
           <categoryLinks>
-            <categoryLink name="Troops" hidden="false" id="13dd-708a-30bc-4c72" targetId="88e6-d373-4152-0dd8">
+            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Troops - Tech-Priest unit only" hidden="false" id="c907-0af7-cce9-9ba8" targetId="3fda-dd8a-a6d5-b782" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-c01a-64d4-dd3c" includeChildSelections="false"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
-            <categoryLink name="Support" hidden="false" id="84a6-92e2-1afd-8497" targetId="345f-9ba6-9b02-ed5c">
+            <categoryLink name="Support - Castellax Battle Maniple or Thallax Cohort Unit only" hidden="false" id="0599-b368-516c-e9d6" targetId="0fd5-6d2d-e2cc-d22a" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7143-e998-ba72-8b90"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Heavy Assault" hidden="false" id="828a-d1ae-eaee-d2b7" targetId="3235-bd79-e9b1-60fa">
+            <categoryLink name="Heavy Assault - Castellax Destructor Maniple only " hidden="false" id="5f2c-c81c-7da0-c8cd" targetId="d49e-048b-a8e2-ba52" type="categoryEntry">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c24e-c0f6-4c76-42e0"/>
               </constraints>
@@ -11679,6 +11688,11 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="f66f-803d-5433-bb35" includeChildSelections="true"/>
           </constraints>
+          <rules>
+            <rule name="Iron Tercio" id="d67e-d02f-4598-ed8a" hidden="false">
+              <description>Units selected as part of this Detachment which contains both one or more Tech-priests and one or more Models with the Automata Type may Hold, Control and Contest Objectives. </description>
+            </rule>
+          </rules>
         </forceEntry>
       </forceEntries>
       <constraints>

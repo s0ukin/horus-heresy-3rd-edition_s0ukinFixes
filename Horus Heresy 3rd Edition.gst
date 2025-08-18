@@ -395,6 +395,18 @@
       </rules>
     </categoryEntry>
     <categoryEntry name="Fortification" id="7e2f-62cf-4e42-9e13" hidden="false"/>
+    <categoryEntry name="Clade Operative" id="335a-5a90-3b7c-c034" hidden="true">
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="64ba-8bb0-fd85-8292"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="f26c-9918-9644-80f7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -655,6 +667,7 @@
             </categoryLink>
             <categoryLink name="Rewards of Treachery" hidden="false" id="2a0d-9fee-9c25-8560" targetId="fe7f-1287-4162-a65d"/>
             <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
+            <categoryLink name="Clade Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="335a-5a90-3b7c-c034"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -826,7 +839,14 @@
                         <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
-                      <comment>Talons</comment>
+                      <comment>Custodes</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -1228,6 +1248,13 @@
                       </conditions>
                       <comment>Talons</comment>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -1424,6 +1451,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -3128,6 +3162,13 @@
                         <condition type="instanceOf" value="1" field="selections" scope="parent" childId="acc1-f897-a117-9b4a" shared="true"/>
                       </conditions>
                       <comment>Talons</comment>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="parent" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                      </conditions>
+                      <comment>Sisters</comment>
                     </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
@@ -12492,6 +12533,7 @@
         <categoryLink name="Lord of War" hidden="false" id="e480-805a-cba5-0102" targetId="a46f-a465-0ead-d6b8"/>
         <categoryLink name="Warlord" hidden="false" id="a9f0-0981-4d0f-a835" targetId="22ee-7208-4089-b005"/>
         <categoryLink name="Fortification" hidden="false" id="8261-22fc-c75e-2df6" targetId="7e2f-62cf-4e42-9e13"/>
+        <categoryLink name="Clade Operative" hidden="false" id="0f22-af59-a81b-bcff" targetId="335a-5a90-3b7c-c034"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -12936,6 +12978,18 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Clade Operative" hidden="true" id="8d32-7962-99e2-166a" type="selectionEntry" targetId="f26c-9918-9644-80f7" sortIndex="6">
+          <comment>Assassins</comment>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Allegiance" id="9fa8-cbae-ef5e-4b7c" hidden="false">
       <selectionEntries>
@@ -13114,6 +13168,16 @@ All Models in any of these Units have their Faction Trait replaced with &apos;Al
 When a Model with this Special Rule is included in a Detachment, one additional Force Organization Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with &apos;Bonded Automata&apos;, and this Unit can be included even thought it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Clade Operative" hidden="true" id="f26c-9918-9644-80f7">
+      <rules>
+        <rule name="Clade Operative" id="be0c-7465-c500-8e2e" hidden="false">
+          <description>Add three additional Support Force Organisation Slots to the Detachment that includes the Prime Slot with this Prime Advantage. These Force Organisation Slots may only be filled by Units selected from the Divisio Assassinorum Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="08f7-fb5e-031d-d378" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>

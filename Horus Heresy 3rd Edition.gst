@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="31" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="32" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -287,24 +287,6 @@
     <categoryEntry name="Support - Castellax Battle Maniple Only" id="61eb-11e2-1592-3161" hidden="false"/>
     <categoryEntry name="Recon - Vorax Attack Maniple Only" id="0fb1-2125-2a33-b094" hidden="false"/>
     <categoryEntry name="Fast Attack - Vulturax Stratos Squadron Only" id="7db9-74d1-6ba1-061e" hidden="false"/>
-    <categoryEntry name="Master of Automata" id="43f5-bc69-29b9-2286" hidden="true">
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fc2-eb91-c0cf-1c8c"/>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="058e-61f0-0bb1-a728"/>
-      </constraints>
-      <modifiers>
-        <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" includeChildSelections="true" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" value="1" field="058e-61f0-0bb1-a728">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="abf3-3d0e-d457-3a59" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-    </categoryEntry>
     <categoryEntry name="Heavy Assault - Castellax Destructor Maniple only " id="d49e-048b-a8e2-ba52" hidden="false">
       <comment>Solar Auxilia - Iron Tercio</comment>
     </categoryEntry>

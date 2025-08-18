@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="5" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="df17-7a05-0826-6e22" name="Traits" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="6" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedProfiles>
     <profile name="Master of the Legion" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="6cd2-96be-b703-6d57">
       <characteristics>
@@ -178,6 +178,8 @@
     <categoryEntry name="Shield" id="26c6-e05c-0f72-7852" hidden="false"/>
     <categoryEntry name="Golden Exemplar" id="6da5-a1b8-41c0-b6fc" hidden="false"/>
     <categoryEntry name="Talons of the Emperor" id="af7f-ce65-7fad-6d0e" hidden="false"/>
+    <categoryEntry name="Diabolist" id="107a-0195-0c8b-ddc9" hidden="false"/>
+    <categoryEntry name="Terminator Armour" id="3f80-6d12-e3a6-879a" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Allegiance Traits" id="edd3-9763-97ca-0323" hidden="false">

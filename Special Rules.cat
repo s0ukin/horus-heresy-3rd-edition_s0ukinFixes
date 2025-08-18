@@ -600,6 +600,12 @@ At the End of the Charge Sub-Phase, if a Unit that includes any Models with this
 
 *The Perfect Guard - If this effect is selected, until the end of this Phase, the Weapon Skill Characteristic of each Model in this Unit with this Special Rule is considred to be one point higher than normal when determining the score an opposing Model needs to Hit this Model in the Strike Step of the Challenge Sub-Phase or the Make Hit Tests Step of the Resolving an Initiative Step Step (this does not modify the Weapon Skill Characteristic of each Model in this Unit for the purposes of Hit Tests made for their own attacks).</description>
     </rule>
+    <rule name="Damned" id="181f-72e1-a92a-cc89" hidden="false">
+      <description>&quot;A model with this Special Rule can join Units that have the Malefic Sub-type.&quot;
+
+
+A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="e09e-1438-3205-2a57"/>

@@ -37,21 +37,23 @@ class GameTests(unittest.TestCase):
 
     def test_root_link_categories(self):
         expected_primaries = Heresy3e.BATTLEFIELD_ROLES.copy()
-        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata"]
+        expected_primaries += ['Army Configuration', 'Rewards of Treachery', "Master of Automata",
+                               "Clade Operative", "War-engine - Upgraded by The Iron-clad",
+                               ]
         expected_secondaries = Heresy3e.FACTIONS.copy()
         for file in self.system.files:
             entry_links_node = file.root_node.get_child(tag='entryLinks')
             if entry_links_node is None:
                 continue
             for child in entry_links_node.children:
-                with self.subTest(f"Root link {child}'s primary category should be a battlefield role"):
+                with self.subTest(f"Categories on {child}"):
                     category_links = child.get_child(tag='categoryLinks')
                     primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
                     self.assertIsNotNone(primary_cat,
                                          f"There should be a primary category"
                                          )
                     self.assertIn(primary_cat.target_name, expected_primaries,
-                                  f"(The link's primary category) is a battlefield role: "
+                                  f"The link's primary category should be a battlefield role or special slot"
                                   )
                     for other_link in category_links.children:
                         if other_link.id == primary_cat.id:
@@ -194,6 +196,34 @@ class GameTests(unittest.TestCase):
                 raw_model.type_and_subtypes = type_and_subtypes
                 errors = model_node.check_types_and_subtypes(raw_model)
                 self.assertEqual(len(errors), 0, f"{errors} on {model_node}")
+
+    def test_specific_upgrade_slots_LA(self):
+        system_file = next(filter(lambda sf: sf.name == "Legiones Astartes.cat", self.system.files), None)
+        slots_and_upgrades = {
+            "War-engine": [
+                "War-engine - Upgraded by The Iron-clad"
+            ],
+        }
+        # First sort all the units in the cat by slot
+        entry_links_node = system_file.root_node.get_child(tag='entryLinks')
+        units_by_slot = {}
+        for child in entry_links_node.children:
+            category_links = child.get_child(tag='categoryLinks')
+            primary_cat = category_links.get_child(tag='categoryLink', attrib={"primary": "true"})
+            if primary_cat is None:
+                continue  # This will be caught by other tests
+            slot = primary_cat.target_name
+            if slot not in units_by_slot.keys():
+                units_by_slot[slot] = {}
+            units_by_slot[slot][child.target_id] = child.target_name
+
+        # Then tests
+        for base_slot in slots_and_upgrades.keys():
+            for upgrade_slot in slots_and_upgrades[base_slot]:
+                with self.subTest(f"All {base_slot} units have a second link for {upgrade_slot}"):
+                    for unit_id, name in units_by_slot[base_slot].items():
+                        self.assertIsNotNone(units_by_slot[upgrade_slot].get(unit_id),
+                                             f"{name} should have a second link with primary category {upgrade_slot}")
 
 
 if __name__ == '__main__':

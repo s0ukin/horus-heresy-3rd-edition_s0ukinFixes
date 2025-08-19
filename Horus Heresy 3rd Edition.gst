@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="30" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="36" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
-    <categoryEntry name="Apex Detachment" id="6b46-02bb-c8aa-142d" hidden="false"/>
     <categoryEntry name="Armour" id="643a-1012-bd51-6537" hidden="false"/>
     <categoryEntry name="Asset" id="b720-ea51-7339-6a08" hidden="false"/>
-    <categoryEntry name="Auxiliary Detachment" id="1a65-8b23-419b-b30f" hidden="false"/>
     <categoryEntry name="Command" id="6dbf-654a-f06f-2d69" hidden="false"/>
     <categoryEntry name="Elites" id="5d5e-958f-e388-50b5" hidden="false"/>
     <categoryEntry name="Fast Attack" id="cf96-8891-3f9a-8921" hidden="false"/>
@@ -357,31 +355,31 @@
     <categoryEntry name="Fortification Model Type" id="ae5b-4e74-db76-fa25" hidden="false">
       <rules>
         <rule name="Fortification" id="1498-b800-3984-286c" hidden="false">
-          <description>The following Rules apply to all Models with the Fortification Type:
-• A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
-• A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
-• A Model with the Fortification Type may never Hold, Control or Contest an Objective Marker of any kind.
-• A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
-• A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
-• A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
+          <description>The following Rules apply to all Models with the Fortification Type:
+• A Model with the Fortification Type can never be moved by any Rule or effect after it has been Deployed.
+• A Model with the Fortification Type can never be placed into Reserves and must always be deployed at the start of a Battle.
+• A Model with the Fortification Type may never Hold, Control or Contest an Objective Marker of any kind.
+• A Model with the Fortification Type can never be affected by any kind of Status, including both Tactical Statuses and Cybertheurgic Statuses. However, such a Model can be affected by Cybertheurgic Rites that do not apply a Cybertheurgic Status.
+• A Unit that includes a Model with the Fortification Type may never be joined by any other Models of any Type.
+• A Model with the Fortification Type cannot make Reactions of any kind, unless a specific Sub-Type states otherwise.</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="Emplacement Model Sub-Type" id="d1e7-50c0-0764-9de5" hidden="false">
       <rules>
         <rule name="Emplacement Sub-Type" id="4e4e-7b92-cb21-86de" hidden="false">
-          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
-• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
-• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
+          <description>The following Rules apply to all Models with the Emplacement Sub-Type:
+• A Model with the Emplacement Sub-Type has a Ballistic Skill Characteristic and can make Shooting Attacks.
+• A Model with the Emplacement Sub-Type can have the Return Fire and Interceptor Reactions made for it</description>
         </rule>
       </rules>
     </categoryEntry>
     <categoryEntry name="Bunker Model Sub-Type" id="7caa-3c9a-875c-5bca" hidden="false">
       <rules>
         <rule name="Bunker Sub-Type" id="894b-4c1c-9e09-0ffc" hidden="false">
-          <description>The following Rules apply to all Models with the Bunker Sub-Type:
-• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
-• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
+          <description>The following Rules apply to all Models with the Bunker Sub-Type:
+• A Model with the Bunker Sub-Type has a Transport Capacity Characteristic.
+• Only Models with the Infantry Type that have no variant of the Bulky (X) Special Rule may Embark on a Model with the Bunker Sub-Type.
 • A Model with the Bunker Sub-Type can be Captured</description>
         </rule>
       </rules>
@@ -389,7 +387,7 @@
     <categoryEntry name="Structure Model Sub-Type" id="2893-a655-1074-9831" hidden="false">
       <rules>
         <rule name="Structure Sub-Type" id="c363-0bc3-7cb7-6d63" hidden="false">
-          <description>The following Rules apply to all Models with the Structure Sub-Type:
+          <description>The following Rules apply to all Models with the Structure Sub-Type:
 • A Model with the Structure Sub-Type can be Captured</description>
         </rule>
       </rules>
@@ -403,6 +401,24 @@
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="f26c-9918-9644-80f7" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
+    <categoryEntry name="War-engine - Upgraded by The Iron-clad" id="d00a-e269-2ed3-8fc4" hidden="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da1a-c79a-6c94-bcae"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="594f-a798-4982-f901"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0d32-12ae-3831-a4d6" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="594f-a798-4982-f901">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="0d32-12ae-3831-a4d6" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -669,6 +685,7 @@
             <categoryLink name="Rewards of Treachery" hidden="false" id="98cb-44e6-103b-4f50" targetId="fe7f-1287-4162-a65d"/>
             <categoryLink name="Master of Automata" hidden="false" id="c260-2ecb-3a86-a859" targetId="43f5-bc69-29b9-2286"/>
             <categoryLink name="Clade Operative" hidden="false" id="2a0d-9fee-9c25-8560" targetId="335a-5a90-3b7c-c034"/>
+            <categoryLink name="War-engine - Upgraded by The Iron-clad" hidden="false" id="0ef7-249a-c847-6970" targetId="d00a-e269-2ed3-8fc4"/>
           </categoryLinks>
           <constraints>
             <constraint type="min" value="1" field="forces" scope="roster" shared="true" id="5611-db49-9e64-44c6-min" includeChildSelections="true"/>
@@ -1081,7 +1098,16 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="5f94-2b1f-582e-f027"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="f2b2-3139-7b13-6c80" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Transport" hidden="false" id="2530-de81-c953-f47d" targetId="fc27-1a48-84ae-aa7b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aadd-6985-c329-e156" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="b89f-1dc8-0b04-f97f" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2796-15f4-0561-d11b" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -1262,6 +1288,13 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Tactical Support" id="2965-5682-3cbc-8b47" hidden="true" sortIndex="4">
           <categoryLinks>
@@ -1275,7 +1308,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c86b-d088-efd3-0e86"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="7ce0-f95c-8fee-df61" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Troops" hidden="false" id="613d-dad1-4746-5c74" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9c86-e88f-16b7-b9b8" includeChildSelections="true"/>
@@ -1466,6 +1498,13 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Armoured Support" id="4a2f-ac9e-195e-77cf" hidden="true" sortIndex="5">
           <categoryLinks>
@@ -1474,7 +1513,6 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="55ad-034f-09fb-344b"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="a56d-c59f-397f-c1eb" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Armour" hidden="false" id="c38b-2801-da19-2cd1" targetId="4460-7bc1-4d80-aecb">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0b7c-566a-8311-703d" includeChildSelections="true"/>
@@ -1653,6 +1691,13 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Heavy Support" id="bd1f-82a0-abd4-cd56" hidden="true" sortIndex="6">
           <categoryLinks>
@@ -1661,7 +1706,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aaae-9981-1e16-13b2"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="b245-2dca-7278-f7a1" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime War-engine" hidden="false" id="beec-b88f-6137-23e5" targetId="9699-67c9-2c0b-e64b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="1fe7-5114-3d7d-e501" includeChildSelections="true"/>
@@ -1840,6 +1884,13 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Combat Pioneer" id="edf5-6891-81d8-6309" hidden="true" sortIndex="7">
           <categoryLinks>
@@ -1848,7 +1899,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="56c4-65a1-7083-3041"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="ed74-5a30-58f6-3a94" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Recon" hidden="false" id="cc09-a724-add5-8dce" targetId="6348-ecd0-714d-042a">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f4fd-d341-0f65-784b" includeChildSelections="true"/>
@@ -2027,6 +2077,13 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Shock Assault" id="c9a5-3069-920b-32f1" hidden="true" sortIndex="8">
           <categoryLinks>
@@ -2035,7 +2092,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5279-0e0a-763f-7aec"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="fb62-562a-78b2-f800" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Heavy Assault" hidden="false" id="e69d-01d0-1f83-768c" targetId="1e95-35f0-1353-ffa1">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0dc3-2e75-42a7-ef00" includeChildSelections="true"/>
@@ -2214,6 +2270,13 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - First Strike" id="c444-8242-d3fc-b5b0" hidden="true" sortIndex="9">
           <categoryLinks>
@@ -2222,7 +2285,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9723-874b-5bbf-14cc"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="f026-67a5-0d0e-ee8d" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Fast Attack" hidden="false" id="9713-0512-a699-1e8e" targetId="c291-144b-3da6-37ed">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0764-c4bb-2d59-a5d0" includeChildSelections="true"/>
@@ -2401,30 +2463,16 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Combat Retinue" id="7203-426e-7a82-0b01" hidden="true" sortIndex="10">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="9b24-8662-0565-34a0" targetId="6b46-02bb-c8aa-142d"/>
-            <categoryLink name="High Command" hidden="false" id="4011-a31f-7c9d-d41e" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="823a-d3ea-26a0-664d"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="d2f8-1f44-8168-0180" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="52c1-45ab-60aa-de30" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Command" hidden="false" id="3509-a105-70a0-f9a2" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cdc5-7638-965d-7a1d"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="4ea0-613d-4f67-b9de" targetId="c85c-2963-658f-1bb9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="0528-cf22-0e4e-1243" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="23ec-dc41-3a5c-ba70" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1db1-f89e-9696-63d6"/>
@@ -2452,6 +2500,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="f68c-c731-1a07-ecee" targetId="276f-7a07-a56c-affd">
@@ -2467,6 +2520,11 @@
                 <modifier type="increment" value="1" field="46ed-923e-06d5-d74a">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2486,6 +2544,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Troops" hidden="false" id="8b85-2464-e603-1a1d" targetId="c3f9-a7f3-984b-3fda">
@@ -2501,6 +2564,11 @@
                 <modifier type="increment" value="1" field="b054-143f-e7b5-2632">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2520,6 +2588,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Transport" hidden="false" id="fa6e-4a89-62c2-0a2a" targetId="fc27-1a48-84ae-aa7b">
@@ -2535,6 +2608,11 @@
                 <modifier type="increment" value="1" field="4b15-c4ee-4a0f-57c3">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2554,6 +2632,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Heavy Transport" hidden="false" id="ef49-eb1d-8d06-c1c1" targetId="abff-3686-c39a-9a24">
@@ -2569,6 +2652,11 @@
                 <modifier type="increment" value="1" field="e176-d72c-c74a-2606">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2588,6 +2676,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Recon" hidden="false" id="1527-10ae-5d7c-386e" targetId="6348-ecd0-714d-042a">
@@ -2603,6 +2696,11 @@
                 <modifier type="increment" value="1" field="8a36-66a6-9e02-0e85">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2785,20 +2883,16 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Officer Cadre" id="90b7-c0fa-a9e1-6765" hidden="true" sortIndex="11">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="bb23-9795-e5fe-fc4f" targetId="6b46-02bb-c8aa-142d"/>
-            <categoryLink name="High Command" hidden="false" id="e4a5-903c-7e56-7234" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="512e-0705-7a37-3fc8"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="0aea-9060-451c-e664" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9e39-fba7-95b7-a5fe" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Command" hidden="false" id="1e36-d9bb-bb9c-7eee" targetId="6dbf-654a-f06f-2d69">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="bcdd-2dff-ec88-dfd8"/>
@@ -2819,6 +2913,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Retinue" hidden="false" id="a0d3-0902-fc58-9542" targetId="c66b-ef39-b20f-725b">
@@ -2834,6 +2933,11 @@
                 <modifier type="increment" value="1" field="5ed4-b583-1a9c-700b">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2853,6 +2957,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime War-engine" hidden="false" id="a19e-be57-282e-95e0" targetId="9699-67c9-2c0b-e64b">
@@ -2868,6 +2977,11 @@
                 <modifier type="increment" value="1" field="3104-a324-5349-b28f">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2887,6 +3001,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="2124-9f11-bc3c-7264" targetId="1c79-ecdf-9a64-84c9">
@@ -2902,6 +3021,11 @@
                 <modifier type="increment" value="1" field="7beb-95ac-0c51-5594">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2921,6 +3045,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Heavy Assault" hidden="false" id="b187-2ccc-ee81-12f2" targetId="1e95-35f0-1353-ffa1">
@@ -2936,6 +3065,11 @@
                 <modifier type="increment" value="1" field="7b4d-2599-7c57-e799">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -2955,6 +3089,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Armour" hidden="false" id="5193-87d8-1ed4-fb6e" targetId="4460-7bc1-4d80-aecb">
@@ -2972,6 +3111,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Recon" hidden="false" id="dc97-f2ce-52f0-b6d5" targetId="6348-ecd0-714d-042a">
@@ -2987,6 +3131,11 @@
                 <modifier type="increment" value="1" field="93fd-8655-1f3a-43b4">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3177,30 +3326,16 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Army Vanguard" id="0690-c05e-c301-f595" hidden="true" sortIndex="12">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="8950-5774-cc6a-db66" targetId="6b46-02bb-c8aa-142d"/>
-            <categoryLink name="High Command" hidden="false" id="9efb-f99f-bde9-902d" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a025-4389-44ec-3c06"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="96c4-6ad2-33b0-56b6" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cd0a-9bd8-8c3a-6341" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Command" hidden="false" id="2ffc-e883-1f5c-164e" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a0ef-091a-ce46-c49d"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="9002-6e67-544a-a828" targetId="c85c-2963-658f-1bb9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="742b-047a-e505-6d8e" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="a5b1-2339-feaf-9ff1" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="82b5-b6b5-7fce-cb0a"/>
@@ -3209,6 +3344,11 @@
                 <modifier type="increment" value="1" field="82b5-b6b5-7fce-cb0a">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3245,6 +3385,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime War-engine" hidden="false" id="9e84-9080-67e6-be42" targetId="9699-67c9-2c0b-e64b">
@@ -3260,6 +3405,11 @@
                 <modifier type="increment" value="1" field="ae4a-49cf-af75-944c">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3279,6 +3429,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="7137-27cf-e970-492b" targetId="1c79-ecdf-9a64-84c9">
@@ -3294,6 +3449,11 @@
                 <modifier type="increment" value="1" field="ea37-aedf-8733-1056">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3313,6 +3473,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Heavy Assault" hidden="false" id="af04-dc86-e5ed-a1cb" targetId="1e95-35f0-1353-ffa1">
@@ -3328,6 +3493,11 @@
                 <modifier type="increment" value="1" field="0578-5bcd-9517-a284">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3347,6 +3517,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Armour" hidden="false" id="8245-5444-6250-37b5" targetId="4460-7bc1-4d80-aecb">
@@ -3364,6 +3539,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Recon" hidden="false" id="f205-755e-9e98-676e" targetId="6348-ecd0-714d-042a">
@@ -3379,6 +3559,11 @@
                 <modifier type="increment" value="1" field="9da2-2c10-052b-fe2f">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3561,6 +3746,13 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Primacy Wing" id="b86b-981d-9aab-5675" hidden="true" sortIndex="70">
           <modifiers>
@@ -3592,7 +3784,6 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1941-e677-3709-8d3d"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="e4d7-bb42-395a-0309" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Retinue" hidden="false" id="6bfb-d0bc-89e2-afdf" targetId="c66b-ef39-b20f-725b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e57d-ff06-36a1-372f" includeChildSelections="true"/>
@@ -3610,6 +3801,13 @@
             </categoryLink>
           </categoryLinks>
           <comment>EC Only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Tagmata Cohort" id="59b8-2183-4bab-b91c" hidden="true" sortIndex="13">
           <categoryLinks>
@@ -3618,7 +3816,11 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="ec08-2ba4-b38c-8746" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="4396-a118-d91e-7a80" targetId="1a65-8b23-419b-b30f"/>
+            <categoryLink name="Prime Support" hidden="false" id="4ffc-b6b5-72a0-b7ae" targetId="1c79-ecdf-9a64-84c9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b97e-e506-b3e0-1a22" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3639,6 +3841,13 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Apprentice Cadre" id="6e73-e03d-9ae7-fd33" hidden="true" sortIndex="14">
           <categoryLinks>
@@ -3652,7 +3861,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b649-61e8-62cb-a4b0" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="19ff-5e45-8c20-36b3" targetId="1a65-8b23-419b-b30f"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3673,8 +3881,15 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
-        <forceEntry name="Apex - The Hearth of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="15">
+        <forceEntry name="Apex - The Heart of Power" id="0594-4b9b-675b-f633" hidden="true" sortIndex="15">
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="c224-b95f-a73a-ea18" targetId="a38e-50ff-310f-f19e">
               <constraints>
@@ -3696,7 +3911,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01b3-450e-6e90-b041" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="bcef-974a-de97-c3d7" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -3717,6 +3931,13 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Command Maniple" id="dbe3-9946-d4de-dc73" hidden="true" sortIndex="16">
           <categoryLinks>
@@ -3910,6 +4131,13 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - The Panoply of Cruelty" id="d5e2-3162-f591-6a81" hidden="true" sortIndex="17">
           <categoryLinks>
@@ -4097,6 +4325,13 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - The Host of Destruction" id="1db9-6dc0-7da5-e517" hidden="true" sortIndex="18">
           <categoryLinks>
@@ -4284,6 +4519,13 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Crux of Judgement" id="4f19-3023-0077-1049" hidden="true" sortIndex="19">
           <categoryLinks>
@@ -4292,7 +4534,11 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="83c4-a1e7-c38c-e164" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="ba0d-dd1d-7a6e-b90b" targetId="6b46-02bb-c8aa-142d"/>
+            <categoryLink name="Prime Command" hidden="false" id="9a0d-a107-8ece-c576" targetId="c85c-2963-658f-1bb9">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f015-623b-6deb-1ccb" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4313,6 +4559,13 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Iron Phalanx" id="a782-7985-325b-1840" hidden="true" sortIndex="20">
           <categoryLinks>
@@ -4336,7 +4589,6 @@
                 <constraint type="max" value="3" field="selections" scope="force" shared="true" id="e480-9bfa-a46f-c224" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Apex Detachment" hidden="false" id="b994-409d-271c-f7ab" targetId="6b46-02bb-c8aa-142d"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -4354,6 +4606,13 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Thallax Command Cohort" id="7f03-c1a3-d883-8a98" hidden="true" sortIndex="21">
           <categoryLinks>
@@ -4541,10 +4800,16 @@
             </modifier>
           </modifiers>
           <comment>Mechanicum only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - The Hammer of Olympia" id="1d3d-a6b8-94d8-443b" hidden="true" sortIndex="72">
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="1482-f3fe-58dd-e575" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="Retinue" hidden="false" id="9f88-7ba6-dc34-0074" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bb04-941d-dabe-3b36"/>
@@ -4803,10 +5068,16 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="cbbf-a5c7-0527-b306"/>
           </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - The Ironfire Cohort" id="5bc5-5224-c751-d437" hidden="true" sortIndex="71">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="4769-6a17-b205-fb4a" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Armour - Arquitor Bombard Only" hidden="false" id="2ba5-198c-9b80-1720" targetId="b58f-c88f-6b2e-02b1">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="07cc-06c4-b48e-51f2"/>
@@ -5055,10 +5326,16 @@
             </modifier>
           </modifiers>
           <comment>IW Only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Reaping Host" id="3b60-24c1-dccc-23db" hidden="true" sortIndex="77">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="515c-a4b9-bad0-df67" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="d8c2-ba60-ce7e-86dc" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d943-5817-f82d-76de"/>
@@ -5302,6 +5579,13 @@
             </modifier>
           </modifiers>
           <comment>DG Only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Primus Demi-Company" id="1da1-f220-0bad-5f78" hidden="true" sortIndex="62">
           <modifiers>
@@ -5323,7 +5607,6 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5b4-12a7-164c-df56"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="79d4-74fa-cc87-03a5" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="8d19-f52c-d56c-f742" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="41a1-ff71-3b52-ada7"/>
@@ -5558,10 +5841,16 @@
             </categoryLink>
           </categoryLinks>
           <comment>UM Only</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Veletaris Tercio" id="e1a1-2699-4681-47ab" hidden="true" sortIndex="30">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="55a1-8512-405b-8905" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Elites - Veletaris Storm or Veletaris Vanguard units only" hidden="false" id="710a-9bde-a37e-3661" targetId="8dce-eb64-ec33-0b51">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0cbe-df78-5aa1-886c"/>
@@ -5816,10 +6105,16 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="0cdf-ec44-4886-b292" includeChildSelections="true"/>
           </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Armour Tercio" id="6aff-b91d-02bb-7461" hidden="true" sortIndex="31">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="880f-e609-7151-ee38" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Armour - Leman Russ Strike, Leman Russ Assault or Malcador Heavy tank units only" hidden="false" id="0bee-0d7e-0466-e2cb" targetId="5725-7f8c-f02e-4df6">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="e63e-7101-ee0c-825b"/>
@@ -5864,10 +6159,16 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="b12c-e160-7e18-6447" includeChildSelections="true"/>
           </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Artillery Tercio" id="371d-e9ef-7bf9-47de" hidden="true" sortIndex="32">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="8dec-bd47-6453-908b" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Support" hidden="false" id="0d04-d559-7cd8-7f60" targetId="1c79-ecdf-9a64-84c9">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="69ec-fb9b-4ad6-bf96" includeChildSelections="true"/>
@@ -5912,10 +6213,16 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="ab5c-eef0-021a-f3d7" includeChildSelections="true"/>
           </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Infantry Tercio" id="243b-4ffd-9808-11d8" hidden="true" sortIndex="33">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="3d8a-ec45-1eea-203b" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Prime Troops" hidden="false" id="6f1e-54be-753a-3ddf" targetId="c3f9-a7f3-984b-3fda">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ab-da50-e5e0-666c" includeChildSelections="true"/>
@@ -6161,10 +6468,16 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="27bb-2701-02d4-1c6f" includeChildSelections="true"/>
           </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Scout Tercio" id="551a-23a1-7758-2688" hidden="true" sortIndex="34">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="7fc3-b32d-cdda-e42f" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Hermes Light Sentinel Squadron units only" hidden="false" id="4b81-7b2e-792e-003a" targetId="b367-e724-5450-9e45">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a2d1-1899-30ed-b88f"/>
@@ -6219,10 +6532,16 @@
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="09ef-6880-510a-852b"/>
           </constraints>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Chogorian Warband" id="0f6e-3db8-8b6f-74e1" hidden="true" publicationId="b905-0414-1057-bb34" page="147" sortIndex="56">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="54cc-e754-3644-660e" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Fast Attack - Scimitar Jetbike Squadrons only" hidden="false" id="118a-8a04-7902-9a00" targetId="eaec-7669-f5ba-3ad9">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ccb3-72e4-b500-232d"/>
@@ -6255,26 +6574,6 @@
             <categoryLink name="Prime Recon" hidden="false" id="0a94-d47e-bdd7-4c6f" targetId="6348-ecd0-714d-042a">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3b75-20d9-d81a-6b78" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="High Command" hidden="false" id="9cb4-04f1-435f-27e0" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="59f3-f99f-5de2-1360"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="11ed-20b9-3180-ba66" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="593f-4986-1a6a-817a" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Command" hidden="false" id="48dc-f33e-e791-9739" targetId="6dbf-654a-f06f-2d69">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9caa-9d16-faf5-d37b"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime Command" hidden="false" id="6c66-59a6-01ac-c7bb" targetId="c85c-2963-658f-1bb9">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="258c-9ddc-2601-9dde" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
             <categoryLink name="Retinue" hidden="false" id="7fbb-55a7-594e-8423" targetId="a38e-50ff-310f-f19e">
@@ -6507,10 +6806,16 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Medusan Vanguard" id="7ff8-9e2c-e68a-573f" hidden="true" sortIndex="61" publicationId="b905-0414-1057-bb34" page="231">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="5866-7374-495e-6757" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Command - Praevian Only" hidden="false" id="7af5-6fff-edb0-8932" targetId="7c8e-52bb-951b-9c7f">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2487-c5ff-80ac-19a3" includeChildSelections="true"/>
@@ -6778,10 +7083,16 @@
             </modifier>
           </modifiers>
           <comment>IH - verify iron father restriction</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Terror Assault" id="8fe1-7b62-49cf-479b" hidden="true" sortIndex="73">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="dc5c-c763-789b-6b73" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Terror Squads Only" hidden="false" id="0f3a-d373-9df5-93fb" targetId="6e0b-c31d-739b-d9cc">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6537-4339-f77e-ea81"/>
@@ -7029,6 +7340,13 @@
             </modifier>
           </modifiers>
           <comment>NL</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Atramentar Hunt " id="dbbe-886f-3ce1-13c0" hidden="true" sortIndex="74">
           <categoryLinks>
@@ -7067,10 +7385,16 @@
             </modifier>
           </modifiers>
           <comment>NL - But no Logistical Benefit Prime Advantage</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Berserker Cadre" id="bda6-c5d3-eafc-4eb5" hidden="true" sortIndex="75">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="2d58-316e-79d5-2034" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Heavy Assault - Rampager Squads Only" hidden="false" id="b686-b285-d2bd-e8e2" targetId="91f0-1b91-0a9a-c542">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1242-7e4c-5871-ede3"/>
@@ -7313,10 +7637,16 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Bloodied Claw" id="06b3-c35d-da74-de37" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="57" page="167">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="85fe-c763-8c05-317e" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Grey Slayer Packs Only" hidden="false" id="aa62-7956-a2d2-fec4" targetId="a4aa-d941-3aab-a81b">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c184-fb15-bb63-2022"/>
@@ -7564,10 +7894,16 @@
             </modifier>
           </modifiers>
           <comment>SW</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Revelation Host" id="edb0-a5d8-84f1-4eee" hidden="true" sortIndex="59" publicationId="b905-0414-1057-bb34" page="211">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="ffe5-1e65-907d-9b83" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Assault Squads Only" hidden="false" id="9de0-e8ca-656a-5fbb" targetId="5091-8467-38f9-a6fb">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="71e9-f4d1-4a4d-af43"/>
@@ -7815,10 +8151,16 @@
               <comment>BA</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Sons of Bodt" id="9bfb-c160-31df-9108" hidden="true" sortIndex="76">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="44f1-1e68-30b9-2b6a" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Apothecary Only" hidden="false" id="cccd-5667-9e16-e4d4" targetId="4a48-9154-40d8-d6b7">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cab4-0a45-b17d-8a36"/>
@@ -7905,11 +8247,6 @@
                 <modifier type="increment" value="1" field="c634-def4-8483-74b9">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="9e8c-63b6-a15a-cd4f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8071,10 +8408,16 @@
             </modifier>
           </modifiers>
           <comment>WE</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Spearhead Phalanx" id="4737-e73a-394e-433f" hidden="true" sortIndex="60" publicationId="b905-0414-1057-bb34" page="231">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="397b-95e4-2d0b-9598" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Heavy Transport - Land Raider Carrier or Spartan Only" hidden="false" id="34cc-c81a-e963-0919" targetId="6b8d-15cd-2d41-9709">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ce6c-ced0-b1af-830c"/>
@@ -8120,10 +8463,16 @@
             </modifier>
           </modifiers>
           <comment>IH</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Supremecy Cadre" id="2436-a714-22cc-fd31" hidden="true" sortIndex="79" page="249" publicationId="e54c-7040-0f35-d85d">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="61c8-0a14-7098-1526" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="098e-08d1-0f5d-4aa0" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="7f60-2d58-56dc-5742"/>
@@ -8366,10 +8715,16 @@
               </conditionGroups>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Stormwing Moster" id="bdf9-3781-2927-bc55" hidden="true" sortIndex="52" page="128" publicationId="b905-0414-1057-bb34">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="db7c-ce9f-043a-09bf" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="826e-f0bb-f6e6-840d" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="6cb7-7a22-5eea-8f05"/>
@@ -8618,10 +8973,16 @@
               <comment>DA</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Deathwing Conclave" id="9b6c-2a18-7b8a-1aab" hidden="true" sortIndex="53" page="128" publicationId="b905-0414-1057-bb34">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="7b95-952e-a35e-95a1" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="f13c-d2e0-2616-7a6a" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acfa-a1a4-1e07-ffb6"/>
@@ -8865,10 +9226,16 @@
               <comment>DA</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Ravenwing Lance" id="466d-8e42-0890-721a" hidden="true" sortIndex="54" publicationId="b905-0414-1057-bb34" page="128">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="4b62-f5fd-eaa6-8166" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Outrider Squads Only" hidden="false" id="d5a5-e528-301f-e1b8" targetId="a8bc-a4af-e5b3-2684">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="fc02-d575-3ed8-8c9d"/>
@@ -9117,10 +9484,16 @@
               <comment>DA</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Firewing Echelon" id="3e2f-4f99-d366-7a95" hidden="true" sortIndex="55" publicationId="b905-0414-1057-bb34" page="128">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="bbcd-2619-f109-b29b" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Elites - Seeker Squads Only" hidden="false" id="9ef4-28d6-7a6a-290b" targetId="6ab9-f648-a6de-e2e8">
               <modifiers>
                 <modifier type="increment" value="1" field="246b-e4ed-56da-769b">
@@ -9369,10 +9742,16 @@
               <comment>DA</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Ironwing Gauntlet" id="cb64-b547-1144-fd70" hidden="true" sortIndex="50" publicationId="b905-0414-1057-bb34" page="127">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9233-837f-e44e-8177" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Heavy Transport" hidden="false" id="5b6e-8b8d-0fd3-9ed3" targetId="52d0-8b78-439e-18e5">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="161c-2566-a5fc-41e3"/>
@@ -9409,10 +9788,16 @@
               <comment>DA</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Dreadwing Cadre" id="4df8-3a15-6b77-1b80" hidden="true" sortIndex="51" publicationId="b905-0414-1057-bb34" page="127">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="eb0a-40cc-536b-d751" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Dreadwing or Rapier Only" hidden="false" id="7843-04fb-71c7-c434" targetId="d52d-47c6-e17a-9e35">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7550-bb36-9d75-0601"/>
@@ -9666,10 +10051,16 @@
               <comment>DA</comment>
             </modifier>
           </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Siege Gauntlet" id="1581-346d-51c6-4739" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="58" page="187">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="c9dd-280d-6c74-28c8" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Breacher Squads Only" hidden="false" id="ee65-4faf-127b-8c50" targetId="2b63-c3cd-b88c-a465">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e90a-b85f-1e6e-b9f8"/>
@@ -9912,10 +10303,16 @@
             </modifier>
           </modifiers>
           <comment>IF</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Immolation Covenant" id="04d2-0a69-061e-75fe" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="63" page="265">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="8432-3f6c-3d45-2cb6" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Armour - Predator or Vindicator Only" hidden="false" id="3719-db31-cc33-da3d" targetId="bde9-c2c4-611e-7fb7">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4f40-8800-1727-562f"/>
@@ -10163,10 +10560,16 @@
             </modifier>
           </modifiers>
           <comment>SAL</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Decapitation Cadre" id="27bf-3e6b-587c-74bb" hidden="true" publicationId="b905-0414-1057-bb34" sortIndex="64" page="265">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="be42-9976-9746-7d26" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="a25f-674d-d2e3-f98c" targetId="f8c3-f44e-569f-4418">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2cac-063e-c4b0-e09c"/>
@@ -10202,6 +10605,13 @@
             </modifier>
           </modifiers>
           <comment>RG</comment>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Prosperine Convocation" id="450b-0ca8-0beb-ff89" hidden="true" sortIndex="78" publicationId="e54c-7040-0f35-d85d" page="225">
           <comment>TS</comment>
@@ -10219,7 +10629,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9e45-da32-e845-85db" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="ce47-2c7f-d94c-1e3c" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="bc7f-e7cb-b26b-abd5"/>
@@ -10443,6 +10852,13 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Apex - Exalted Conclave" id="c961-7007-0142-5d07" hidden="true" sortIndex="80" publicationId="e54c-7040-0f35-d85d" page="273">
           <comment>WB - No LB Prime</comment>
@@ -10460,7 +10876,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Apex Detachment" hidden="false" id="7df6-a08b-9c78-907d" targetId="6b46-02bb-c8aa-142d"/>
             <categoryLink name="Troops" hidden="false" id="b3b2-bd18-c654-d809" targetId="88e6-d373-4152-0dd8">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="8a82-537e-c44d-bcf9"/>
@@ -10482,6 +10897,13 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Headhunter Leviathal" id="74f4-a9d0-a2be-b4bd" hidden="true" sortIndex="81" publicationId="e54c-7040-0f35-d85d" page="295">
           <comment>AL</comment>
@@ -10499,7 +10921,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="0e92-d177-5376-cb00" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Elites - Seeker Squads or Headhunter Kill Teams Only" hidden="false" id="832a-df38-fd99-3ca0" targetId="5c0d-4d49-44e2-0a99">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ddb5-036a-fe48-d088"/>
@@ -10733,6 +11154,13 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Daemonic Manifestation" id="0078-217d-19d4-a354" hidden="true" sortIndex="40" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Traitor Legions Only, Esoterist</comment>
@@ -10881,9 +11309,13 @@
               <comment>Legions</comment>
             </modifier>
           </modifiers>
-          <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="bc87-f9cb-3b79-c52b" targetId="1a65-8b23-419b-b30f"/>
-          </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Veteran Cadre" id="1834-a10c-a732-d989" hidden="true" sortIndex="41" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Legions - Champion</comment>
@@ -11033,7 +11465,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="544b-a557-7a7f-8a42" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Retinue" hidden="false" id="e3d0-30db-2723-5ac2" targetId="a38e-50ff-310f-f19e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273b-ae30-fbc1-5d7a" includeChildSelections="true"/>
@@ -11049,7 +11480,29 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef2a-3dd1-1b5c-8dc0" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Prime Retinue" hidden="false" id="3346-5750-ce80-ad22" targetId="c66b-ef39-b20f-725b">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aecf-057e-51d1-57fc" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Elites" hidden="false" id="f79e-5d5f-2bf7-7742" targetId="276f-7a07-a56c-affd">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f0d-4bb0-c1d5-c0b2" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
+            <categoryLink name="Prime Heavy Transport" hidden="false" id="a1c5-9dd3-ce69-70bb" targetId="abff-3686-c39a-9a24">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e705-c4b0-9fa3-ead3" includeChildSelections="true"/>
+              </constraints>
+            </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Apothecarion Delegation" id="41f6-7dfc-4eb9-f6ef" hidden="true" sortIndex="42" publicationId="e54c-7040-0f35-d85d" page="16">
           <comment>Legions</comment>
@@ -11199,7 +11652,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="10bd-1900-4f7f-5d76" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Apothecary Only" hidden="false" id="d378-d558-8199-1aef" targetId="4a48-9154-40d8-d6b7">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="399a-151b-e3cc-3930" includeChildSelections="true"/>
@@ -11438,6 +11890,13 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Techmarine Covenant" id="7993-0219-c614-f612" hidden="true" sortIndex="43" publicationId="e54c-7040-0f35-d85d" page="17">
           <comment>Legions</comment>
@@ -11587,7 +12046,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="35ee-fc2a-6a9b-4a93" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Techmarine Only" hidden="false" id="7c32-fc69-8436-734b" targetId="103f-d00d-f8cf-52de">
               <constraints>
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="7ca5-a0b5-47a5-8387" includeChildSelections="true"/>
@@ -11826,6 +12284,13 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Storm Battery" id="d089-8cc7-96a7-903f" hidden="true" sortIndex="44" publicationId="e54c-7040-0f35-d85d" page="17">
           <comment>Legions</comment>
@@ -11975,7 +12440,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="b8dc-4a0d-8e24-ea29" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Support - Rapier Battery Only" hidden="false" id="933f-a441-79bd-56e3" targetId="b59d-a86f-b951-9f06">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e585-7d87-7007-e091" includeChildSelections="true"/>
@@ -11997,6 +12461,13 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Recon Demi-Company" id="38f7-2240-f8ee-6cce" hidden="true" sortIndex="43" publicationId="e54c-7040-0f35-d85d" page="17">
           <comment>Legions</comment>
@@ -12146,7 +12617,6 @@
             </modifier>
           </modifiers>
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="5d9b-7994-2000-e107" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Recon - Reconnaissance Squad Only" hidden="false" id="7ce6-438b-4534-48c2" targetId="f8c3-f44e-569f-4418">
               <constraints>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="85de-faa2-8303-a76b"/>
@@ -12380,10 +12850,16 @@
               </constraints>
             </categoryLink>
           </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
         <forceEntry name="Auxiliary - Iron Tercio" id="9a10-a2d9-5a87-a5a9" hidden="true" sortIndex="35">
           <categoryLinks>
-            <categoryLink name="Auxiliary Detachment" hidden="false" id="9939-ad32-7608-7ad1" targetId="1a65-8b23-419b-b30f"/>
             <categoryLink name="Troops - Tech-Priest unit only" hidden="false" id="c907-0af7-cce9-9ba8" targetId="3fda-dd8a-a6d5-b782">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b57b-c01a-64d4-dd3c" includeChildSelections="false"/>
@@ -12443,6 +12919,13 @@
               <description>Units selected as part of this Detachment which contains both one or more Tech-priests and one or more Models with the Automata Type may Hold, Control and Contest Objectives.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="1"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
         </forceEntry>
       </forceEntries>
       <constraints>
@@ -12508,16 +12991,6 @@
       <forceEntries>
         <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="false" sortIndex="1">
           <categoryLinks>
-            <categoryLink name="High Command" hidden="false" id="58e7-5b31-8c1f-b1b8" targetId="d9a6-9b5f-b18a-4d63">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b237-8b41-3ea2-f48f"/>
-              </constraints>
-            </categoryLink>
-            <categoryLink name="Prime High Command" hidden="false" id="de5a-a77e-972d-d402" targetId="3568-ad75-b452-3137">
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3cf5-c146-4467-a815" includeChildSelections="true"/>
-              </constraints>
-            </categoryLink>
             <categoryLink name="Command" hidden="false" id="7866-0c42-0336-a2c9" targetId="6dbf-654a-f06f-2d69">
               <constraints>
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="390b-521d-badf-8cff"/>
@@ -12538,6 +13011,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Retinue" hidden="false" id="2be5-77d1-2212-0356" targetId="c66b-ef39-b20f-725b">
@@ -12555,6 +13033,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="2c87-f91b-27cc-6a1b" targetId="276f-7a07-a56c-affd">
@@ -12570,6 +13053,11 @@
                 <modifier type="increment" value="1" field="199b-38ce-0c87-25f2">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="fac3-0af2-8be3-20dc" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12606,6 +13094,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Support" hidden="false" id="744a-63b8-a9db-372c" targetId="1c79-ecdf-9a64-84c9">
@@ -12621,6 +13114,11 @@
                 <modifier type="increment" value="1" field="bd2c-cc0a-e9ab-2a27">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="861f-723a-938e-bc2c" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12640,6 +13138,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="5da8-2289-4e20-649f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Heavy Assault" hidden="false" id="aade-1b71-9254-3498" targetId="1e95-35f0-1353-ffa1">
@@ -12655,6 +13158,11 @@
                 <modifier type="increment" value="1" field="89b1-ff58-1016-441e">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="ad55-0e60-66fe-a7a9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -12674,6 +13182,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d5b0-22dc-909e-415e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Armour" hidden="false" id="f803-182e-e0cb-33b5" targetId="4460-7bc1-4d80-aecb">
@@ -12691,6 +13204,11 @@
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a166-27df-d75c-bdb0" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </categoryLink>
             <categoryLink name="Prime Recon" hidden="false" id="f14f-9a5d-ef33-9835" targetId="6348-ecd0-714d-042a">
@@ -12706,6 +13224,11 @@
                 <modifier type="increment" value="1" field="3865-6994-c215-426e">
                   <conditions>
                     <condition type="equalTo" value="1" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cf0d-0aff-8242-f25a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -13174,37 +13697,6 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27a5-7dd1-f626-57f9" includeChildSelections="false"/>
       </constraints>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Auxilary Detachment" hidden="false" id="f96f-02f1-599b-9fc5">
-      <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-        <cost name="Auxilary Detachments" typeId="3e8e-05ee-be52-12d6" value="1"/>
-      </costs>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f7a9-f3c7-c7bc-b376-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7a9-f3c7-c7bc-b376-max" includeChildSelections="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Auxiliary Detachment" hidden="false" id="7f95-db86-dc1b-a60b" targetId="1a65-8b23-419b-b30f" primary="true"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Apex Detachment" hidden="false" id="8fb8-af35-3a6d-c27e">
-      <costs>
-        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
-        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
-        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
-        <cost name="Auxilary Detachments" typeId="3e8e-05ee-be52-12d6" value="0"/>
-        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="1"/>
-      </costs>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afc0-b089-54c4-4a13-min" includeChildSelections="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afc0-b089-54c4-4a13-max" includeChildSelections="false"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink name="Apex Detachment" hidden="false" id="bf3e-2861-1eb5-3a48" targetId="6b46-02bb-c8aa-142d" primary="true"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="How to change wargear: For models with individual options, use the two overlapping squares with the plus to split the stack and customize each group individually" hidden="false" id="eb57-d57d-1cc4-6e8e" defaultAmount="1">
       <categoryLinks>
@@ -13772,11 +14264,16 @@ When a Model with this Special Rule is included in a Detachment, one additional 
     <selectionEntry type="upgrade" import="true" name="Clade Operative" hidden="true" id="f26c-9918-9644-80f7">
       <rules>
         <rule name="Clade Operative" id="be0c-7465-c500-8e2e" hidden="false">
-          <description>Add three additional Support Force Organisation Slots to the Detachment that includes the Prime Slot with this Prime Advantage. These Force Organisation Slots may only be filled by Units selected from the Divisio Assassinorum Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
+          <description>Add three additional Support Force Organisation Slots to the Detachment that includes the Prime Slot with this Prime Advantage. These Force Organisation Slots may only be filled by Units selected from the Divisio Assassinorum Army List. This Prime Advantage may only be selected for a single Force Organisation Slot in an Army’s Primary Detachment.</description>
         </rule>
       </rules>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="08f7-fb5e-031d-d378" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Iron-clad" hidden="false" id="0d32-12ae-3831-a4d6">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="30f5-3300-a36a-9a11" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
   </sharedSelectionEntries>

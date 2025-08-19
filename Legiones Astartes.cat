@@ -3510,9 +3510,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </infoLink>
         <infoLink name="Vanguard (X)" id="8807-62df-f930-072c" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
-          <comment>1</comment>
+          <comment>3</comment>
           <modifiers>
-            <modifier type="set" value="Vanguard (1)" field="name"/>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>

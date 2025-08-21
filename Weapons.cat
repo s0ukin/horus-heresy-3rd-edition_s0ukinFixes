@@ -4723,7 +4723,7 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Paired Gravis power fists" hidden="false" id="0400-0700-57cd-bbcf">
       <profiles>
-        <profile name="Gravis power fist" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="eb32-08d5-3647-11c6">
+        <profile name="Paired Gravis power fist" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="eb32-08d5-3647-11c6">
           <characteristics>
             <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
             <characteristic name="AM" typeId="03d0-6094-84f0-e27e">+1</characteristic>

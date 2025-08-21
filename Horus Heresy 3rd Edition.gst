@@ -7456,6 +7456,23 @@
                 </modifier>
               </modifiers>
             </categoryLink>
+            <categoryLink name="Support" hidden="false" id="e245-26b0-d8b1-1011" targetId="345f-9ba6-9b02-ed5c">
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b409-5d48-7100-b1cb"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="b409-5d48-7100-b1cb">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="18ed-afc2-ec5d-9f8c" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">

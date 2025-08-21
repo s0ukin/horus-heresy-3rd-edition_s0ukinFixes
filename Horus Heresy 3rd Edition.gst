@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="39" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="40" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -7076,7 +7076,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="aa68-7c65-5d9f-280f"/>
               </constraints>
             </categoryLink>
-            <categoryLink name="Cohort Doctrine: Solar Pattern Cohort" hidden="false" id="833b-b51d-5db3-570a" targetId="f2be-abfe-311c-afe2" type="categoryEntry"/>
+            <categoryLink name="Cohort Doctrine: Solar Pattern Cohort" hidden="false" id="833b-b51d-5db3-570a" targetId="f2be-abfe-311c-afe2"/>
           </categoryLinks>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -8084,6 +8084,7 @@
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5a3b-ebb7-4e2b-6728" includeChildSelections="true"/>
               </constraints>
             </categoryLink>
+            <categoryLink name="Master of Automata" hidden="false" id="89dd-fa0f-af89-c7b5" targetId="43f5-bc69-29b9-2286"/>
           </categoryLinks>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="06ca-d5c5-58f1-f184"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="37" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="38" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -2707,6 +2707,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="[Allegiance]" id="6a95-5a01-606f-b582" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="7771-c465-b19d-3cb0" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Rhino" hidden="false" id="1b41-8597-7168-c326" sortIndex="45">
       <selectionEntries>
@@ -3326,6 +3333,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Veteran Assault Squad" hidden="false" id="a119-c2a7-ff1a-399c" sortIndex="25">
       <selectionEntries>
@@ -7767,6 +7781,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="[Allegiance]" id="e590-dd10-ce8d-c704" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
         <infoLink name="[Legiones Astartes]" id="09ad-c29f-b564-c90e" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tartaros Terminator Command Squad" hidden="false" id="50fb-f90a-70ec-7649" sortIndex="22">
       <entryLinks>
@@ -8016,6 +8037,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </infoLink>
         <infoLink name="Implacable Advance" id="ff69-397d-c5f8-ec9c" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Cataphractii Terminator Squad" hidden="false" id="e9a1-490f-8679-fc4e" sortIndex="27">
       <entryLinks>
@@ -8610,6 +8638,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </modifiers>
         </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tartaros Terminator Squad" hidden="false" id="3139-1aa9-4b77-da26" sortIndex="28">
       <entryLinks>
@@ -9143,6 +9178,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Implacable Advance" id="56fc-8285-ea0d-f004" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
         <infoLink name="Slow and Purposeful" id="36a3-6a49-7945-2b0b" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Despoiler Squad" hidden="false" id="44bd-10de-2055-40f6" sortIndex="31">
       <entryLinks>
@@ -14461,6 +14503,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <categoryLink targetId="9871-cb62-5283-2216" id="33d6-ca22-314c-3ef1" primary="false" name="Command Model Sub-type"/>
         <categoryLink targetId="c504-9dfa-35d3-c98f" id="3818-4e55-2428-f3a2" primary="false" name="Antigrav Model Sub-Type"/>
         <categoryLink targetId="594d-fa82-13cb-a345" id="cd48-e4ed-155e-77a8" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="ea11-0241-9a96-06a5" id="e21c-b59e-4599-fa6c" primary="false" name="Tip of the Spear"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Overseer" hidden="false" id="d43d-be97-943b-2081" sortIndex="16">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="38" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="39" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -14649,6 +14649,37 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Decurion Sagittar" hidden="false" id="cccd-963b-fdfa-ab7a">
+      <entryLinks>
+        <entryLink import="true" name="Iliastus Assault Cannon" hidden="false" id="4536-ac83-17d5-df0f" type="selectionEntry" targetId="f38b-8af1-17b8-30fe">
+          <modifiers>
+            <modifier type="set" value="Pintle Mounted iliastus assault cannon" field="name"/>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Skyfire" id="2831-57d2-f663-37bc" hidden="false" type="rule" targetId="8ff3-b6fe-c75b-1d52"/>
+            <infoLink name="Precision (X)" id="3915-d6d8-234b-e0a2" hidden="false" type="rule" targetId="4fbd-e0bc-8f72-6e3f">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Precision (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8027-418c-760b-0d25-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8027-418c-760b-0d25-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Augury scanner" hidden="false" id="c452-6afb-a389-d6ee" type="selectionEntry" targetId="fede-99f5-4c76-4659">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0575-4121-3909-eb45-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0575-4121-3909-eb45-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="5498-66fa-1f62-7244" id="bfff-8a3b-9a91-b763" primary="false" name="Decurion Sagittar"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
     <entryLink import="true" name="Praetor in Saturnine Terminator Armour" hidden="false" id="723a-caa1-9f03-13f9" type="selectionEntry" targetId="2a5a-8ab8-be4d-6fa7" sortIndex="3">
@@ -16580,8 +16611,15 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </entryLink>
       </entryLinks>
       <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e462-2a64-e0ee-ecd9"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e462-2a64-e0ee-ecd9" automatic="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="e462-2a64-e0ee-ecd9">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="parent" childId="cccd-963b-fdfa-ab7a" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Prime Benefits" id="d3a2-e7f2-9da7-fd3c" hidden="false" sortIndex="11">
       <selectionEntries>
@@ -17082,6 +17120,18 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
               </conditions>
             </modifier>
           </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Decurion Sagittar" hidden="true" id="886c-12bb-f424-dcce" type="selectionEntry" targetId="cccd-963b-fdfa-ab7a">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d186-cffc-0950-f632" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <constraints>

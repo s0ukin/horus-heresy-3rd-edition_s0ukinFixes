@@ -7450,6 +7450,11 @@
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2de-94e6-6bde-ed24" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
@@ -7479,6 +7484,11 @@
             <modifier type="set" value="5" field="9893-c379-920b-8982">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b2de-94e6-6bde-ed24" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>

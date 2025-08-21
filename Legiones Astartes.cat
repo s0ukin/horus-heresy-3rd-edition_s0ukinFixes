@@ -5890,6 +5890,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink targetId="5a95-e564-96b2-8dc9" id="4157-fb03-9a71-7ed6" primary="false" name="Champion Model Sub-Type"/>
+        <categoryLink targetId="1baf-b200-9e02-844d" id="1095-dd85-ad6b-3af6" primary="false" name="Legion Champion"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Vigilator" hidden="false" id="22fd-89ea-04c6-3f3d" sortIndex="10">

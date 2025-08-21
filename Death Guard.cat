@@ -299,6 +299,10 @@ A Model with this Special Rule that has moved no more than 4&quot; in the Moveme
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="459b-d0d3-6eba-3066-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="459b-d0d3-6eba-3066-max"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Slaker" hidden="false" id="a8bc-e03e-b598-9475" sortIndex="2">
               <profiles>
@@ -330,6 +334,10 @@ A Model with this Special Rule that has moved no more than 4&quot; in the Moveme
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6373-c966-12a6-c8cc-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6373-c966-12a6-c8cc-max"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>

@@ -443,6 +443,7 @@
     <categoryEntry name="Archmagos is Malagra" id="3006-172b-ba54-4d75" hidden="false"/>
     <categoryEntry name="Archmagos is Reductor" id="be35-75c1-1217-2fdb" hidden="false"/>
     <categoryEntry name="Archmagos is Macrotek" id="b25e-e5d1-1044-ea7c" hidden="false"/>
+    <categoryEntry name="Default Chainsword" id="afd9-2b52-9cdd-30f2" hidden="false"/>
     <categoryEntry name="Legion Champion" id="1baf-b200-9e02-844d" hidden="false"/>
     <categoryEntry name="Tip of the Spear" id="ea11-0241-9a96-06a5" hidden="false"/>
     <categoryEntry name="Decurion Sagittar" id="5498-66fa-1f62-7244" hidden="false"/>

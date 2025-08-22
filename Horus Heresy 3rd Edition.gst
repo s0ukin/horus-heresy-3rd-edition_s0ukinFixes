@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="44" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="45" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -15961,6 +15961,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="fd9b-d04e-362d-8e5d" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

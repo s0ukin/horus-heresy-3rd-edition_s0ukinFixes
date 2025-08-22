@@ -4918,7 +4918,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7de-7d06-50b3-dd17"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Prosperine Arcana" hidden="false" id="8dc8-c5af-5e57-91ce" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
           </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4b06-1a70-2757-faf1" includeChildSelections="false"/>
@@ -4978,6 +4977,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </entryLinks>
         </entryLink>
         <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="5a03-b6ea-16aa-c722" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b" sortIndex="3"/>
+        <entryLink import="true" name="Prosperine Arcana" hidden="false" id="8dc8-c5af-5e57-91ce" type="selectionEntryGroup" targetId="eafe-beb3-8d27-ec50"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Optae" hidden="false" id="1653-8dfd-2881-8cec" sortIndex="6">

@@ -15961,7 +15961,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="258b-97fb-2366-7344" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="acc1-f897-a117-9b4a" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="e7b4-2c1c-7d85-a4e3" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

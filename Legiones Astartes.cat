@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="42" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="9b32-f350-6aa9-9c09" name="Legiones Astartes" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="43" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Rapier Battery" hidden="false" id="5e1a-86ac-b637-daf2" sortIndex="36">
       <selectionEntries>
@@ -547,25 +547,26 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </conditions>
                   <comment>DA Paladin</comment>
                 </modifier>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -5126,37 +5127,40 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </conditions>
                   <comment>Corvid Jump Pack</comment>
                 </modifier>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2a84-8986-b83f-6ba8" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Pack Thegn</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2a84-8986-b83f-6ba8" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Pack Thegn</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>Pack Thegn</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Pack Thegn</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Pack Thegn</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="2a84-8986-b83f-6ba8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5456,25 +5460,26 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </conditions>
                   <comment>Tartaros</comment>
                 </modifier>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -5830,26 +5835,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -6010,26 +6014,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -6090,26 +6093,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -6193,26 +6195,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -6327,26 +6328,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -6406,26 +6406,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -6560,25 +6559,26 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                   </conditions>
                   <comment>Corvid Jump Pack</comment>
                 </modifier>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <categoryLinks>
@@ -6691,26 +6691,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -6848,26 +6847,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -7036,26 +7034,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5++</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -14747,26 +14744,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>
@@ -14898,26 +14894,25 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">2+</characteristic>
                 <characteristic name="INV" typeId="a951-a772-7ce0-0b64">5+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <comment>Paragon of Battle</comment>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="253c-d694-4695-c89e">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                    <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
+                      <comment>Paragon of Battle</comment>
+                    </modifier>
+                  </modifiers>
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
                   </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-                <modifier type="increment" value="1" field="024e-bdb1-7982-25a0">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="20cb-4eec-0844-8a97" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                  <comment>Paragon of Battle</comment>
-                </modifier>
-              </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <constraints>

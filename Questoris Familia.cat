@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Familia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Familia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Knight Questoris" hidden="false" id="6fbb-fa07-52b9-d350" sortIndex="4">
       <selectionEntries>
@@ -2036,16 +2036,30 @@ Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subj
       <profiles>
         <profile name="Twin castigator bolt cannon" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7e92-bd3c-2cb8-5593">
           <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037"/>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355"/>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63"/>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951"/>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291"/>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd"/>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03"/>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">36</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">10</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">6</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordinance (D), Suppressive (2)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Bolt</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Ordnance (X)" id="9736-5d4b-5ca7-dcf8" hidden="false" type="rule" targetId="b6b3-909a-b78a-3dbf">
+          <comment>D</comment>
+          <modifiers>
+            <modifier type="set" value="Ordinance (D)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Suppressive (X)" id="b672-38e4-9a60-3959" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Suppressive (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tempest warblade" hidden="false" id="8737-136f-ec1a-b66c">
       <profiles>

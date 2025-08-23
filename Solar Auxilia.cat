@@ -1804,7 +1804,7 @@
                 <modifierGroup type="and">
                   <comment>Paragon of Battle</comment>
                   <modifiers>
-                    <modifier type="increment" value="1" field="0cd5-b269-e3bc-028b">
+                    <modifier type="increment" value="1" field="a17e-8e7d-d21f-c138">
                       <comment>Paragon of Battle</comment>
                     </modifier>
                   </modifiers>
@@ -9706,6 +9706,9 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="b980-187b-2b17-d635" id="a2ff-59eb-e01b-be58" primary="false" name="Unique Model Sub-Type"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tarantula Section" hidden="false" id="5c1a-1910-9a09-75cd">
       <selectionEntries>

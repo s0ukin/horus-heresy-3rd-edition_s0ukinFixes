@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="13" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="2f57-6e9d-8a7b-5c2e" name="Mechanicum" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Anacharis Scoria" hidden="false" id="10f5-dae8-f081-d82f" sortIndex="29">
       <infoLinks>
@@ -3208,55 +3208,36 @@
             <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
           </costs>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Must have one of the following options" id="4b86-e546-c577-5527" hidden="false" sortIndex="2">
+            <selectionEntryGroup name="Weapon Options" id="da21-875e-9764-ee15" hidden="false" defaultSelectionEntryId="d949-5b9f-f2dd-a0e4" sortIndex="2">
               <selectionEntryGroups>
-                <selectionEntryGroup name="Two options from the following:" id="4fd8-0cd0-ead7-1b81" hidden="false" sortIndex="1">
-                  <entryLinks>
-                    <entryLink import="true" name="Volkite veuglaire" hidden="false" id="eb2c-7500-298e-6f94" type="selectionEntry" targetId="fd48-6c5b-4ac5-2a8f" sortIndex="2">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="083f-db6b-e9b1-0abd"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink import="true" name="Lightning lock" hidden="false" id="3d25-f09c-4211-6988" type="selectionEntry" targetId="d22a-d9bc-ed06-1a7f" sortIndex="3">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2b37-d8d9-f794-702d"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink import="true" name="Graviton pulsar" hidden="false" id="7be6-c0ad-6975-64a7" type="selectionEntry" targetId="bc2f-0d66-62c3-9494" sortIndex="4">
-                      <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2563-140c-8343-7eec"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
+                <selectionEntryGroup name="Two options from the following list:" id="7d45-d7d2-00ef-6c0f" hidden="false" sortIndex="1" defaultSelectionEntryId="none">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="079a-d8f6-8017-86d6" automatic="true"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ddc1-34ba-1d99-91ae" automatic="true"/>
+                  </constraints>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Gyges siege claw and one Irad-cleanser" hidden="false" id="362a-7ecd-2684-87c6" sortIndex="1">
+                    <selectionEntry type="upgrade" import="true" name="Gyges siege claw and one Irad-cleanser" hidden="false" id="7739-8123-d0eb-a8fa" sortIndex="1">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="760c-5f53-dc8f-edd9"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7270-03f1-4d89-7a05"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink import="true" name="Irad-cleanser" hidden="false" id="b514-64d9-c78a-7d8c" type="selectionEntry" targetId="910e-3579-4968-44af">
+                        <entryLink import="true" name="Irad-cleanser" hidden="false" id="79e6-e72b-6f3e-2027" type="selectionEntry" targetId="910e-3579-4968-44af">
                           <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24fe-4c62-c122-023d"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b93-98e2-1838-d23a"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1103-dedb-aed5-4f6f"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7341-901d-2c22-4129"/>
                           </constraints>
                         </entryLink>
-                        <entryLink import="true" name="Gyges siege claws" hidden="false" id="a2e5-e84d-4785-d835" type="selectionEntry" targetId="8026-777a-5e74-7952">
+                        <entryLink import="true" name="Gyges siege claws" hidden="false" id="45c1-84e7-1aba-3ade" type="selectionEntry" targetId="8026-777a-5e74-7952">
                           <constraints>
-                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e482-8d62-707f-b7ea"/>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31ee-4be3-e373-d11b"/>
+                            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0b9-9c33-7a8f-7136"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b598-dd6d-5c78-3028"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Moirax conversion beamer" hidden="false" id="63bc-df52-e94e-6acf" sortIndex="5">
+                    <selectionEntry type="upgrade" import="true" name="Moirax conversion beamer" hidden="false" id="4c08-1af7-eeab-1a1d" sortIndex="5">
                       <profiles>
-                        <profile name="2) Moirax conversion beamer &lt;15" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="5dc7-e30a-81a3-994b">
+                        <profile name="2) Moirax conversion beamer &lt;15" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="322f-ee89-4a44-ace2">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">&lt;15</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3267,7 +3248,7 @@
                             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
                           </characteristics>
                         </profile>
-                        <profile name="1) Moirax conversion beamer 15-30" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="7924-445d-0b5a-2ea7">
+                        <profile name="1) Moirax conversion beamer 15-30" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="a342-3f18-e3bb-bac4">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">15-30</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3278,7 +3259,7 @@
                             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Conversion</characteristic>
                           </characteristics>
                         </profile>
-                        <profile name="3) Moirax conversion beamer &gt;30-45" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="6ea2-6cb6-2e09-234d">
+                        <profile name="3) Moirax conversion beamer &gt;30-45" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="fb5c-b594-9b14-a4d2">
                           <characteristics>
                             <characteristic name="R" typeId="cdb0-8654-6840-1037">&gt;30-45</characteristic>
                             <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
@@ -3291,19 +3272,19 @@
                         </profile>
                       </profiles>
                       <infoLinks>
-                        <infoLink name="Blast (X)" id="1aeb-6a6b-5cd6-86f1" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
+                        <infoLink name="Blast (X)" id="b17d-ae45-25dc-49c3" hidden="false" type="rule" targetId="8687-05f8-7034-412c">
                           <modifiers>
                             <modifier type="set" value="Blast (3&quot;)" field="name"/>
                           </modifiers>
                           <comment>3&quot;</comment>
                         </infoLink>
-                        <infoLink name="Heavy (X)" id="6c15-218b-b947-11f6" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
+                        <infoLink name="Heavy (X)" id="7a88-1d32-dcc5-821d" hidden="false" type="rule" targetId="bc30-3b33-2683-01a2">
                           <modifiers>
                             <modifier type="set" value="Heavy (RS)" field="name"/>
                           </modifiers>
                           <comment>RS</comment>
                         </infoLink>
-                        <infoLink name="Suppressive (X)" id="90c6-356a-b09a-1798" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
+                        <infoLink name="Suppressive (X)" id="98c1-ece4-6a24-dde9" hidden="false" type="rule" targetId="001f-53f3-4d87-4b43">
                           <modifiers>
                             <modifier type="set" value="Suppressive (1)" field="name"/>
                           </modifiers>
@@ -3316,49 +3297,86 @@
                         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
                       </costs>
                       <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b94e-fb13-dea5-ab1b"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e901-79e9-3b63-7b7a"/>
                       </constraints>
                     </selectionEntry>
                   </selectionEntries>
-                  <constraints>
-                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fa42-f182-5312-0445"/>
-                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Volkite veuglaire" hidden="false" id="1f23-c72e-f128-b875" type="selectionEntry" targetId="fd48-6c5b-4ac5-2a8f" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4eba-cdd2-bb6c-d3e2"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Lightning lock" hidden="false" id="6eb0-9a58-ef2f-a80f" type="selectionEntry" targetId="d22a-d9bc-ed06-1a7f" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eee1-8f38-5fa3-4a60"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Graviton pulsar" hidden="false" id="2e5d-fd0e-75b3-5f2d" type="selectionEntry" targetId="bc2f-0d66-62c3-9494" sortIndex="4">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="00cc-8c40-4cd2-d881"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="0" field="079a-d8f6-8017-86d6">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="5f9a-1df9-bcb6-86ad" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="ddc1-34ba-1d99-91ae">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="5f9a-1df9-bcb6-86ad" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Paired Gyges siege claws and two Irad-cleansers" hidden="false" id="e07a-a363-54f2-a504" sortIndex="2">
+                <selectionEntry type="upgrade" import="true" name="Paired Gyges siege claws and two Irad-cleansers" hidden="false" id="5f9a-1df9-bcb6-86ad">
                   <entryLinks>
-                    <entryLink import="true" name="Paired Gyges siege claws" hidden="false" id="6903-6428-0037-14d8" type="selectionEntry" targetId="9406-f4d1-d2ac-c664">
+                    <entryLink import="true" name="Paired Gyges siege claws" hidden="false" id="d21d-fbcd-c2f1-c691" type="selectionEntry" targetId="9406-f4d1-d2ac-c664" sortIndex="1">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="623a-6072-0687-9ac5"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a73a-2ccc-4fac-392c"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="aa79-ba4f-3e65-e6eb"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5165-c55f-8f4a-91d4"/>
                       </constraints>
                     </entryLink>
-                    <entryLink import="true" name="Irad-cleanser" hidden="false" id="58c3-c497-55bd-c503" type="selectionEntry" targetId="910e-3579-4968-44af">
+                    <entryLink import="true" name="Irad-cleanser" hidden="false" id="9bea-42d9-4937-e771" type="selectionEntry" targetId="910e-3579-4968-44af">
                       <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="e9fa-179f-7b21-4bb9"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6aaa-2c58-3c4a-c176"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="b43b-2844-8741-8de7"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="2e01-29e9-47ed-9345"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf94-19e0-f086-0f12"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc12-b26d-1a3c-dd7e"/>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="beb0-28a4-d354-b9ef"/>
-              </constraints>
               <modifiers>
-                <modifier type="decrement" value="1" field="beb0-28a4-d354-b9ef">
+                <modifier type="set" value="1" field="b775-60e6-4820-ff23">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="3d84-fd67-3560-2968" childId="e07a-a363-54f2-a504" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" value="1" field="fc12-b26d-1a3c-dd7e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="3d84-fd67-3560-2968" childId="4fd8-0cd0-ead7-1b81" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="parent" childId="5f9a-1df9-bcb6-86ad" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b775-60e6-4820-ff23" automatic="true"/>
+              </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>

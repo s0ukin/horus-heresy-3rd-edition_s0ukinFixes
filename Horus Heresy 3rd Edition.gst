@@ -14138,7 +14138,7 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Auxilliary - Planetfall Speartip" id="2e50-319d-ae62-a50c" hidden="true" sortIndex="82">
+        <forceEntry name="Auxiliary - Planetfall Speartip" id="2e50-319d-ae62-a50c" hidden="true" sortIndex="82">
           <categoryLinks>
             <categoryLink name="Prime Retinue" hidden="false" id="3334-e38f-cc78-1e2f" targetId="c66b-ef39-b20f-725b">
               <constraints>

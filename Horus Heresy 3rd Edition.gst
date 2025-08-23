@@ -453,6 +453,7 @@
     <categoryEntry name="Heavy Transport - Logisticae" id="6fc0-917e-44a4-a4da" hidden="true">
       <comment>Ultramarines Logisticae</comment>
     </categoryEntry>
+    <categoryEntry name="Night Raptor Squad" id="3edc-0325-4190-a414" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">

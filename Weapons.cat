@@ -3150,17 +3150,6 @@
             <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
           </characteristics>
         </profile>
-        <profile name="Kratos battle cannon (Flashburn shells)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="33c4-daec-f344-e049">
-          <characteristics>
-            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
-            <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
-            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
-            <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
-            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
-            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (D), Armourbane, Overload (1)</characteristic>
-            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Ordnance (X)" id="b5cc-c496-8ec4-6ba0" hidden="false" type="rule" targetId="b6b3-909a-b78a-3dbf">
@@ -3194,6 +3183,33 @@
           </modifiers>
         </infoLink>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Flashburn shells" hidden="false" id="831e-426f-fb16-9bdc">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0b9-d4d8-2bc4-59d5"/>
+          </constraints>
+          <profiles>
+            <profile name="Kratos battle cannon (Flashburn shells)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="33c4-daec-f344-e049">
+              <characteristics>
+                <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+                <characteristic name="FP" typeId="5037-1f27-1790-e355">1</characteristic>
+                <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">9</characteristic>
+                <characteristic name="AP" typeId="7a23-0248-2b94-5951">2</characteristic>
+                <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">3</characteristic>
+                <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Ordnance (D), Armourbane, Overload (1)</characteristic>
+                <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Auto</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Twin bolter" hidden="false" id="222f-82cb-05a2-f8f1">
       <profiles>

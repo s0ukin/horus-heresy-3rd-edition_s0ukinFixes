@@ -16742,6 +16742,23 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Phoenix rapier" hidden="true" id="fa83-824e-f318-16fb" type="selectionEntry" targetId="25cc-1fea-8185-39a4" sortIndex="28">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>EC</comment>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Equipment" id="0e69-ccf1-cde7-acaf" hidden="false" sortIndex="7" collapsible="true">
@@ -17166,15 +17183,26 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="force" childId="a956-190d-3b47-6258" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
                   </conditions>
                   <comment>WE</comment>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8045-89a4-76d4-fcef" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Phoenix rapier" hidden="true" id="f139-2ff4-40e0-ffc5" type="selectionEntry" targetId="25cc-1fea-8185-39a4" sortIndex="14">
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <comment>EC</comment>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -17626,7 +17654,8 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="9a22-d01f-ab5c-ec07" shared="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5dd5-d00c-b150-34b9" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="976b-2d8a-7e70-e6a7" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="976b-2d8a-7e70-e6a7" childId="d4a4-a3f7-f634-4632" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>

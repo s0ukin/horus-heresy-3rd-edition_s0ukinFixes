@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Familia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="8" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fd9b-d04e-362d-8e5d" name="Questoris Familia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="9" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issue" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Knight Questoris" hidden="false" id="6fbb-fa07-52b9-d350" sortIndex="4">
       <selectionEntries>
@@ -3532,7 +3532,7 @@ Once the cost has been paid, the Reactive Player must select one Unit under thei
     </entryLink>
     <entryLink import="true" name="Vorax Attack Maniple" hidden="false" id="b668-14af-31af-66e2" type="selectionEntry" targetId="de2e-f9b5-abe6-b8b5" sortIndex="103">
       <categoryLinks>
-        <categoryLink targetId="0fb1-2125-2a33-b094" id="7b89-e630-7541-b568" primary="true" name="Recon - Vorax Attack Maniple Only"/>
+        <categoryLink targetId="2b65-a3f2-620a-dc58" id="8e64-3ffc-2d12-2922" primary="true" name="Recon"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="[Questoris Familia]" id="4a34-d006-7d62-09ba" hidden="false" type="profile" targetId="32ec-1c1a-df63-3253"/>

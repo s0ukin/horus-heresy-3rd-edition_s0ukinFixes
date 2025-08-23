@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="11" battleScribeVersion="2.03" type="catalogue" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="106b-693b-99f2-00c3" name="Special Rules" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="15" battleScribeVersion="2.03" type="catalogue" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedRules>
     <rule name="Interdiction Cadres" id="a752-1dc3-403e-9336" hidden="false">
       <description>All Models in a Unit selected to fill a Prime Force Organization with this Prime Advantage gain the Concealed Positions and Expendable(1) Special Rules.</description>
@@ -605,6 +605,21 @@ At the End of the Charge Sub-Phase, if a Unit that includes any Models with this
 
 
 A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
+    </rule>
+    <rule name="Legiones Thallaxes" id="0f82-041f-71e9-f02b" hidden="false">
+      <description>&quot;This Special Rule allows Thallax units to be selected as part of a Detatchment that Includes a Forge Lord.&quot;
+
+
+When a Model with this Special rule is included in a Detatchment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from the Liber mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with &apos;Bonded Reductor&apos; on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do no have the same Faction Trait as the other Units in that Detatachment.</description>
+    </rule>
+    <rule name="Consul-Delegatus" id="a311-5de6-a98b-e634" hidden="false">
+      <description>&quot;A Command Model with this Special Rule unlocks an Apex Detachment, but awards Victory Points for Slay the Warlord.&quot;
+
+
+An Army may not include more than one Model with this Special Rule. If a Model with this Special Rule is selected to fill a Command Slot in any Detachment in the Crusade Force Organisation Chart, then the Controlling Player may select one Apex Detachment instead of the Auxiliary Detachment usually granted by filling a Command Slot. Additionally, a Model with this Special Rule counts as being a High Command Choice for the purposes of any version of the Slay the Warlord (X) Secondary Objective.</description>
+    </rule>
+    <rule name="True Believers" id="e073-f1b9-0100-b915" hidden="false">
+      <description>All Models in the Unit selected to fill the Prime Slot gain the Malefic Sub-Type.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>

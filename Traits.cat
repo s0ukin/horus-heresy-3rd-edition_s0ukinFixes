@@ -180,6 +180,9 @@
     <categoryEntry name="Talons of the Emperor" id="af7f-ce65-7fad-6d0e" hidden="false"/>
     <categoryEntry name="Diabolist" id="107a-0195-0c8b-ddc9" hidden="false"/>
     <categoryEntry name="Terminator Armour" id="3f80-6d12-e3a6-879a" hidden="false"/>
+    <categoryEntry name="Tartaros Armour" id="c5f1-734c-1712-8ec3" hidden="false"/>
+    <categoryEntry name="Cataphractii Armour" id="7bbd-af53-b6c5-183c" hidden="false"/>
+    <categoryEntry name="Malefic" id="7a6b-fb9d-abb4-f36d" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Allegiance Traits" id="edd3-9763-97ca-0323" hidden="false">

@@ -15094,6 +15094,11 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
             <condition type="instanceOf" value="1" field="forces" scope="force" childId="27bf-3e6b-587c-74bb" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set-primary" value="2fed-0e3c-cc68-e4d4" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Praetor" hidden="false" id="26fe-3b8a-0d61-e070" type="selectionEntry" targetId="9ae1-34b8-0b83-f1c5" sortIndex="1">
@@ -15232,6 +15237,13 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
       <categoryLinks>
         <categoryLink targetId="a38e-50ff-310f-f19e" id="7323-9c77-7237-9490" primary="true" name="Retinue"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="af7b-1fc6-d5b1-0841" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="2e50-319d-ae62-a50c" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="true" name="Centurion Command Squad" hidden="false" id="7966-ca20-b5f1-218d" type="selectionEntry" targetId="4985-94a1-4448-a9ff" sortIndex="21">
       <categoryLinks>

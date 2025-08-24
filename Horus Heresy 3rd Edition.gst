@@ -453,6 +453,8 @@
       <comment>Ultramarines Logisticae</comment>
     </categoryEntry>
     <categoryEntry name="Night Raptor Squad" id="3edc-0325-4190-a414" hidden="false"/>
+    <categoryEntry name="Elites - Veteran Assault Squads Only" id="2fed-0e3c-cc68-e4d4" hidden="false"/>
+    <categoryEntry name="Retinue - Praetorian Command Squad with Jump Packs Only" id="af7b-1fc6-d5b1-0841" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -14135,36 +14137,12 @@
             <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
           </costs>
         </forceEntry>
-        <forceEntry name="Auxilliary - Planetfall Speartip" id="2e50-319d-ae62-a50c" hidden="true" sortIndex="82">
+        <forceEntry name="Auxiliary - Planetfall Speartip" id="2e50-319d-ae62-a50c" hidden="true" sortIndex="82">
           <categoryLinks>
-            <categoryLink name="Retinue" hidden="false" id="1279-3195-8b2e-9051" targetId="a38e-50ff-310f-f19e">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88e9-39ad-3087-8f8e"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="88e9-39ad-3087-8f8e">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </categoryLink>
             <categoryLink name="Prime Retinue" hidden="false" id="3334-e38f-cc78-1e2f" targetId="c66b-ef39-b20f-725b">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2ee1-f541-0f54-3238" includeChildSelections="true"/>
               </constraints>
-            </categoryLink>
-            <categoryLink name="Elites" hidden="false" id="bf51-31c9-0472-c4f1" targetId="5d5e-958f-e388-50b5">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5ae0-78b6-d64a-e571"/>
-              </constraints>
-              <modifiers>
-                <modifier type="increment" value="1" field="5ae0-78b6-d64a-e571">
-                  <conditions>
-                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </categoryLink>
             <categoryLink name="Prime Elites" hidden="false" id="81ad-15ba-38da-7cee" targetId="276f-7a07-a56c-affd">
               <constraints>
@@ -14368,6 +14346,30 @@
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f820-8b49-8029-6e88" includeChildSelections="true"/>
               </constraints>
+            </categoryLink>
+            <categoryLink name="Elites - Veteran Assault Squads Only" hidden="false" id="453e-4c0b-3c13-417b" targetId="2fed-0e3c-cc68-e4d4" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b99f-94f2-d9af-9ebc"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="b99f-94f2-d9af-9ebc">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="d81c-494b-0302-5844" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </categoryLink>
+            <categoryLink name="Retinue - Praetorian Command Squad with Jump Packs Only" hidden="false" id="7d0f-4b59-bd7a-0b69" targetId="af7b-1fc6-d5b1-0841" type="categoryEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88e9-39ad-3087-8f8e"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="88e9-39ad-3087-8f8e">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="e788-1cee-dabe-1e19" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </categoryLink>
           </categoryLinks>
           <comment>Master of Descent only</comment>

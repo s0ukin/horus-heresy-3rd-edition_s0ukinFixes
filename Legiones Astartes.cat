@@ -1480,7 +1480,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                     </entryLink>
                   </entryLinks>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="691c-9084-b60d-3b72" includeChildSelections="true"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="691c-9084-b60d-3b72" includeChildSelections="true" automatic="true"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="May exchange Bolt pistol for:" id="2da1-6f3c-e1f4-3537" hidden="false" defaultSelectionEntryId="29a9-66f3-d0b9-2cfa" sortIndex="1">
@@ -1585,6 +1585,13 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                       </modifiers>
                     </selectionEntryGroup>
                   </selectionEntryGroups>
+                  <modifiers>
+                    <modifier type="set" value="1" field="691c-9084-b60d-3b72">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="6754-24dd-5be0-26ff" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntryGroup>

@@ -15786,7 +15786,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <infoLink name="Smokescreen" id="f2fe-9f62-1bf1-b9f3" hidden="false" type="profile" targetId="12ec-97aa-0b8a-7573"/>
       </infoLinks>
       <rules>
-        <rule name="Mastodon Transport Bay" id="e072-e4f5-b964-a208" hidden="false"/>
+        <rule name="Mastodon Transport Bay" id="e072-e4f5-b964-a208" hidden="false">
+          <description>&quot; A Mastodon Super-heavy Assault Transport can transport larger Models as well as infantry.&quot;
+
+
+Models of any Type other than Vehicle may Embark on a Model with this Special Rule, however only 4 Models may be Embarked that do not have the Infantry or Paragon Type, and such a Model may not have any variant of the Bulky (X) Special Rule where the value of X is greater than 6.</description>
+        </rule>
       </rules>
       <costs>
         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="600"/>

@@ -1271,8 +1271,6 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
             <modifier type="set" value="Bulky (4)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Command Unit Sub-type" id="0c1a-4c66-e3c9-a5a7" hidden="false" type="rule" targetId="7b6d-2e0d-8659-252d"/>
-        <infoLink name="Heavy Unit Sub-type" id="28f5-7bff-3a79-96de" hidden="false" type="rule" targetId="7d35-4d6f-c4fe-4aac"/>
         <infoLink name="Implacable Advance" id="3b22-41a7-1b11-db34" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
         <infoLink name="Infantry Unit Type" id="12a0-7dca-8a47-c4e1" hidden="false" type="rule" targetId="d518-ea26-a708-e6a1"/>
         <infoLink name="Slow and Purposeful" id="884d-c920-88e9-d201" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>

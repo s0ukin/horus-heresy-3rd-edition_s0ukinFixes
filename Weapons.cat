@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="20" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="a22d-4dd0-c59d-57d3" name="Weapons" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="21" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Bolt pistol" hidden="false" id="2942-f783-d627-33c5">
       <profiles>
@@ -7236,6 +7236,35 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Destroyer Missile Launcher" hidden="false" id="0ee7-cc10-6d8f-b2bc">
+      <profiles>
+        <profile name="Destroyer Missile Launcher (Rad)" typeId="c591-09ed-3e6f-eb2b" typeName="Ranged Weapon" hidden="false" id="0e50-b9e0-d670-c996">
+          <characteristics>
+            <characteristic name="R" typeId="cdb0-8654-6840-1037">24</characteristic>
+            <characteristic name="FP" typeId="5037-1f27-1790-e355">2</characteristic>
+            <characteristic name="RS" typeId="b9da-ee13-79f9-fa63">4</characteristic>
+            <characteristic name="AP" typeId="7a23-0248-2b94-5951">3</characteristic>
+            <characteristic name="D" typeId="88c3-1ca5-7dc1-f291">1</characteristic>
+            <characteristic name="Special Rules" typeId="5aad-137a-8ee2-63fd">Poisoned (2+), Phage (T)</characteristic>
+            <characteristic name="Traits" typeId="1247-79d2-6cc1-8a03">Assault, Rad</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Poisoned (X)" id="a626-84bb-d1a2-c2ac" hidden="false" type="rule" targetId="076f-2c91-c58b-71b3">
+          <modifiers>
+            <modifier type="set" value="2+" field="name"/>
+          </modifiers>
+          <comment>Rad</comment>
+        </infoLink>
+        <infoLink name="Phage (X)" id="0136-7516-95c6-e158" hidden="false" type="rule" targetId="3e26-d357-69d6-1341">
+          <modifiers>
+            <modifier type="set" value="T" field="name"/>
+          </modifiers>
+          <comment>Rad</comment>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Power Weapon" id="d23f-b4f0-0127-9394" hidden="false" collapsible="true" flatten="true">
@@ -8021,6 +8050,28 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="10" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c660-c7ad-70b0-5318" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Excoriator chainaxe" hidden="false" id="fd97-ad69-195c-f35d" sortIndex="2">
               <profiles>
@@ -8059,6 +8110,28 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="10" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c660-c7ad-70b0-5318" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Paired falax blades" hidden="false" id="067a-7956-a818-438a" sortIndex="3">
               <profiles>
@@ -8081,6 +8154,28 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="10" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c660-c7ad-70b0-5318" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="c800-8aad-56c2-d3c1" sortIndex="4">
               <profiles>
@@ -8119,6 +8214,28 @@
                 <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
                 <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="10" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="9893-c379-920b-8982">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c660-c7ad-70b0-5318" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <modifiers>

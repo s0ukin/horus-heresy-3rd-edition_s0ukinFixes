@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="14" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="a956-190d-3b47-6258" name="                        XII - World Eaters" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="15" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Angron" hidden="false" id="af62-d4a0-c800-712e">
       <selectionEntries>
@@ -450,7 +450,7 @@ Furthermore, if a Model with this Special Rule is part of an Army, then the foll
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca02-2b47-27da-b541" includeChildSelections="false"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Butcher Chainfists" hidden="false" id="7ad6-d711-ddc0-0975" sortIndex="2" defaultAmount="">
+                <selectionEntry type="upgrade" import="true" name="Butcher Chainfists" hidden="false" id="7ad6-d711-ddc0-0975" sortIndex="2">
                   <profiles>
                     <profile name="Butcher Chainfists" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="5cf1-a077-ddfb-2486">
                       <characteristics>
@@ -1325,6 +1325,421 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6e1-5095-9699-0572"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Red Hand Destroyer Assault Squad" hidden="false" id="c924-dc35-f110-115c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="For every five Models, one Ravager may exchange one bolt pistol for:" id="c41c-4925-4fee-9eb0" hidden="false" sortIndex="6">
+          <entryLinks>
+            <entryLink import="true" name="Destroyer Missile Launcher" hidden="false" id="1175-95b5-c869-6baf" type="selectionEntry" targetId="0ee7-cc10-6d8f-b2bc" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="6af2-b9cc-8046-5523" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b099-cbbf-93c5-d312"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ef75-b5bc-ed5e-df41"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="ef75-b5bc-ed5e-df41">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="c924-dc35-f110-115c" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Blood Bonded with Jump Pack" hidden="false" id="7d64-f305-604f-0ea8" sortIndex="1">
+          <profiles>
+            <profile name="Blood Bonded with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="f88f-23bd-5863-aa92">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant, Antigrav)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May have the following items:" id="487c-1c2b-4212-eb64" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Phosphex bombs" hidden="false" id="c9bd-3818-fe74-234f" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25d2-a515-e9b1-9720"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="eb19-b702-7d12-6ac0"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Melta bombs" hidden="false" id="554e-cdcd-2564-bffc" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea9c-4436-d313-a2c1"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="89b1-2ef1-0827-9f6a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapon Options:" id="40de-d874-912a-b312" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="9953-bf0c-226a-1bb8" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2a6-94a0-e7bf-952a"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8015-4b72-0232-d106"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="c0c2-4675-4098-1289" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <modifiers>
+                <modifier type="set" value="Two bolt pistols" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c187-f70d-bbf3-8ff8-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c187-f70d-bbf3-8ff8-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="3ece-e237-eeac-941c" targetId="8045-89a4-76d4-fcef" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c7d-f94e-cd3e-1e02"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f619-46cc-6c59-455f"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ravager with Jump Pack" hidden="false" id="2f41-8103-7177-7870" sortIndex="2">
+          <profiles>
+            <profile name="Ravager with Jump Pack" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="6c11-9fa3-cc2d-0927">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Antigrav)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">12</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">7</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Options:" id="3508-8da4-e0e9-8d80" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="d41d-9316-dd2f-85bc" type="selectionEntry" targetId="78f4-4967-2896-c3a5"/>
+                <entryLink import="true" name="Caedere Weapons" hidden="false" id="2a04-5ba4-4da4-672a" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="980d-b0fc-5cc4-a5d6"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8d6b-b247-aace-ce44"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="07b8-64e8-51a5-a42b" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <modifiers>
+                <modifier type="set" value="Two bolt pistols" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bba4-5637-9891-ba32-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bba4-5637-9891-ba32-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="0cf0-09d0-8e0c-ba50"/>
+            <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="12d4-b1ef-a627-e2dc"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Bitter Duty" id="fb99-e736-1dae-4516" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5"/>
+        <infoLink name="Firestorm" id="a8cc-43b7-104f-9c9b" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
+        <infoLink name="Bearers of the Blood Hand" id="c4f5-ccee-6803-c2e9" hidden="false" type="rule" targetId="d783-7994-1dee-469d"/>
+        <infoLink name="[Allegiance]" id="516d-e5fc-129e-b336" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="c30b-e651-f596-714f" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+        <infoLink name="Deep Strike" id="6ec8-57cc-3317-f7b6" hidden="false" type="rule" targetId="0553-d06b-52b9-34db"/>
+        <infoLink name="Bulky (X)" id="fe3c-2803-81e5-b479" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
+          <modifiers>
+            <modifier type="set" value="2" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="30"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="a72a-6cdc-8301-e500" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="5f53-c24e-6565-556a" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="7f62-5900-dd33-cd23" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1ba-64a8-7eab-6b09-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1ba-64a8-7eab-6b09-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="8cb5-bb36-c11d-75f4" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8904-2c40-0b16-6755-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8904-2c40-0b16-6755-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad grenades" hidden="false" id="6350-fa18-a67b-34b6" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d769-7614-ab35-5503-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d769-7614-ab35-5503-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry Model Type" hidden="false" id="53bc-781f-f81e-64b4" targetId="594d-fa82-13cb-a345" primary="false"/>
+        <categoryLink name="Antigrav Model Sub-Type" hidden="false" id="a3ca-070c-f20a-262e" targetId="c504-9dfa-35d3-c98f" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Red Hand Destroyer Mortalis Squad" hidden="false" id="5b89-285e-226b-077a">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="For every five Models, one Ravager may exchange one bolt pistol for:" id="e41a-3e36-951c-078b" hidden="false" sortIndex="6">
+          <entryLinks>
+            <entryLink import="true" name="Destroyer Missile Launcher" hidden="false" id="73ee-dea6-3a28-c5d6" type="selectionEntry" targetId="0ee7-cc10-6d8f-b2bc" sortIndex="1">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Thunder hammer" hidden="false" id="b24d-9e4a-74ba-4f1c" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="2">
+              <costs>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a8c7-278e-3f24-33dc"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f0a9-85ac-5f8e-7d39"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="f0a9-85ac-5f8e-7d39">
+              <repeats>
+                <repeat value="5" repeats="1" field="selections" scope="5b89-285e-226b-077a" childId="model" shared="true" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Blood Bonded" hidden="false" id="656b-5a15-775a-df79" sortIndex="1">
+          <profiles>
+            <profile name="Blood Bonded" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="8041-ff4d-222e-84aa">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">3</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">8</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May have the following items:" id="286a-69f4-5adf-508c" hidden="false" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Phosphex bombs" hidden="false" id="201a-2251-7274-0b13" type="selectionEntry" targetId="5ad2-c3b4-f5eb-5b10" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b660-231d-241e-5579"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5789-a6af-aa10-fe64"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Melta bombs" hidden="false" id="ec31-ded8-958a-5369" type="selectionEntry" targetId="2eb4-687e-a515-ee3d" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd55-e756-3130-06fe"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f0eb-262d-fab6-4043"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapon Options:" id="1900-9e07-60a5-2415" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Legion Sergeant Melee Weapons" hidden="false" id="7233-0f17-e4ed-a541" type="selectionEntryGroup" targetId="b8d7-8ff0-721e-a963"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36c4-3eac-4c59-0031"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9abe-57e6-1b17-08c9"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="ac56-6722-cdbb-3383" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <modifiers>
+                <modifier type="set" value="Two bolt pistols" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9190-09c7-b12f-08b2-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9190-09c7-b12f-08b2-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink name="Sergeant Model Sub-Type" hidden="false" id="c32c-c3b8-7743-669d" targetId="8045-89a4-76d4-fcef" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbce-c695-5393-59dd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="caf1-523e-2c3b-e521"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ravager" hidden="false" id="a5ed-0613-2468-d93f" sortIndex="2">
+          <profiles>
+            <profile name="Ravager" typeId="a76f-8e23-8c3e-166d" typeName="Profile" hidden="false" id="b5e4-bad1-cb4a-5e10">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="50fc-9241-d4a2-045b">Infantry (Sergeant)</characteristic>
+                <characteristic name="M" typeId="a106-a779-d272-5e93">7</characteristic>
+                <characteristic name="WS" typeId="253c-d694-4695-c89e">4</characteristic>
+                <characteristic name="BS" typeId="0cd5-b269-e3bc-028b">4</characteristic>
+                <characteristic name="S" typeId="498f-dce1-59fd-d8d7">4</characteristic>
+                <characteristic name="T" typeId="3120-8275-e537-ecd2">4</characteristic>
+                <characteristic name="W" typeId="f5cc-79a3-d302-cc1d">1</characteristic>
+                <characteristic name="I" typeId="af9d-7db8-dc95-71c1">4</characteristic>
+                <characteristic name="A" typeId="024e-bdb1-7982-25a0">2</characteristic>
+                <characteristic name="LD" typeId="02ad-ebe6-86e7-9fd6">7</characteristic>
+                <characteristic name="CL" typeId="9cd1-0e7c-2cd6-5f2f">8</characteristic>
+                <characteristic name="WP" typeId="f714-1726-37d3-44df">7</characteristic>
+                <characteristic name="IN" typeId="29c5-925d-5b1d-1e77">7</characteristic>
+                <characteristic name="SAV" typeId="03bd-4ecb-351d-143b">3+</characteristic>
+                <characteristic name="INV" typeId="a951-a772-7ce0-0b64">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Options:" id="c9f5-3780-b20a-98b8" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="4338-9aaf-b64b-d762" type="selectionEntry" targetId="78f4-4967-2896-c3a5"/>
+                <entryLink import="true" name="Caedere Weapons" hidden="false" id="fb67-b468-43bc-9f78" type="selectionEntryGroup" targetId="f18f-e86f-e13e-4a48"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ee9-45df-649c-6f77"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8c61-f08d-5ac3-24e5"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="dd16-4ec6-b77c-52c4" type="selectionEntry" targetId="2942-f783-d627-33c5">
+              <modifiers>
+                <modifier type="set" value="Two bolt pistols" field="name"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c63-0d2d-1192-38fc-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c63-0d2d-1192-38fc-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c16f-97d7-e42d-059a"/>
+            <constraint type="max" value="14" field="selections" scope="parent" shared="true" id="f8a9-743d-4495-8f9d"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Bitter Duty" id="bbe7-7c1a-5512-330d" hidden="false" type="rule" targetId="5d6f-552a-f409-cad5"/>
+        <infoLink name="Firestorm" id="8119-2fab-8bbc-c4b6" hidden="false" type="rule" targetId="3ed1-c5b3-a98d-1b12"/>
+        <infoLink name="Bearers of the Blood Hand" id="c9d1-e8c2-ff41-1e55" hidden="false" type="rule" targetId="d783-7994-1dee-469d"/>
+        <infoLink name="[Allegiance]" id="20c1-8d03-784d-886f" hidden="false" type="profile" targetId="bb66-f1f6-4d65-5a07"/>
+        <infoLink name="[Legiones Astartes]" id="bccc-2d1d-8f77-d767" hidden="false" type="profile" targetId="641c-ca0a-7093-4525"/>
+      </infoLinks>
+      <costs>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
+        <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+        <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+        <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+        <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Prime Unit" hidden="false" id="73e8-eb56-865a-7b6f" type="selectionEntry" targetId="3fa2-78b1-637f-7fb2">
+          <entryLinks>
+            <entryLink import="true" name="Prime Benefits" hidden="false" id="ba1f-3ca7-afc4-de75" type="selectionEntryGroup" targetId="a396-b846-c263-6767"/>
+          </entryLinks>
+        </entryLink>
+        <entryLink import="true" name="Frag grenades" hidden="false" id="7792-ab5a-6b2a-d8c5" type="selectionEntry" targetId="60e4-ca33-2e68-9afc" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7107-49da-843e-67f8-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7107-49da-843e-67f8-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak grenades" hidden="false" id="3b9a-c9c0-e7bb-7585" type="selectionEntry" targetId="0c9b-a32b-87e2-fc3e" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7731-88f5-58dd-1296-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7731-88f5-58dd-1296-max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Rad grenades" hidden="false" id="8011-1fa6-3977-7b0f" type="selectionEntry" targetId="cd5f-1eff-df69-6bd2" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e4ea-3422-fc19-57bf-min"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e4ea-3422-fc19-57bf-max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry Model Type" hidden="false" id="9cb5-9dce-22a4-c7c5" targetId="594d-fa82-13cb-a345" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="ac5c-9c2b-185d-f926" importRootEntries="true" targetId="9b32-f350-6aa9-9c09"/>
@@ -1354,6 +1769,25 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
           <infoLinks>
             <infoLink name="Impact (X)" id="8c9d-da08-fb7c-6823" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c"/>
           </infoLinks>
+          <costs>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Excoriator chainaxe" hidden="false" id="a13c-fa7e-22a2-7ca1" sortIndex="2">
           <profiles>
@@ -1385,6 +1819,19 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
               </modifiers>
             </infoLink>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paired falax blades" hidden="false" id="23ac-beeb-dfe5-bed4" sortIndex="3">
           <profiles>
@@ -1400,6 +1847,19 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Barb-hook lash" hidden="false" id="dc05-c0cf-935f-2c7f" sortIndex="4">
           <profiles>
@@ -1431,6 +1891,19 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
               </modifiers>
             </infoLink>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="10" field="9893-c379-920b-8982">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="647c-faca-3c98-c203" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5b89-285e-226b-077a" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="c924-dc35-f110-115c" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -1441,10 +1914,25 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079c-1e93-eb2e-8bed"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="76a0-5e6b-d5c1-2c48">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica: The Nails Bite" hidden="false" id="76a0-5e6b-d5c1-2c48">
               <rules>
                 <rule name="The Nails&apos; Bite" id="7b8c-068a-9985-9b71" hidden="false">
-                  <description>&quot;&quot;</description>
+                  <description>&quot;The Controlling Player may choose that a World Eaters Unit becomes Lost to the Nails when it fails a Leadership Check&quot;
+
+
+When a Unit entirely composed of Models with this Special Rule fails a Leadership Check, that Unit&apos;s Controlling Player can choose for that Unit to become Lost to the nails.</description>
+                </rule>
+                <rule name="Lost to the Nails" id="db51-cf43-3c97-e20d" hidden="false" publicationId="e54c-7040-0f35-d85d" page="164">
+                  <description>When a Unit becomes Lost to the Nails, all Tactical Statuses affecting it are removed. In addition, while a Unit is Lost to the Nails:
+
+
+*Models in that Unit may add +1&quot; to the distance of any Set-up Move.
+*Modify the Attacks Characteristic of Models in that Unit by +1
+*Models in that Unit are considered to have a Leadership, Cool and Willpower Characteristic of 10 (unless it would normally be higher).
+*If, at the start of the Controlling Player&apos;s Charge, SubPhase, the Unit is withing 12&quot; of an enemy Models, that Unit must make a Charge Move. If more than one enemy Unit is within 12&quot;, the Controlling Player of this Unit must select the closest enemy Unit as the Target Unit for that Charge.
+
+
+At the start of the Controlling Player&apos;s Charge Sub-Phase, if there are no enemy Units within 12&quot; of a Unit that is Lost to the nails, that Unit is no longer Lost to the Nails.</description>
                 </rule>
               </rules>
               <constraints>
@@ -1456,8 +1944,8 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
               <profiles>
                 <profile name="Brutal Dimemberment" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1e68-7b8f-e641-b1cb">
                   <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to score additional Combat Resolution Points if they are the winner of the Challenge</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">While this Gambit is selected, if the enemy Model is Removed as a Casualty during the Strike Step, during the subsequent Glory Step, the Controlling Player gains 2 additional Combat Resolution Points.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1470,7 +1958,14 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
               <profiles>
                 <profile name="Furious Charge" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="f42e-f20c-f516-0c50">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to become Lost to the Nails after the Volley Step of a Charge.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting unit to become Lost to the Nails after the Volley Step of a Charge</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Furious Charge Advanced Reaction at the end of Step 4 of a Charge declared by the Active Player that targets a Unit which only includes Models with the World Eaters Trait if any Models in the Target Unit were Removed as Casualties as a result of Volley Attacks.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction allotment to declare a Furious Charge Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the unit that was declared as the target of the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once this Reaction is declared, the Target Unit becomes Lost to the Nails.
+2. The Reactive Player must then make a Charge Roll for the Reacting unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting unit into Base contact with a model from the Target Unit, then a Charge move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a model from the Target Unit, then no Charge Move is made and the Players proceed to Step 5 of the Charge process.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1521,7 +2016,14 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
               <profiles>
                 <profile name="Brutal Tide" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="378d-cd14-1e73-dbf0">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to make a Charge towards a Unit that Targets them with a Shooting Attack.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">Once per Battle, the Reactive Player may declare the Brutal Tide Advanced Reaction during Step 4 of a Shooting Attack declared by the Active Player that targets a Unit which only includes Models with the World Eaters Trait and does not have the Vehicle Type.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Brutal Tide Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare a Brutal Tide Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Shooting Attack that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. For the duration of the current Shooting Phase, all Models in the Reacting Unit gain the Eternal Warrior (1) Special Rule.
+2. Immediately after Step 11 of the Shooting Attack that triggered this Reaction is resolved, the Reactive Player must make a Charge Roll for the Reacting Unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1611,5 +2113,22 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
         <categoryLink targetId="abfa-86ab-1726-077a" id="2f33-dc81-6c6f-aabb" primary="true" name="Army Configuration"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Red Hand Destroyer Assault Squad" hidden="false" id="d13e-37af-f9bf-15ad" type="selectionEntry" targetId="c924-dc35-f110-115c">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="7408-bbf0-6990-9176" targetId="5d5e-958f-e388-50b5" primary="true"/>
+        <categoryLink name="World Eaters" hidden="false" id="f8a3-e253-77e7-82bb" targetId="48b7-17a8-eaf4-d6c2" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Red Hand Destroyer Mortalis Squad" hidden="false" id="746f-edff-6b3f-9208" type="selectionEntry" targetId="5b89-285e-226b-077a">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="e849-94df-437a-d3b4" targetId="5d5e-958f-e388-50b5" primary="true"/>
+        <categoryLink name="World Eaters" hidden="false" id="c2be-b9d1-e43e-d26a" targetId="48b7-17a8-eaf4-d6c2" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
+  <sharedRules>
+    <rule name="Bearers of the Blood Hand" id="d783-7994-1dee-469d" hidden="false">
+      <description>When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, the Controlling Player scores 1 Combat Resolution Point for each Unit that includes any Models with this Special Rule.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

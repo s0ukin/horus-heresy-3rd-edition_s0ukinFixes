@@ -15861,6 +15861,7 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b980-187b-2b17-d635" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="5a95-e564-96b2-8dc9" field="category"/>
           </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Paragon of Battle" hidden="false" id="20cb-4eec-0844-8a97" sortIndex="3">

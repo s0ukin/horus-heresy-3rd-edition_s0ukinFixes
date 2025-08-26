@@ -2079,7 +2079,7 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
       <modifiers>
         <modifier type="set-primary" value="91f0-1b91-0a9a-c542" field="category">
           <conditions>
-            <condition type="instanceOf" value="1" field="forces" scope="roster" childId="bda6-c5d3-eafc-4eb5" shared="true" includeChildSelections="true"/>
+            <condition type="instanceOf" value="1" field="forces" scope="force" childId="bda6-c5d3-eafc-4eb5" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>

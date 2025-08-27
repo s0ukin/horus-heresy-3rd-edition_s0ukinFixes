@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="16" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="fcc7-4319-bb04-2c25" name="Wargear" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="17" authorName="The4D6" battleScribeVersion="2.03" type="catalogue" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Strato-vox" hidden="false" id="e3dd-d327-3f0b-265f">
       <profiles>
@@ -656,14 +656,30 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
           </modifiers>
         </infoLink>
       </infoLinks>
-      <comment>IH
-
-</comment>
+      <comment>IH</comment>
       <profiles>
         <profile name="Gorgon Pattern Terminator Armour" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="f047-e4d4-e887-c2f0">
           <characteristics>
             <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">Successful Armour Tests and Invulnerable Tests may inflict Tactical Statuses on enemy Models.</characteristic>
-            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">At the end of Step 4 of the Assault Phase, if any Models with Gorgon pattern Terminator armour passed at least one Armour or Invulnerable Test against wounds caused by Shooting Attacks in the same Assault Phase, the Unit which inflicted those wounds must make a Cool Check. If the Check is failed, the Unit gains the Suppressed Status. </characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">At the end of Step 4 of the Assault Phase, if any Models with Gorgon pattern Terminator armour passed at least one Armour or Invulnerable Test against wounds caused by Shooting Attacks in the same Assault Phase, the Unit which inflicted those wounds must make a Cool Check. If the Check is failed, the Unit gains the Suppressed Status.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aetheric juncture splicer" hidden="false" id="5ca3-1dad-6f2c-3482">
+      <profiles>
+        <profile name="Aetheric juncture splicer" typeId="5ec5-e0c3-1701-6f16" typeName="Wargear" hidden="false" id="75ba-c1b5-8d6b-1cb4">
+          <characteristics>
+            <characteristic name="Summary" typeId="8e7d-a0ae-fd85-983c">A Unit which includes a Model with an aetheric juncture splicer can Deep Strike, but risks becoming Suppressed.</characteristic>
+            <characteristic name="Description" typeId="9944-2f6d-d61b-03b5">A Model with an ætheric juncture splicer has the Deep Strike Special Rule. While such a Model has joined a Unit in
+Reserves which only contains Models with the [Legiones Astartes] Trait, the Infantry Type and which do not have a
+version of the Bulky (X) Special Rule where the value of X is greater than 2, all Models in that Unit also gain the Deep
+Strike Special Rule.
+
+
+Additionally, when a Unit which contains any Models with an ætheric juncture splicer suffers one or more Unsaved
+Wounds as a result of the Interceptor Advanced Reaction, that Unit immediately gains the Suppressed Tactical
+Status.</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -18215,7 +18215,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 </modifierGroup>
               </modifierGroups>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Cataphractii Armour" hidden="false" id="8c8e-9672-e05a-4c61" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Cataphractii" hidden="false" id="8c8e-9672-e05a-4c61" sortIndex="3">
               <infoLinks>
                 <infoLink name="Implacable Advance" id="4b14-594d-f698-5ed7" hidden="false" type="rule" targetId="3898-aafb-35e0-141b"/>
                 <infoLink name="Slow and Purposeful" id="35af-a0a5-34a8-e268" hidden="false" type="rule" targetId="6a8e-e508-abc9-cb3e"/>
@@ -18285,7 +18285,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
                 <categoryLink targetId="e734-034b-8652-ffca" id="bdc2-52e7-74ef-62e1" primary="false" name="Free Combi-bolter"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tartaros Armour" hidden="false" id="e036-4d02-5c55-ffbe" sortIndex="4">
+            <selectionEntry type="upgrade" import="true" name="Tartaros" hidden="false" id="e036-4d02-5c55-ffbe" sortIndex="4">
               <infoLinks>
                 <infoLink name="Bulky (X)" id="7856-4094-7253-9f36" hidden="false" type="rule" targetId="50ad-a9a5-1f1d-9a25">
                   <modifiers>
@@ -18351,6 +18351,7 @@ Once per Turn, if a Unit that contains Models with this Special Rule is within 1
               <categoryLinks>
                 <categoryLink targetId="647c-faca-3c98-c203" id="4603-2147-a2c0-bf96" primary="false" name="Free Power Weapon"/>
                 <categoryLink targetId="e734-034b-8652-ffca" id="1b95-4409-2422-357b" primary="false" name="Free Combi-bolter"/>
+                <categoryLink targetId="86d7-7e47-a0d7-6041" id="dd5e-d756-177b-ae5f" primary="false" name="Tartaros Centurion"/>
               </categoryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Outrider Bike" hidden="false" id="3e06-94dd-34c9-0d2f" sortIndex="5">

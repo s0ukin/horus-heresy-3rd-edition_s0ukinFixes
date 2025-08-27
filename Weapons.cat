@@ -5963,6 +5963,18 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="1a76-2b6e-8467-2f9c" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Impact (X)" id="65cb-1071-17a8-eb51" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+          <modifiers>
+            <modifier type="set" value="D" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Graviton crusher" hidden="false" id="78f1-345c-81d8-1cb1">
       <profiles>
@@ -6631,6 +6643,18 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="813e-b4f6-e735-bbcf" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <modifiers>
+            <modifier type="set" value="6+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Impact (X)" id="ee1d-78ed-97f3-aa8f" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
+          <modifiers>
+            <modifier type="set" value="D" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Graviton mace" hidden="false" id="20ea-8551-8cb1-f569">
       <profiles>

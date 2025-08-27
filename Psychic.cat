@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="1b2d-2038-39a7-f387" name="Psychic" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="2" revision="5" battleScribeVersion="2.03" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorName="Arkangelmark5" type="catalogue">
   <profileTypes>
     <profileType name="Psychic Power" id="9dfb-2fa3-00e7-8cfd" hidden="false" sortIndex="18">
       <characteristicTypes>
@@ -362,6 +362,46 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Diabolism" hidden="false" id="6ad4-7094-dd82-d146">
+      <profiles>
+        <profile name="Dark Channeling" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="8cb7-6cc3-7b30-cade">
+          <characteristics>
+            <characteristic name="Summary" typeId="981f-bb86-6a74-9b20"/>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"/>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+          </characteristics>
+        </profile>
+        <profile name="Hellfire" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="a655-b128-86ab-2a3f">
+          <characteristics>
+            <characteristic name="R" typeId="6d86-f7c6-c184-8bf4">12</characteristic>
+            <characteristic name="FP" typeId="99a5-a4b9-8862-5092">D3</characteristic>
+            <characteristic name="RS" typeId="ff4a-ab25-1be8-4545">7</characteristic>
+            <characteristic name="AP" typeId="c8d6-d2ec-1344-07e3">4</characteristic>
+            <characteristic name="D" typeId="e840-f63c-5bc4-27b3">1</characteristic>
+            <characteristic name="Special Rules" typeId="e87b-e7a3-5562-a456">Breaching (6+), Deflagrate, Force (D)</characteristic>
+            <characteristic name="Traits" typeId="a229-21ce-4177-c4b1">Psychic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="0e6f-9498-63db-e3d5" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
+          <comment>6+</comment>
+        </infoLink>
+        <infoLink name="Deflagrate (X)" id="d1a3-8bcd-9364-e380" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81"/>
+        <infoLink name="Force (X)" id="cd16-b74c-d3db-3384" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
+          <comment>D</comment>
+        </infoLink>
+        <infoLink name="Fear (X)" id="51f0-f9b9-66c0-a0b1" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
+          <comment>1</comment>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Diabolist" hidden="false" id="9882-c7c6-c96c-2d1d" targetId="107a-0195-0c8b-ddc9" primary="false"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="c361-7259-1878-a576" targetId="106b-693b-99f2-00c3"/>
@@ -376,6 +416,7 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
     <categoryEntry name="Telepath" id="d269-d26a-cac1-c953" hidden="false"/>
     <categoryEntry name="Thaumaturge" id="689b-c1f1-9d47-fd2d" hidden="false"/>
     <categoryEntry name="Anathemata" id="8e24-2d8b-26e7-d7aa" hidden="false"/>
+    <categoryEntry name="Diabolism" id="e379-3577-c9d4-22f6" hidden="false"/>
   </categoryEntries>
   <sharedProfiles>
     <profile name="Breach the Veil" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="0e6b-31ce-26ee-f05e">

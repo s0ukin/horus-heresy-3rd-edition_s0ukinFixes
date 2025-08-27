@@ -607,6 +607,12 @@ An Army may not include more than one Model with this Special Rule. If a Model w
 
 When a Model with this Special rule is included in a Detatchment, two additional Force Organisation Slots are added to that Detachment. These Slots can only be filled with Thallax Cohort Units selected from the Liber mechanicum. When such a Unit is included in this way, the Reductor Trait is replaced with &apos;Bonded Reductor&apos; on all Models in the Unit, and the Aegis of Pain Special Rule is removed from all Models in the Unit. These Units can be included even though they do no have the same Faction Trait as the other Units in that Detatachment.</description>
     </rule>
+    <rule name="Damned" id="181f-72e1-a92a-cc89" hidden="false">
+      <description>&quot;A model with this Special Rule can join Units that have the Malefic Sub-type.&quot;
+
+
+A Model with this Special Rule can join Units with the Malefic Sub-Type as if it had that Sub-Type and while part of such a Unit, is treated as having that Sub-Type.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Telepathy" hidden="false" id="e09e-1438-3205-2a57"/>

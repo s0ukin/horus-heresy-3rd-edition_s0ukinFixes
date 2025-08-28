@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="49" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="50" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -480,6 +480,7 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Rite of War" id="41f7-a2c4-75d8-ab2f" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -14766,6 +14767,12 @@
         </categoryLink>
         <categoryLink name="Open Beta Release" hidden="false" id="565d-57fb-6ccc-9598" targetId="c5ac-45c2-a8a9-e32c"/>
         <categoryLink name="Army Configuration" hidden="false" id="b95b-50d4-2dea-049a" targetId="abfa-86ab-1726-077a"/>
+        <categoryLink name="Rite of War" hidden="false" id="7754-b738-63bf-667f" targetId="41f7-a2c4-75d8-ab2f" type="categoryEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e22c-c063-80e4-7265" includeChildSelections="true"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf59-a74a-6efa-eb6e" includeChildSelections="true"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
       <modifiers>
         <modifier type="decrement" value="1" field="0ab6-91a0-792e-4068">

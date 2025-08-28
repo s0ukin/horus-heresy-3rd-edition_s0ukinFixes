@@ -944,7 +944,7 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01a9-34fb-e59f-1b71-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange bolt pistol for:" id="56e1-0d25-4567-4551" hidden="false" defaultSelectionEntryId="d6ef-e031-d18f-df93" sortIndex="2">
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="56e1-0d25-4567-4551" hidden="false" defaultSelectionEntryId="9c6c-54b7-d943-d989" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="9c6c-54b7-d943-d989" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
                 <entryLink import="true" name="Legion Pistols" hidden="false" id="98d8-4b0b-7d57-8be2" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" sortIndex="2"/>
@@ -954,53 +954,11 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5489-3c9a-5c52-90fc" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange Palantine blade for:" id="ee0e-5d57-5257-bc11" hidden="false" sortIndex="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Palatine blade" hidden="false" id="841a-f81a-904e-fd14" page="138" publicationId="e54c-7040-0f35-d85d" sortIndex="1">
-                  <profiles>
-                    <profile name="Palatine blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="0b84-e66a-3df7-3838" publicationId="e54c-7040-0f35-d85d" page="138">
-                      <characteristics>
-                        <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
-                        <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-                        <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
-                        <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
-                        <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
-                        <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Duellist&apos;s Edge (1)</characteristic>
-                        <characteristic name="Traits" typeId="76e3-c188-bc65-3467">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Breaching (X)" id="6a88-0c32-d7e7-72ac" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-                      <modifiers>
-                        <modifier type="set" value="Breaching (5+)" field="name"/>
-                      </modifiers>
-                      <comment>5+</comment>
-                    </infoLink>
-                    <infoLink name="Duellist&apos;s Edge (X)" id="8c37-8f60-fe2a-dbbe" hidden="false" type="rule" targetId="94bc-c69f-99b6-8ba0">
-                      <modifiers>
-                        <modifier type="set" value="Duellist&apos;s Edge (1)" field="name"/>
-                      </modifiers>
-                      <comment>1</comment>
-                    </infoLink>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
+            <selectionEntryGroup name="May exchange Palantine blade for:" id="ee0e-5d57-5257-bc11" hidden="false" sortIndex="1" defaultSelectionEntryId="1e10-e851-b222-9c76">
               <entryLinks>
-                <entryLink import="true" name="Phoenix power spear" hidden="false" id="5259-1445-0cc3-5d39" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="2">
-                  <infoLinks>
-                    <infoLink name="Breaching (X)" id="37ba-dfca-8469-e085" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
-                      <modifiers>
-                        <modifier type="set" value="Breaching (6+)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Impact (X)" id="a7d2-bd4c-e2d1-c8e7" hidden="false" type="rule" targetId="6ead-c31c-ab09-2f8c">
-                      <modifiers>
-                        <modifier type="set" value="Impact (D)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                </entryLink>
+                <entryLink import="true" name="Phoenix rapier" hidden="false" id="a0e8-7538-e020-44dc" type="selectionEntry" targetId="3882-1da8-e0e4-2c84"/>
+                <entryLink import="true" name="Palatine blade" hidden="false" id="1e10-e851-b222-9c76" type="selectionEntry" targetId="064a-9739-9126-441b"/>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="d586-bf95-550f-cb94" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a75-e0e3-3e37-b129"/>
@@ -1075,18 +1033,11 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="a65e-65a5-8e3c-7dc3" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange Palantine blade for:" id="ba2d-8783-66d8-183b" hidden="false">
+            <selectionEntryGroup name="May exchange Palantine blade for:" id="ba2d-8783-66d8-183b" hidden="false" defaultSelectionEntryId="c5a1-560a-5ad4-a5b0" sortIndex="1">
               <entryLinks>
-                <entryLink import="true" name="Phoenix power spear" hidden="false" id="c751-6c1b-906f-8ffa" type="selectionEntry" targetId="41b7-f368-f337-d940" sortIndex="2">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e08-2183-bf86-f2fc"/>
-                  </constraints>
-                </entryLink>
-                <entryLink import="true" name="Palatine blade" hidden="false" id="f7d3-21b1-5afa-662d" type="selectionEntry" targetId="841a-f81a-904e-fd14" sortIndex="1">
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feed-a264-ac53-6e92"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Phoenix rapier" hidden="false" id="0f95-63ca-150c-1b65" type="selectionEntry" targetId="3882-1da8-e0e4-2c84" sortIndex="2"/>
+                <entryLink import="true" name="Palatine blade" hidden="false" id="c5a1-560a-5ad4-a5b0" type="selectionEntry" targetId="064a-9739-9126-441b" sortIndex="1"/>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="5e91-e591-3fcc-ccec" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="3"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b9a-4086-fb68-cfb7"/>
@@ -1136,10 +1087,19 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
           <categoryLinks>
             <categoryLink name="Infantry Model Type" hidden="false" id="5069-4635-fdda-fcac" targetId="594d-fa82-13cb-a345" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Bolt pistol" hidden="false" id="c2e5-b365-36d7-a36c" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="00a6-fc20-fc45-ae68-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="00a6-fc20-fc45-ae68-max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="594d-fa82-13cb-a345" id="3dfd-53bc-489b-e997" primary="false" name="Infantry Model Type"/>
+        <categoryLink targetId="647c-faca-3c98-c203" id="682a-1e54-096d-601d" primary="false" name="Free Power Weapon"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Surgical Augments:" hidden="true" id="c9dc-ebe1-fd50-c5d0" targetId="ab39-af3b-58c2-8d9b" type="selectionEntryGroup">
@@ -1744,7 +1704,7 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eab4-a86e-748b-7cfb" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange bolt pistol for:" id="59f1-f949-a77c-c4e1" hidden="false" defaultSelectionEntryId="d6ef-e031-d18f-df93" sortIndex="2">
+            <selectionEntryGroup name="May exchange bolt pistol for:" id="59f1-f949-a77c-c4e1" hidden="false" defaultSelectionEntryId="31f5-75cc-ec97-a295" sortIndex="2">
               <entryLinks>
                 <entryLink import="true" name="Bolt pistol" hidden="false" id="31f5-75cc-ec97-a295" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="1"/>
                 <entryLink import="true" name="Legion Pistols" hidden="false" id="4d47-633e-6021-9aac" type="selectionEntryGroup" targetId="4041-7fad-77cd-f9cf" sortIndex="2"/>
@@ -1754,7 +1714,7 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="776c-04e1-20e7-cb8d" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="May exchange Palantine blade for:" id="260d-5176-fbda-edb6" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="May exchange Palantine blade for:" id="260d-5176-fbda-edb6" hidden="false" sortIndex="1" defaultSelectionEntryId="4809-df67-f9e6-6913">
               <entryLinks>
                 <entryLink import="true" name="Phoenix rapier" hidden="false" id="97ec-0cd8-2325-4228" type="selectionEntry" targetId="3882-1da8-e0e4-2c84" sortIndex="2">
                   <infoLinks>
@@ -1823,7 +1783,7 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="2024-34b6-3121-dceb" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="May exchange Palantine blade for:" id="3570-2d18-796c-a15e" hidden="false" sortIndex="1">
+            <selectionEntryGroup name="May exchange Palantine blade for:" id="3570-2d18-796c-a15e" hidden="false" sortIndex="1" defaultSelectionEntryId="a3d8-3989-1d51-bc38">
               <entryLinks>
                 <entryLink import="true" name="Phoenix rapier" hidden="false" id="f662-1da4-e499-1882" type="selectionEntry" targetId="3882-1da8-e0e4-2c84" sortIndex="2"/>
                 <entryLink import="true" name="Power Weapon" hidden="false" id="8f19-4496-0c50-d27c" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="3"/>
@@ -1863,8 +1823,8 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
           <entryLinks>
             <entryLink import="true" name="Bolt pistol" hidden="false" id="30e9-40a7-323a-8cb1" type="selectionEntry" targetId="2942-f783-d627-33c5" sortIndex="2">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6adb-9428-58cb-1787-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6adb-9428-58cb-1787-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1e39-8491-6c25-0e54-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e39-8491-6c25-0e54-max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1913,9 +1873,9 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
       <profiles>
         <profile name="Palatine blade" typeId="3587-6dcd-005c-c263" typeName="Melee Weapon" hidden="false" id="3873-a63a-9092-7e77" publicationId="e54c-7040-0f35-d85d" page="138">
           <characteristics>
-            <characteristic name="IM" typeId="6eec-4093-f946-1014">1</characteristic>
+            <characteristic name="IM" typeId="6eec-4093-f946-1014">I</characteristic>
             <characteristic name="AM" typeId="03d0-6094-84f0-e27e">A</characteristic>
-            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+3</characteristic>
+            <characteristic name="SM" typeId="4505-de6f-d4ae-6280">+1</characteristic>
             <characteristic name="AP" typeId="a014-126b-3b7b-27e8">3</characteristic>
             <characteristic name="D" typeId="6a9d-4feb-065a-33e7">1</characteristic>
             <characteristic name="Special Rules" typeId="ebe0-7b28-b40c-694e">Breaching (5+), Duellist&apos;s Edge (1)</characteristic>
@@ -2054,8 +2014,8 @@ On any Turn in which they made a Charge Move, Models with this Special Rule gain
                 </rule>
               </rules>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e71-b51b-dd92-6db5-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e71-b51b-dd92-6db5-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c79-20d9-e5c9-692c-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c79-20d9-e5c9-692c-max"/>
               </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gambit: Paragon of Excellence" hidden="false" id="b53e-5fc2-5882-f3d5">
@@ -2068,8 +2028,8 @@ On any Turn in which they made a Charge Move, Models with this Special Rule gain
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c1c7-402f-8c63-1fa4-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1c7-402f-8c63-1fa4-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d0b2-0029-b703-b60f-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0b2-0029-b703-b60f-max"/>
               </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Advanced Reaction: Perfect Counter" hidden="false" id="6a36-d3fa-ce22-d665">
@@ -2087,8 +2047,8 @@ On any Turn in which they made a Charge Move, Models with this Special Rule gain
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dd7-1231-5349-57ad-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dd7-1231-5349-57ad-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="add5-b54e-8156-20e6-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="add5-b54e-8156-20e6-max"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
@@ -2115,8 +2075,8 @@ After a Shooting Attack that targets a Unit entirely composed of the Models with
                 </rule>
               </rules>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ce8-3472-1454-fcb9-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ce8-3472-1454-fcb9-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79e9-02e9-8c01-2075-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79e9-02e9-8c01-2075-max"/>
               </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Advanced Reaction: Twisted Desire" hidden="false" id="e608-49a7-093d-af7d">
@@ -2131,6 +2091,10 @@ After a Shooting Attack that targets a Unit entirely composed of the Models with
                   </characteristics>
                 </profile>
               </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41c4-df6e-f671-0484-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41c4-df6e-f671-0484-max"/>
+              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Gambit: The Broken Mirror" hidden="false" id="eda9-13f4-25b7-f3d1">
               <profiles>
@@ -2142,13 +2106,17 @@ After a Shooting Attack that targets a Unit entirely composed of the Models with
                 </profile>
               </profiles>
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cda8-c9e1-c667-7952-min"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cda8-c9e1-c667-7952-max"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d2d-32ef-002e-619a-min"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d2d-32ef-002e-619a-max"/>
               </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
       </selectionEntries>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e676-ef08-a734-afcb"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4202-da64-caa9-1c2c"/>
+      </constraints>
     </selectionEntryGroup>
     <selectionEntryGroup name="Surgical Augments" id="bcb8-3151-6aff-5203" hidden="true">
       <entryLinks>
@@ -2231,4 +2199,14 @@ After a Shooting Attack that targets a Unit entirely composed of the Models with
       <comment>Stays here since it&apos;s a root level force</comment>
     </forceEntry>
   </forceEntries>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="a3a0-8b47-8fdc-f5a5">
+      <entryLinks>
+        <entryLink import="true" name="Emperor&apos;s Children Rite of War" hidden="false" id="bd63-cfc2-f3c8-1f1b" type="selectionEntryGroup" targetId="67f2-6d7f-9c35-9774"/>
+      </entryLinks>
+      <categoryLinks>
+        <categoryLink targetId="41f7-a2c4-75d8-ab2f" id="5104-90a0-a826-dd34" primary="true" name="Rite of War"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

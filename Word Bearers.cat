@@ -2570,9 +2570,19 @@ When resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 
         </selectionEntry>
       </selectionEntries>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="61c5-ba2c-a4ea-817f"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="61c5-ba2c-a4ea-817f"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8b66-105c-8b6c-15c8"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="6ce4-1ed2-2933-e005">
+      <categoryLinks>
+        <categoryLink targetId="41f7-a2c4-75d8-ab2f" id="3163-cf50-a71b-805b" primary="true" name="Rite of War"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Word Bearers Rite of War" hidden="false" id="3bc9-0976-9ac9-1831" type="selectionEntryGroup" targetId="abcf-e690-07e7-5266"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

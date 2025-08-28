@@ -10496,9 +10496,9 @@ While a Unit entirely composed of Models with the Solar Auxilia Trait includes a
           </conditions>
         </modifier>
       </modifiers>
-      <categoryLinks>
-        <categoryLink targetId="b980-187b-2b17-d635" id="a2ff-59eb-e01b-be58" primary="false" name="Unique Model Sub-Type"/>
-      </categoryLinks>
+      <constraints>
+        <constraint type="max" id="d6ab-92c1-4279-a1d3" value="1" field="selections" scope="roster" shared="true" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tarantula Section" hidden="false" id="5c1a-1910-9a09-75cd">
       <selectionEntries>

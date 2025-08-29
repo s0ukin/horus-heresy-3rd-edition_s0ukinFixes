@@ -4111,6 +4111,9 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                           </repeats>
                         </modifier>
                       </modifiers>
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                   <constraints>
@@ -4271,7 +4274,11 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Disintegrator pistol" hidden="false" id="8142-d03c-e2db-9a7c" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3"/>
+                    <entryLink import="true" name="Disintegrator pistol" hidden="false" id="8142-d03c-e2db-9a7c" type="selectionEntry" targetId="32d1-2c70-882f-9467" sortIndex="3">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4c4b-5475-aad1-bd1e" includeChildSelections="false"/>

@@ -367,11 +367,13 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
         <profile name="Dark Channeling" typeId="9dfb-2fa3-00e7-8cfd" typeName="Psychic Power" hidden="false" id="8cb7-6cc3-7b30-cade">
           <characteristics>
             <characteristic name="Summary" typeId="981f-bb86-6a74-9b20"/>
-            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e"/>
-            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86"/>
-            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770"/>
-            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4"/>
-            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0"/>
+            <characteristic name="Trigger" typeId="1be9-f118-1cf3-357e">The Active Player may choose to Manifest the Dark Channeling Psychic Power at the start of the Fight Sub-Phase of their Assault Phase.</characteristic>
+            <characteristic name="Focus" typeId="3f2d-f6e7-e6d3-1f86">The Focus of the Power must be a Model with the Diabolist Trait under the Active Player’s control.</characteristic>
+            <characteristic name="Target" typeId="2ba0-fbf8-ed6c-3770">The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 12&quot; of the Focus and with Line of Sight to the Focus, and which is entirely composed of Models with the Word Bearers Trait.</characteristic>
+            <characteristic name="Duration" typeId="d7d5-5b31-5b37-66c4">If Successfully Manifested, the effects of this Psychic Power last until the end the Assault Phase.</characteristic>
+            <characteristic name="Process" typeId="3804-b2cf-9f1a-4ff0">1. Once the Focus and Target Unit have been decided, make a Manifestation Check.
+2. If the Manifestation Check is successful, all Models in the Target Unit gain the Aflame (1) and Feel No Pain (6+) Special Rules.
+3. If the Manifestation Check fails then there is no further effect.</characteristic>
           </characteristics>
         </profile>
         <profile name="Hellfire" typeId="7d31-7144-3b28-c850" typeName="Psychic Ranged Weapon" hidden="false" id="a655-b128-86ab-2a3f">
@@ -389,13 +391,26 @@ any Model in the Target Unit makes attacks with a Weapon that has the Psychic Tr
       <infoLinks>
         <infoLink name="Breaching (X)" id="0e6f-9498-63db-e3d5" hidden="false" type="rule" targetId="b094-0b64-eb57-aed6">
           <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Breaching (6)" field="name"/>
+          </modifiers>
         </infoLink>
-        <infoLink name="Deflagrate (X)" id="d1a3-8bcd-9364-e380" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81"/>
+        <infoLink name="Deflagrate (X)" id="d1a3-8bcd-9364-e380" hidden="false" type="rule" targetId="f4a0-f206-0dba-7d81">
+          <modifiers>
+            <modifier type="set" value="Deflagrate" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Force (X)" id="cd16-b74c-d3db-3384" hidden="false" type="rule" targetId="25cd-60d0-a0a4-6b18">
           <comment>D</comment>
+          <modifiers>
+            <modifier type="set" value="Force (D)" field="name"/>
+          </modifiers>
         </infoLink>
         <infoLink name="Fear (X)" id="51f0-f9b9-66c0-a0b1" hidden="false" type="rule" targetId="0ebc-0c92-2209-6393">
           <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Fear (1)" field="name"/>
+          </modifiers>
         </infoLink>
       </infoLinks>
       <categoryLinks>

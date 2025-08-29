@@ -1943,9 +1943,9 @@ At the start of the Controlling Player&apos;s Charge Sub-Phase, if there are no 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d8d-bb96-7a4e-b22d-max"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Brutal Dimemberment" hidden="false" id="2032-2088-368f-8e81">
+            <selectionEntry type="upgrade" import="true" name="Gambit: Brutal Dismemberment" hidden="false" id="2032-2088-368f-8e81">
               <profiles>
-                <profile name="Brutal Dimemberment" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1e68-7b8f-e641-b1cb">
+                <profile name="Brutal Dismemberment" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1e68-7b8f-e641-b1cb">
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to score additional Combat Resolution Points if they are the winner of the Challenge</characteristic>
                     <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">While this Gambit is selected, if the enemy Model is Removed as a Casualty during the Strike Step, during the subsequent Glory Step, the Controlling Player gains 2 additional Combat Resolution Points.</characteristic>
@@ -2130,9 +2130,10 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
     </rule>
   </sharedRules>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="e1c1-3066-9c13-7557">
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="e1c1-3066-9c13-7557" defaultAmount="1">
       <categoryLinks>
         <categoryLink targetId="bc57-c076-f023-c3b3" id="d236-b5e0-9d72-f404" primary="true" name="Rite of War"/>
+        <categoryLink targetId="48b7-17a8-eaf4-d6c2" id="1027-564d-d0b3-17fa" primary="false" name="World Eaters"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="World Eaters Rite of War" hidden="false" id="119f-84d0-6118-12fe" type="selectionEntryGroup" targetId="1455-b8d9-311a-e3f6"/>

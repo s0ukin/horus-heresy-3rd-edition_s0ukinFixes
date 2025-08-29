@@ -2185,12 +2185,13 @@ After a Shooting Attack that targets a Unit entirely composed of the Models with
     </forceEntry>
   </forceEntries>
   <selectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="a3a0-8b47-8fdc-f5a5">
+    <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="a3a0-8b47-8fdc-f5a5" defaultAmount="1">
       <entryLinks>
         <entryLink import="true" name="Emperor&apos;s Children Rite of War" hidden="false" id="bd63-cfc2-f3c8-1f1b" type="selectionEntryGroup" targetId="67f2-6d7f-9c35-9774"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="bc57-c076-f023-c3b3" id="2980-c02c-f988-5277" primary="true" name="Rite of War"/>
+        <categoryLink targetId="a364-a983-c2b2-cbc7" id="5c07-506e-4d5a-d084" primary="false" name="Emperor&apos;s Children"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>

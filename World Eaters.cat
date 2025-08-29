@@ -1321,7 +1321,7 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="0797-1862-f00c-9f92">
       <entryLinks>
-        <entryLink import="true" name="Rite of War" hidden="false" id="cf3f-3fb5-2d7a-f3d6" type="selectionEntryGroup" targetId="1455-b8d9-311a-e3f6"/>
+        <entryLink import="true" name="World Eaters Rite of War" hidden="false" id="cf3f-3fb5-2d7a-f3d6" type="selectionEntryGroup" targetId="1455-b8d9-311a-e3f6"/>
       </entryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0714-6abe-5ada-250e"/>
@@ -2132,7 +2132,7 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Rite of War" hidden="false" id="e1c1-3066-9c13-7557">
       <categoryLinks>
-        <categoryLink targetId="41f7-a2c4-75d8-ab2f" id="763d-f9af-5143-97c3" primary="true" name="Rite of War"/>
+        <categoryLink targetId="bc57-c076-f023-c3b3" id="d236-b5e0-9d72-f404" primary="true" name="Rite of War"/>
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="World Eaters Rite of War" hidden="false" id="119f-84d0-6118-12fe" type="selectionEntryGroup" targetId="1455-b8d9-311a-e3f6"/>

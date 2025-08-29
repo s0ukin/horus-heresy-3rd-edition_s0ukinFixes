@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="52" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="sys-9fe4-1dc3-b7c2-73cf" name="Horus Heresy 3rd Edition" battleScribeVersion="2.03" revision="53" type="gameSystem" authorName="The4D6" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/">
   <categoryEntries>
     <categoryEntry name="Officer of the Line (2)" id="901a-6b71-7a29-4597" hidden="false"/>
     <categoryEntry name="Allegiance" id="c408-52f1-b632-4c82" hidden="false"/>
@@ -473,6 +473,7 @@
     <categoryEntry name="Myrmidax" id="9e7d-913d-86f0-e05e" hidden="false"/>
     <categoryEntry name="Reductor" id="e76a-e22d-9fc4-dc1f" hidden="false"/>
     <categoryEntry name="Mechanicum Logistical Benefit" id="7e6f-65f7-7535-9ffc" hidden="false"/>
+    <categoryEntry name="Rite of War" id="bc57-c076-f023-c3b3" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
@@ -17581,6 +17582,25 @@
             <constraint type="min" value="0" field="forces" scope="parent" shared="true" id="0d54-af57-44fa-bce3" includeChildSelections="false"/>
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="5df5-5821-ea4c-d0e2" includeChildSelections="false"/>
           </constraints>
+        </forceEntry>
+        <forceEntry name="See All Options" id="1563-66bc-869c-03b2" hidden="false">
+          <categoryLinks>
+            <categoryLink name="High Command" hidden="false" id="69a6-7ba4-85d3-187b" targetId="d9a6-9b5f-b18a-4d63"/>
+            <categoryLink name="Command" hidden="false" id="9fda-fd36-6380-a4a1" targetId="6dbf-654a-f06f-2d69"/>
+            <categoryLink name="Retinue" hidden="false" id="7678-23d8-1cab-8d9c" targetId="a38e-50ff-310f-f19e"/>
+            <categoryLink name="Troops" hidden="false" id="2574-1f5c-6497-b1ba" targetId="88e6-d373-4152-0dd8"/>
+            <categoryLink name="Support" hidden="false" id="5f67-3517-0faf-7cf2" targetId="345f-9ba6-9b02-ed5c"/>
+            <categoryLink name="Transport" hidden="false" id="874c-9a82-d8a6-30c0" targetId="d162-4711-5d60-0a48"/>
+            <categoryLink name="Elites" hidden="false" id="f25e-e33d-28e9-6db7" targetId="5d5e-958f-e388-50b5"/>
+            <categoryLink name="Heavy Assault" hidden="false" id="5790-e881-7b5c-5272" targetId="3235-bd79-e9b1-60fa"/>
+            <categoryLink name="Heavy Transport" hidden="false" id="0d7a-c7d6-10f8-0116" targetId="52d0-8b78-439e-18e5"/>
+            <categoryLink name="Recon" hidden="false" id="4f77-6d11-54e2-9f40" targetId="2b65-a3f2-620a-dc58"/>
+            <categoryLink name="Fast Attack" hidden="false" id="192a-9711-dfff-fb7d" targetId="cf96-8891-3f9a-8921"/>
+            <categoryLink name="Armour" hidden="false" id="6824-b661-1db3-cdaf" targetId="643a-1012-bd51-6537"/>
+            <categoryLink name="War-engine" hidden="false" id="0354-abcb-5f56-4ee8" targetId="2499-7239-685f-8465"/>
+            <categoryLink name="Lord of War" hidden="false" id="4ad3-7b57-0549-a6ab" targetId="a46f-a465-0ead-d6b8"/>
+            <categoryLink name="Warlord" hidden="false" id="8d26-386b-6000-bca0" targetId="22ee-7208-4089-b005"/>
+          </categoryLinks>
         </forceEntry>
       </forceEntries>
       <constraints>

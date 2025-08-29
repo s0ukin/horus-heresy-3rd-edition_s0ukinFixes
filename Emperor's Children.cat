@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="15" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="9a22-d01f-ab5c-ec07" name="                         III - Emperor&apos;s Children" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="16" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition/" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legiones Astartes" id="2589-ec0f-809a-8660" targetId="9b32-f350-6aa9-9c09" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Assets" id="a2a4-0123-e538-6ae9" targetId="5334-5605-242c-d75e" importRootEntries="true"/>
@@ -960,6 +960,38 @@ Bite of the Betrayed: This Gambit can only be selected during the first Face-Off
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ef4-69cf-0f64-13ce" includeChildSelections="false"/>
               </constraints>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Surgical Augments" id="6e07-b601-3385-fbba" hidden="true">
+              <entryLinks>
+                <entryLink import="true" name="Sonic shriekers" hidden="false" id="94eb-6099-e58c-a570" type="selectionEntry" targetId="f7a1-d5a3-c294-7ebd" sortIndex="1">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e2a-1f93-89de-e557" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Sonic lance" hidden="false" id="6ad6-68ff-6c26-4a42" type="selectionEntry" targetId="5767-7e75-a9ce-d25b" sortIndex="2">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa73-f1bd-6765-e75d" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b966-1308-8308-052c" includeChildSelections="false"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8246-35cc-c16f-7232"/>
+              </constraints>
+              <comment>Character version</comment>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="597e-83d8-32e1-8eaa" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
             <categoryLink targetId="8045-89a4-76d4-fcef" id="7b3c-23c6-3ba8-bdc0" primary="false" name="Sergeant Model Sub-Type"/>
@@ -1839,7 +1871,7 @@ Once per Battle, before making a Shooting Attack in the Controlling Player&apos;
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7de6-71e7-5b3f-9003-max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Surgical Augments:" hidden="false" id="5a4c-daf5-39f6-1c6e" type="selectionEntryGroup" targetId="ab39-af3b-58c2-8d9b" sortIndex="3"/>
+        <entryLink import="true" name="Legion Specific Upgrade" hidden="false" id="1072-b4f5-8f09-dbe2" type="selectionEntryGroup" targetId="ef74-faa7-0d36-762b"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Vanguard (X)" id="ce94-fa17-feda-c97e" hidden="false" type="rule" targetId="530f-b733-993c-ec84">
@@ -2158,7 +2190,7 @@ After a Shooting Attack that targets a Unit entirely composed of the Models with
         <entryLink import="true" name="Emperor&apos;s Children Rite of War" hidden="false" id="bd63-cfc2-f3c8-1f1b" type="selectionEntryGroup" targetId="67f2-6d7f-9c35-9774"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="41f7-a2c4-75d8-ab2f" id="5104-90a0-a826-dd34" primary="true" name="Rite of War"/>
+        <categoryLink targetId="bc57-c076-f023-c3b3" id="2980-c02c-f988-5277" primary="true" name="Rite of War"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>

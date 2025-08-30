@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="29" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="7851-69ac-f701-034e" name="Solar Auxilia" gameSystemId="sys-9fe4-1dc3-b7c2-73cf" gameSystemRevision="1" revision="30" authorUrl="https://github.com/BSData/horus-heresy-3rd-edition" authorContact="https://github.com/BSData/horus-heresy-3rd-edition/issues" authorName="The4D6" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Legatine Command Section" hidden="false" id="8641-1dd0-7e76-de7d">
       <selectionEntries>
@@ -2069,7 +2069,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01bb-db2c-eb1a-dde6"/>
               </constraints>
               <rules>
-                <rule name="Armoured Warfare" id="704a-3f40-66bd-a4ee" hidden="false"/>
+                <rule name="Armoured Warfare" id="704a-3f40-66bd-a4ee" hidden="false">
+                  <description>&quot;Models with this Special Rule provide the Auto-repair (4+) Special Rule to nearby Units with the Armour Tercio Trait.&quot;
+Any Model with the Armour Tercio Trait gains the Auto-repair (4+) Special Rule as long as it is within 18&quot; of a Friendly Model with this Special Rule.</description>
+                </rule>
               </rules>
             </selectionEntry>
           </selectionEntries>

@@ -19,6 +19,7 @@ PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
                          "Master of Automata",
                          "Clade Operative",
                          "Legiones Thallaxes",
+                         "Recon - Land Raider Explorator Only",
                          ]
 
 LA_PRIME_BENEFIT_SLOT_UPGRADES = {

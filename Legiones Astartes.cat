@@ -35101,6 +35101,15 @@ have one item from" field="name"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Phoenix rapier" hidden="true" id="931c-bd09-d697-ec8c" type="selectionEntry" targetId="3882-1da8-e0e4-2c84" sortIndex="13">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Legion Equipment" id="0e69-ccf1-cde7-acaf" hidden="false" sortIndex="7" collapsible="true">
@@ -36622,22 +36631,22 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
           </costs>
         </entryLink>
         <entryLink import="true" name="Power Weapon" hidden="false" id="9c68-e9b5-9e61-e27e" type="selectionEntryGroup" targetId="d23f-b4f0-0127-9394" sortIndex="5" flatten="true"/>
-        <entryLink import="true" name="Thunder hammer" hidden="false" id="b2dc-7384-92c0-be95" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="6">
+        <entryLink import="true" name="Thunder hammer" hidden="false" id="b2dc-7384-92c0-be95" type="selectionEntry" targetId="4338-dbe9-1e94-7e6d" sortIndex="7">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Power fist" hidden="false" id="d525-a3d2-f079-df2f" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="9">
+        <entryLink import="true" name="Power fist" hidden="false" id="d525-a3d2-f079-df2f" type="selectionEntry" targetId="2fcc-92a6-d03a-4b55" sortIndex="10">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Lightning claw" hidden="false" id="1e51-7778-7aad-342c" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="13">
+        <entryLink import="true" name="Lightning claw" hidden="false" id="1e51-7778-7aad-342c" type="selectionEntry" targetId="cbf0-9b29-9a16-28b2" sortIndex="14">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="cab6-23e4-e3d7-153a" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="10">
+        <entryLink import="true" name="Solarite Power Gauntlet" hidden="true" id="cab6-23e4-e3d7-153a" type="selectionEntry" targetId="ddcb-01e9-18af-c8f6" sortIndex="11">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -36663,7 +36672,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Terranic greatsword" hidden="true" id="92be-7471-0272-007d" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="12">
+        <entryLink import="true" name="Terranic greatsword" hidden="true" id="92be-7471-0272-007d" type="selectionEntry" targetId="f1aa-3d18-caac-a960" sortIndex="13">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -36707,7 +36716,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Frost claw" hidden="true" id="e29e-8b5c-8385-7215" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="14">
+        <entryLink import="true" name="Frost claw" hidden="true" id="e29e-8b5c-8385-7215" type="selectionEntry" targetId="e14f-7600-8fdd-65ce" sortIndex="15">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
@@ -36733,7 +36742,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Raven&apos;s Talons" hidden="true" id="ec80-995a-c476-a71f" type="selectionEntry" targetId="8682-12f8-dccc-c0e2" sortIndex="15">
+        <entryLink import="true" name="Raven&apos;s Talons" hidden="true" id="ec80-995a-c476-a71f" type="selectionEntry" targetId="8682-12f8-dccc-c0e2" sortIndex="16">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -36752,7 +36761,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Graviton crusher" hidden="true" id="4054-10af-d6dd-a38f" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="7">
+        <entryLink import="true" name="Graviton crusher" hidden="true" id="4054-10af-d6dd-a38f" type="selectionEntry" targetId="78f1-345c-81d8-1cb1" sortIndex="8">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditionGroups>
@@ -36778,7 +36787,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="e755-261f-f6a1-d9e6" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="8">
+        <entryLink import="true" name="Forge-crafted thunder hammer" hidden="true" id="e755-261f-f6a1-d9e6" type="selectionEntry" targetId="d08b-34be-c6b9-8494" sortIndex="9">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
@@ -36805,7 +36814,7 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="d550-0da0-a5ab-2eda" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="11">
+        <entryLink import="true" name="Forge-crafted power fist" hidden="true" id="d550-0da0-a5ab-2eda" type="selectionEntry" targetId="8146-abba-1612-3d0f" sortIndex="12">
           <costs>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="25"/>
           </costs>
@@ -36838,6 +36847,15 @@ May have it&apos;s power sword exchanged with one frost sword or frost axe for F
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="instanceOf" value="1" field="selections" scope="force" childId="21c0-18db-03dd-ae07" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Phoenix rapier" hidden="true" id="98a5-d56c-27d0-b29e" type="selectionEntry" targetId="3882-1da8-e0e4-2c84" sortIndex="6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="force" childId="9a22-d01f-ab5c-ec07" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

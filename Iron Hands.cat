@@ -1059,11 +1059,31 @@ A Model with Armatus Necrotechnika gains teh Auto-Repair (5+) Special Rule. Addi
                   <selectionEntryGroups>
                     <selectionEntryGroup name="1-3 may exchange their combi-bolter for:" id="dd30-a71e-a63b-312b" hidden="false" flatten="false">
                       <entryLinks>
-                        <entryLink import="true" name="Heavy flamer" hidden="false" id="a391-74f9-d729-2a73" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="1"/>
-                        <entryLink import="true" name="Graviton gun" hidden="false" id="2e22-a959-3016-cb05" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="2"/>
-                        <entryLink import="true" name="Graviton shredder" hidden="false" id="d1cb-6a91-37ba-4cb0" type="selectionEntry" targetId="5921-7ef7-197a-ef9f" sortIndex="3"/>
-                        <entryLink import="true" name="Plasma blaster" hidden="false" id="077e-4900-361d-7620" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="4"/>
-                        <entryLink import="true" name="Reaper autocannon" hidden="false" id="8403-f65f-0e0e-82d5" type="selectionEntry" targetId="196d-a0ea-a851-d09e" sortIndex="5"/>
+                        <entryLink import="true" name="Heavy flamer" hidden="false" id="a391-74f9-d729-2a73" type="selectionEntry" targetId="4fa7-ea45-2a89-ad86" sortIndex="1">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Graviton gun" hidden="false" id="2e22-a959-3016-cb05" type="selectionEntry" targetId="4a06-c55e-a06f-bd0c" sortIndex="2">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Graviton shredder" hidden="false" id="d1cb-6a91-37ba-4cb0" type="selectionEntry" targetId="5921-7ef7-197a-ef9f" sortIndex="3">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Plasma blaster" hidden="false" id="077e-4900-361d-7620" type="selectionEntry" targetId="3787-3dca-b6c9-f9e3" sortIndex="4">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink import="true" name="Reaper autocannon" hidden="false" id="8403-f65f-0e0e-82d5" type="selectionEntry" targetId="196d-a0ea-a851-d09e" sortIndex="5">
+                          <costs>
+                            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                          </costs>
+                        </entryLink>
                       </entryLinks>
                       <constraints>
                         <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="02eb-f2ea-4e4b-982d" includeChildSelections="true"/>

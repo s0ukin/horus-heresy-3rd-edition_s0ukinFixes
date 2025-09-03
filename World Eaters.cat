@@ -1908,15 +1908,28 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
     </selectionEntryGroup>
     <selectionEntryGroup name="Rite of War" id="1455-b8d9-311a-e3f6" hidden="false" defaultSelectionEntryId="c119-d969-8ad8-a54a">
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="RoW: Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
+        <selectionEntry type="upgrade" import="true" name="Legiones Hereticus World Eaters" hidden="false" id="a095-2238-5c9e-0576">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="079c-1e93-eb2e-8bed"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="76a0-5e6b-d5c1-2c48">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="76a0-5e6b-d5c1-2c48" sortIndex="1">
               <rules>
                 <rule name="The Nails&apos; Bite" id="7b8c-068a-9985-9b71" hidden="false">
-                  <description>&quot;&quot;</description>
+                  <description>&quot;The Controlling Player may choose that a World Eaters Unit becomes Lost to the Nails when it fails a Leadership Check&quot;
+When a Unit entirely composed of Models with this Special Rule fails a Leadership Check, that Unit&apos;s Controlling Player can choose for that Unit to become Lost to the Nails.</description>
+                </rule>
+                <rule name="Lost to the Nails" id="b0e3-2944-982a-e8c4" hidden="false">
+                  <description>When a Unit becomes Lost to the Nails, all Tactical Statuses affecting it are removed. In addition, while a Unit is Lost to the Nails:
+
+
+- Models in that Unit may add +1&quot; to the distance of any Set-up Move.
+- Modify the Attacks Characteristic of Models in that Unit by +1.
+- Models in that Unit are considered to have a Leadership, Cool and Willpower Characteristic of 10 (unless it would normally be higher).
+- If at the start of the Controlling Player&apos;s Charge Sub-Phase, the Unit is within 12&quot; of any enemy Models, that Unit must make a Charge Move. If more than one enemy Unit is within 12&quot;, the Controlling Player of this Unit must select the closest enemy Unit as the Target Unit for that Charge.
+
+
+At the start of the Controlling Player&apos;s Charge Sub-Phase, if there are no enemy Units within 12&quot; of a Unit that is Lost to the Nails, that Unit is no longer Lost to the Nails.</description>
                 </rule>
               </rules>
               <constraints>
@@ -1924,12 +1937,12 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="52b3-b36a-90bf-9952"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Brutal Dimemberment" hidden="false" id="2032-2088-368f-8e81">
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="2032-2088-368f-8e81" sortIndex="2">
               <profiles>
                 <profile name="Brutal Dimemberment" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="1e68-7b8f-e641-b1cb">
                   <characteristics>
-                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7"/>
-                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a"/>
+                    <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows the Controlling Player to score additional Combat Resolution Points if they are the winner of a Challenge.</characteristic>
+                    <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">While this Gambit is selected, if the enemy Model is Removed as a Casualty during the Strike Step, during the subsequent Glory Step, the Controlling Player gains 2 additional Combat Resolution Points.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1938,11 +1951,18 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="82ff-8a70-ed85-d996"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Furious Charge" hidden="false" id="3c47-c5a2-e7a4-8906">
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="3c47-c5a2-e7a4-8906" sortIndex="3">
               <profiles>
                 <profile name="Furious Charge" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="f42e-f20c-f516-0c50">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to become Lost to the Nails after the Volley Step of a Charge.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to become Lost to the Nails after the Volley Step of a Charge.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">The Reactive Player may declare a Furious Charge Advanced Reaction at the end of Step 4 of a Charge declared by the Active Player that targets a Unit which only includes Models with the World Eaters Trait if any Models were Removed as Casualties as a result of Volley Attacks.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Furious Charge Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Charge triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target for the Charge that triggered this Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. Once the Reaction is declared, the Target Unit becomes Lost to the Nails.
+2. The Reactive Player must then make a Charge Ro;; for the Reacting Unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made and the Players proceed to Step 5 of the Charge process.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1953,16 +1973,21 @@ If a Unit includes a Model with this Special Rule, during the Start Phase of the
             </selectionEntry>
           </selectionEntries>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
-              </conditions>
+            <modifier type="add" value="Legiones Hereticus can only be selected for an Army with the Traitor Allegiance" field="error">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e1e1-a344-d3e2-0b91" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="a095-2238-5c9e-0576" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="RoW:Legiones Astartes World Eaters" hidden="false" id="c119-d969-8ad8-a54a">
+        <selectionEntry type="upgrade" import="true" name="Legiones Astartes World Eaters" hidden="false" id="c119-d969-8ad8-a54a">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Legion Tactica: WE" hidden="false" id="4755-a242-4d97-a2cc">
+            <selectionEntry type="upgrade" import="true" name="Legion Tactica" hidden="false" id="4755-a242-4d97-a2cc" sortIndex="1">
               <rules>
                 <rule name="Violence Incarnate" id="b891-bc7e-86a4-203c" hidden="false">
                   <description>&quot;World Eaters gain a +1 to their Attacks Characteristic when they Charge.&quot;
@@ -1975,9 +2000,9 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c762-e816-be7a-2d55"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Gambit: Violent Overkill" hidden="false" id="edaf-aed6-0e44-c425">
+            <selectionEntry type="upgrade" import="true" name="Gambit" hidden="false" id="edaf-aed6-0e44-c425" sortIndex="2">
               <profiles>
-                <profile name="Gambit: Violent Overkill" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="2fb5-499c-55b2-aa59">
+                <profile name="Violent Overkill" typeId="9b5f-da4e-5739-cbcf" typeName="Gambit:" hidden="false" id="2fb5-499c-55b2-aa59">
                   <characteristics>
                     <characteristic name="Summary" typeId="98f3-41cf-e3be-2ae7">This Gambit allows additional wounds to be allocated to enemy Models outside the Challenge when the opponent is Removed as a Casualty</characteristic>
                     <characteristic name="Description" typeId="2d7d-b1d9-dead-605a">If this Gambit is selected, then when this Model makes attacks during the Strike Step, if the other Model involved in the Challenge is Removed as a Casualty, any remaining wounds must instead be allocated to other eligible enemy Models in the same Combat, using the normal Rules.</characteristic>
@@ -1989,11 +2014,18 @@ On any Turn in which they made a Charge Move, Models with this Special Rule modi
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="508b-a2a3-8e4f-820b"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Advanced Reaction - Brutal Tide" hidden="false" id="4a0c-0020-329f-f12e">
+            <selectionEntry type="upgrade" import="true" name="Advanced Reaction" hidden="false" id="4a0c-0020-329f-f12e" sortIndex="3">
               <profiles>
                 <profile name="Brutal Tide" typeId="c14c-ecfd-ea65-58c9" typeName="Reaction" hidden="false" id="378d-cd14-1e73-dbf0">
                   <characteristics>
-                    <characteristic name="Description" typeId="5d02-0e54-0f6a-0f0b">&quot;This Reaction allows the Reacting Unit to make a Charge towards a Unit that Targets them with a Shooting Attack.&quot;</characteristic>
+                    <characteristic name="Summary" typeId="5d02-0e54-0f6a-0f0b">This Reaction allows the Reacting Unit to make a Charge towards a Unit that Targets them with a Shooting Attack.</characteristic>
+                    <characteristic name="Trigger" typeId="02e4-3f90-3125-f8b4">Once per Battle, the Reactive Player may declare the Brutal Tide Advanced Reaction during Step 4 of a Shooting Attack delivered by the Active Player that targets a Unit which only includes Models with the World Eaters Trait and does not have the Vehicle Type.</characteristic>
+                    <characteristic name="Cost" typeId="954a-972f-5c94-2ede">The Reactive Player must spend 1 point of their Reaction Allotment to declare the Brutal Tide Advanced Reaction, this cost paid as soon as the declaration is made.</characteristic>
+                    <characteristic name="Target" typeId="e102-8fdd-9cd4-c0f9">The Target Unit is always the Unit whose Shooting Attack triggered the Reaction. The Reacting Unit is always the Unit that was declared as the target of the Shooting Attack that triggered the Reaction.</characteristic>
+                    <characteristic name="Process" typeId="57cf-1c68-a020-2529">1. For the duration of the current Shooting Phase, all Models in the Reacting Unit gain the Eternal Warrior (1) Special Rule.
+2. Immediately after Step 11 of the Shooting Attack that triggered the Reaction is resolved, the Reactive Player must make a Charge Roll for the Reacting Unit.
+3. If the result of the Charge Roll would be enough to move any Model from the Reacting Unit into Base Contact with a Model from the Target Unit, then a Charge Move is made and the Units are Locked in Combat. Models in the Reacting Unit gain any bonuses for any Special Rules that would apply to that Unit as a result of a successful Charge.
+4. If the result of the Charge Roll would not bring any Model from the Reacting Unit into contact with a Model from the Target Unit, then no Charge Move is made.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

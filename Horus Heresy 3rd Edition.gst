@@ -15785,6 +15785,11 @@
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
+            <modifier type="add" value="Veteran Cadre requires Legion Champion" field="error">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="1baf-b200-9e02-844d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <categoryLinks>
             <categoryLink name="Retinue" hidden="false" id="e3d0-30db-2723-5ac2" targetId="a38e-50ff-310f-f19e">

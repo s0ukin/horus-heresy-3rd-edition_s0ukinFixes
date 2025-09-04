@@ -512,9 +512,11 @@
     <categoryEntry name="Siege Breaker" id="25ad-fbd9-d161-8fd1" hidden="false"/>
     <categoryEntry name="Special Assignment" id="12d9-f8dc-4db6-0880" hidden="false"/>
     <categoryEntry name="No default Power Weapon" id="dd1b-70ef-6015-1291" hidden="false"/>
+    <categoryEntry name="Questoris Mendecant" id="f220-eabc-f1a7-0714" hidden="false"/>
+    <categoryEntry name="Knight Lord of War" id="db9a-f420-5ade-5e9d" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="1">
+    <forceEntry name="Crusade Force Organization Chart" id="8562-592c-8d4b-a1f0" hidden="false" childForcesLabel="Detachments" sortIndex="2">
       <forceEntries>
         <forceEntry name="Crusade Primary Detachment" id="8f12-c30a-6c20-6296" hidden="true" sortIndex="1">
           <categoryLinks>
@@ -18205,7 +18207,7 @@
         </modifier>
       </modifiers>
     </forceEntry>
-    <forceEntry name="Allied Detachment and its Auxiliary" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="2">
+    <forceEntry name="Allied Detachment and its Auxiliary" id="256b-b8a8-017a-75e9" hidden="false" childForcesLabel="Detachments" sortIndex="3">
       <forceEntries>
         <forceEntry name="Allied Detachment " id="7469-bbd2-a2ad-f8a8" hidden="true" sortIndex="1">
           <categoryLinks>
@@ -18700,6 +18702,9 @@
               <comment>Visible to all factions</comment>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="forces" scope="parent" shared="true" id="c92a-53cf-4b03-3ea2" includeChildSelections="false"/>
+          </constraints>
         </forceEntry>
       </forceEntries>
       <modifiers>
@@ -18817,7 +18822,7 @@
         <forceEntryLink name="Apex - Exalted Conclave" id="5054-c3a2-6e82-5245" hidden="true" targetId="c961-7007-0142-5d07" type="forceEntry"/>
       </forceEntryLinks>
     </forceEntry>
-    <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="3">
+    <forceEntry name="Lord of War Detachment" id="b7a1-629f-9d60-c2a9" hidden="false" sortIndex="4">
       <categoryLinks>
         <categoryLink name="Lord of War" hidden="false" id="3c0a-1455-992a-6156" targetId="a46f-a465-0ead-d6b8">
           <constraints>
@@ -18834,6 +18839,17 @@
           <repeats>
             <repeat value="4" repeats="1" field="9893-c379-920b-8982" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
+        </modifier>
+        <modifier type="add" value="Please use the &quot;Knight Lord of War&quot; Detachment instead" field="error">
+          <comment>Questoris Familia</comment>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="9507-42c6-32f3-dacf">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="fd9b-d04e-362d-8e5d" shared="true"/>
+          </conditions>
         </modifier>
       </modifiers>
     </forceEntry>
@@ -19880,6 +19896,16 @@ Please don&apos;t submit bug reports for any of these things. Please only submit
           <conditions>
             <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="cf96-8891-3f9a-8921" shared="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="f220-eabc-f1a7-0714" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="db9a-f420-5ade-5e9d" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>

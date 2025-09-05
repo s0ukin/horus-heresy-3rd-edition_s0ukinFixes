@@ -16,6 +16,7 @@ PRIME_ADVANTAGE_SLOTS = ["Rewards of Treachery",
                          "Clade Operative",
                          "Legiones Thallaxes",
                          "Recon - Land Raider Explorator Only",
+                         "Heavy Assault - Ruinstorm Daemon Brutes Only",
                          "Paragon of Malevolence",
                          ]
 

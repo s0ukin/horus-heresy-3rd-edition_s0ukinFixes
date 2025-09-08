@@ -12532,8 +12532,8 @@ Rules</description>
                         <condition type="atLeast" value="1" field="selections" scope="unit" childId="594d-fa82-13cb-a345" shared="true" includeChildSelections="true"/>
                         <condition type="notEqualTo" value="1" field="selections" scope="unit" childId="a073-2d4a-5bed-123e" shared="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="698d-9fae-4074-af3c" shared="true"/>
-                        <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="a80e-b43a-4e8a-8729" shared="true"/>
                         <condition type="notInstanceOf" value="1" field="selections" scope="unit" childId="944f-f9d2-46e4-961b" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="unit" childId="3760-2dfb-561a-b603" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>

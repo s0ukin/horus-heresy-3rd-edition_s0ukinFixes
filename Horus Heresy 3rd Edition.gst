@@ -18610,6 +18610,11 @@
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="4e4f-ab55-68ef-ad63" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
+            <modifier type="add" value="Dreadnought Talon requires a Mortificator" field="error">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="roster" childId="4e4f-ab55-68ef-ad63" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint type="max" value="0" field="forces" scope="roster" shared="true" id="4256-c6d3-a3ce-63c8"/>

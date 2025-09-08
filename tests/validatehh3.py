@@ -47,6 +47,7 @@ class GameTests(unittest.TestCase):
                              settings={
                                  SystemSettingsKeys.GAME_IMPORT_SPEC: GameImportSpecs.HERESY3E,
                              },
+                             load_silent=True,
                              )
 
         self.battlefield_roles_that_can_be_prime = Heresy3e.BATTLEFIELD_ROLES.copy()
@@ -338,7 +339,9 @@ class GameTests(unittest.TestCase):
                             {"type": "ceil", "value": "10", "field": "29c5-925d-5b1d-1e77"},
                         ], expected_condition_child_id="8cf8-9be5-91d6-c96d")
 
-                    if "Command" in profile_type:
+                    if "Command" in profile_type and not unit.name == "Discipline Master Cadre":
+                        # Discipline master special due to being multiple characters,
+                        # only 1 of which can be the paragon of battle.
                         with self.subTest(f"Paragon of Battle for {profile}"):
                             self.check_mods_and_conditions(paragon_of_battle_group, expected_mods=[
                                 {"type": "increment", "value": "1", "field": "253c-d694-4695-c89e"},
@@ -443,7 +446,14 @@ class GameTests(unittest.TestCase):
                 self.assertEqual(unit.attrib["type"], "unit")
             with self.subTest(f"{unit} should contain models"):
                 entries = unit.get_child("selectionEntries")
-                self.assertIsNotNone(entries, "Should have entries")
+                if entries is None:
+                    groups = unit.get_child("selectionEntryGroups")
+                    if groups is not None:
+                        self.assertEqual(len(groups.children), 1,
+                                         "We can only test one root selection entry group on a unit right now")
+                        entries = groups.children[0].get_child("selectionEntries")
+                self.assertIsNotNone(entries,
+                                     "A unit should contain selection entries or selection entry groups")
                 model_count = 0
                 for potential_model in entries.children:
                     if potential_model.attrib.get("subType") == "unit-group":  # Rapier type unit
@@ -464,6 +474,7 @@ class GameTests(unittest.TestCase):
                         self.assertIsNotNone(potential_model.get_profile_node(None),
                                              f"There should be a profile on {potential_model}")
                 self.assertGreaterEqual(model_count, 1, "There should be at least one model in the unit")
+
         print(f"There are {len(self.get_all_unit_ids())} Units, containing {total_model_count} models")
 
     def test_categories_match_type_line(self):
